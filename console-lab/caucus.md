@@ -19,7 +19,7 @@ GET /console/lab/caucuses
 ### Parameters
 
 | Key | Type | Description | Match | Example
-| ----- | ----- | ----- | ----- | ----- |
+| --- | --- | --- | --- | --- |
 | `name` | string | The name of the caucus. | partial | `無黨`,`無黨籍` |
 
 ### Response
