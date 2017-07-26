@@ -79,7 +79,7 @@ POST /console/lab/parties
 ### Input
 
 | Key | Type | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `name` | string | **Required.** The name of the party. |
 | `abbreviation` | string | **Required.** The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |
@@ -130,7 +130,7 @@ PATCH /console/lab/parties/:id
 ### Input
 
 | Key | Type | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `name` | string | The name of the party. |
 | `abbreviation` | string | The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |

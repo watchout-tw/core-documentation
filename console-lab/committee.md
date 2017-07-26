@@ -72,7 +72,7 @@ POST /console/lab/committees
 ### Input
 
 | Key | Type | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `name` | string | **Required.** The name of the committee. |
 | `abbreviation` | string | **Required.** The abbreviation of the committee. |
 | `category` | string | **Required.** The category of the committee. |
@@ -112,7 +112,7 @@ PATCH /console/lab/committees/:name
 ### Input
 
 | Key | Type | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `name` | string | The name of the committee. |
 | `abbreviation` | string | The abbreviation of the committee. |
 | `category` | string | The category of the committee. |

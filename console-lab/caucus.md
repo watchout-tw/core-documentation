@@ -81,7 +81,7 @@ POST /console/lab/caucuses
 ### Input
 
 | Key | Type | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `name` | string | **Required.** The name of the party. |
 | `abbreviation` | string | **Required.** The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |
@@ -132,7 +132,7 @@ PATCH /console/lab/caucuses/:name
 ### Input
 
 | Key | Type | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | `name` | string | The name of the party. |
 | `abbreviation` | string | The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |
