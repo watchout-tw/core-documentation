@@ -47,7 +47,7 @@
 - 小議題 Specific Topics
   - [/console/lab/specific_topics](./console-lab/specific_topics)
 - 議題關係 Topic Relations
-
+  - [/console/lab/topic_relations](./console-lab/topic_relations)
 - 法案 Acts
   - [/console/lab/acts](./console-lab/acts)
   - [/console/lab/act_dirs](./console-lab/act_dirs)
