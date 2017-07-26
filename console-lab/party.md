@@ -9,8 +9,8 @@
 ## List Committees
 
 | Auth | Paging |
-| ----- | ----- |
-| False | False |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ```
 GET /console/lab/parties
@@ -18,19 +18,19 @@ GET /console/lab/parties
 
 ### Parameters
 
-| Key | Type | Description | Match | Example
-| ----- | ----- | ----- | ----- | ----- |
+| Key | Type | Description | Match | Example |
+| --- | --- | --- | --- | --- |
 | `name` | string | The name of the party. | partial | `無黨`,`無黨籍` |
 
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 [
   {
-    name
+    name,
     abbreviation,
     emblem,
     color,
@@ -44,8 +44,8 @@ Status: 200 OK
 ## Get a single party
 
 | Auth | Paging |
-| ----- | ----- |
-| False | False |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ```
 GET /console/lab/parties/:id
@@ -53,11 +53,11 @@ GET /console/lab/parties/:id
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
-  name
+  name,
   abbreviation,
   emblem,
   color,
@@ -69,8 +69,8 @@ Status: 200 OK
 ## Create a party
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 POST /console/lab/parties
@@ -79,7 +79,7 @@ POST /console/lab/parties
 ### Input
 
 | Key | Type | Description |
-| ----- | ----- | ----- | ----- |
+| --- | --- | --- |
 | `name` | string | **Required.** The name of the party. |
 | `abbreviation` | string | **Required.** The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |
@@ -90,20 +90,20 @@ POST /console/lab/parties
 
 ### Example
 
-``` JSON
+``` json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
   "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO"
-  "basic_info": "something....."
+  "color": "#EAEAEA,#OOOOOO",
+  "basic_info": "something.....",
   "add_info": "something....."
 }
 ```
 
 ### Response
 
-``` JSON
+``` json
 Status: 200 OK
 
 {
@@ -120,8 +120,8 @@ Status: 200 OK
 ## Update a party
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 PATCH /console/lab/parties/:id
@@ -130,7 +130,7 @@ PATCH /console/lab/parties/:id
 ### Input
 
 | Key | Type | Description |
-| ----- | ----- | ----- | ----- |
+| --- | --- | --- |
 | `name` | string | The name of the party. |
 | `abbreviation` | string | The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |
@@ -140,25 +140,25 @@ PATCH /console/lab/parties/:id
 
 ### Example
 
-``` JSON
+``` json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
   "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO"
-  "basic_info": "something....."
+  "color": "#EAEAEA,#OOOOOO",
+  "basic_info": "something.....",
   "add_info": "something....."
 }
 ```
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
   id,
-  name
+  name,
   abbreviation,
   emblem,
   color,
@@ -170,8 +170,8 @@ Status: 200 OK
 ## Delete a party
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 DELETE /console/lab/parties/:id

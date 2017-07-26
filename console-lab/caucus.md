@@ -18,8 +18,8 @@ GET /console/lab/caucuses
 
 ### Parameters
 
-| Key | Type | Description | Match | Example
-| ----- | ----- | ----- | ----- | ----- |
+| Key | Type | Description | Match | Example |
+| --- | --- | --- | --- | --- |
 | `name` | string | The name of the caucus. | partial | `無黨`,`無黨籍` |
 
 ### Response
@@ -81,7 +81,7 @@ POST /console/lab/caucuses
 ### Input
 
 | Key | Type | Description |
-| ----- | ----- | ----- | ----- |
+| --- | --- | --- |
 | `name` | string | **Required.** The name of the party. |
 | `abbreviation` | string | **Required.** The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |
@@ -132,7 +132,7 @@ PATCH /console/lab/caucuses/:name
 ### Input
 
 | Key | Type | Description |
-| ----- | ----- | ----- | ----- |
+| --- | --- | --- |
 | `name` | string | The name of the party. |
 | `abbreviation` | string | The abbreviation of the party. |
 | `emblem` | string | The url path of the party's emblem. |
