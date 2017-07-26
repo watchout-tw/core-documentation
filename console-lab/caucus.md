@@ -9,8 +9,8 @@
 ## List Caucuses
 
 | Auth | Paging |
-| ----- | ----- |
-| False | False |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ```
 GET /console/lab/caucuses
@@ -22,15 +22,14 @@ GET /console/lab/caucuses
 | ----- | ----- | ----- | ----- | ----- |
 | `name` | string | The name of the caucus. | partial | `無黨`,`無黨籍` |
 
-
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 [
   {
-    name
+    name,
     abbreviation,
     type,
     emblem,
@@ -46,8 +45,8 @@ Status: 200 OK
 ## Get a single caucus
 
 | Auth | Paging |
-| ----- | ----- |
-| False | False |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ```
 GET /console/lab/caucuses/:id
@@ -55,11 +54,11 @@ GET /console/lab/caucuses/:id
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
-  name
+  name,
   abbreviation,
   emblem,
   color,
@@ -68,11 +67,12 @@ Status: 200 OK
 }
 ```
 
-## Create a party
+## Create a caucus
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
+
 
 ```
 POST /console/lab/caucuses
@@ -92,25 +92,25 @@ POST /console/lab/caucuses
 
 ### Example
 
-``` JSON
+``` json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
   "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO"
-  "basic_info": "something....."
+  "color": "#EAEAEA,#OOOOOO",
+  "basic_info": "something.....",
   "add_info": "something....."
 }
 ```
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
   id,
-  name
+  name,
   abbreviation,
   emblem,
   color,
@@ -122,8 +122,8 @@ Status: 200 OK
 ## Update a party
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 PATCH /console/lab/caucuses/:name
@@ -142,25 +142,25 @@ PATCH /console/lab/caucuses/:name
 
 ### Example
 
-``` JSON
+``` json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
   "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO"
-  "basic_info": "something....."
+  "color": "#EAEAEA,#OOOOOO",
+  "basic_info": "something.....",
   "add_info": "something....."
 }
 ```
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
   id,
-  name
+  name,
   abbreviation,
   emblem,
   color,
@@ -172,8 +172,8 @@ Status: 200 OK
 ## Delete a Caucus
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 DELETE /console/lab/caucuses/:id
@@ -181,6 +181,6 @@ DELETE /console/lab/caucuses/:id
 
 ### Response
 
-``` JSON
+``` js
 Status: 204 No Content
 ```
