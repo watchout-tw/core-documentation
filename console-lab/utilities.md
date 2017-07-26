@@ -41,7 +41,7 @@ GET /console/lab/district_unique_names
 | 🌑 | 🌑 |
 
 ### Response
-```
+``` js
 {
   rows: [
     {

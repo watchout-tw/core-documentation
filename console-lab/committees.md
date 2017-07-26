@@ -24,7 +24,7 @@ GET /console/lab/committees
 
 ### Response
 
-```
+``` js
 {
   rows: [
     {
@@ -49,7 +49,7 @@ GET /console/lab/committees/:name
 
 ### Response
 
-```
+``` js
 {
   name,
   abbreviation,
@@ -87,7 +87,7 @@ POST /console/lab/committees
 
 ### Response
 
-```
+``` js
 {
   name,
   abbreviation,
@@ -125,7 +125,7 @@ PATCH /console/lab/committees/:name
 
 ### Response
 
-```
+``` js
 {
   name,
   abbreviation,
@@ -145,6 +145,6 @@ DELETE /console/lab/committees/:name
 
 ### Response
 
-``` JSON
-Status: 204 No Content
+``` js
+204 No Content
 ```
