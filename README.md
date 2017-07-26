@@ -1,5 +1,5 @@
-# Watchout Core API 文件目錄
-> Watchout Core API Documentation Index
+# [Watchout Core API 文件目錄](https://core-docs.watchout.tw/)
+> [Watchout Core API Documentation Index](https://core-docs.watchout.tw/)
 
 ## 草民 Citizen
 > 關於草民的 API endpoints
