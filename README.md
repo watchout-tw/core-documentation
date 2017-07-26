@@ -9,7 +9,6 @@
 
 ### 身分認證
 - [/auth/login](./auth/login)
-- [/auth/logout](./auth/logout)
 
 ### 草民
 - [/citizen/:handle](./citizen/id)
@@ -64,8 +63,8 @@
 - 表決 Votes
   - [/console/lab/rs_votes](./console-lab/rs_votes)
 
-### 工具
+### 工具 Utilities
 - 選區
-  - [/console/lab/district_unique_names](./console-lab/district_unique_names)
+  - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names)
 - 日期
-  - [/console/lab/date_to_term](./console-lab/date_to_term)
+  - [/console/lab/date_to_term](./console-lab/utilities#date-to-term)

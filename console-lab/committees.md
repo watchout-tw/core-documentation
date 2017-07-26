@@ -8,13 +8,13 @@
 
 ## List Committees
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
-
 ```
 GET /console/lab/committees
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ### Parameters
 
@@ -24,34 +24,32 @@ GET /console/lab/committees
 
 ### Response
 
-``` js
-Status: 200 OK
-
-[
-  {
-    name,
-    abbreviation,
-    category
-  },
+```
+{
+  rows: [
+    {
+      name,
+      abbreviation,
+      category
+    }
+  ],
   totalRowCount
-]
+}
 ```
 
 ## Get a single committee
-
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
 
 ```
 GET /console/lab/committees/:name
 ```
 
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
+
 ### Response
 
-``` js
-Status: 200 OK
-
+```
 {
   name,
   abbreviation,
@@ -61,13 +59,13 @@ Status: 200 OK
 
 ## Create a committee
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 POST /console/lab/committees
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ### Input
 
@@ -89,9 +87,7 @@ POST /console/lab/committees
 
 ### Response
 
-``` js
-Status: 200 OK
-
+```
 {
   name,
   abbreviation,
@@ -101,13 +97,13 @@ Status: 200 OK
 
 ## Update a committee
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 PATCH /console/lab/committees/:name
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ### Input
 
@@ -129,9 +125,7 @@ PATCH /console/lab/committees/:name
 
 ### Response
 
-``` js
-Status: 200 OK
-
+```
 {
   name,
   abbreviation,
@@ -141,13 +135,13 @@ Status: 200 OK
 
 ## Delete a committee
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 DELETE /console/lab/committees/:name
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ### Response
 
