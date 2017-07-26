@@ -32,7 +32,7 @@
   - [/console/lab/term_districts](./console-lab/term_districts)
 - 委員會 Committees
   - [/console/lab/committees](./console-lab/committees)
-- 立法委員 Representatives
+- 委員 Representatives
   - [/console/lab/reps](./console-lab/reps)
 - 選區 Districts
   - [/console/lab/districts](./console-lab/districts)
@@ -44,14 +44,17 @@
 ### 議題及法案 Topics & Acts
 - 大議題 General Topics
   - [/console/lab/general_topics](./console-lab/general_topics)
-  - [/console/lab/topic_relations](./console-lab/topic_relations)
 - 小議題 Specific Topics
   - [/console/lab/specific_topics](./console-lab/specific_topics)
+- 議題關係 Topic Relations
+
 - 法案 Acts
   - [/console/lab/acts](./console-lab/acts)
   - [/console/lab/act_dirs](./console-lab/act_dirs)
-  - [/console/lab/st_questions](./console-lab/st_questions)
   - [/console/lab/act_features](./console-lab/act_features)
+- 爭點 Questions
+  - [/console/lab/st_questions](./console-lab/st_questions)
+
 
 ### 委員表態 Representatives’ Speeches
 - 發言 Statements
@@ -62,5 +65,7 @@
   - [/console/lab/rs_votes](./console-lab/rs_votes)
 
 ### 工具
+- 選區
+  - [/console/lab/district_unique_names](./console-lab/district_unique_names)
 - 日期
   - [/console/lab/date_to_term](./console-lab/date_to_term)
