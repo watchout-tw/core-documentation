@@ -18,7 +18,7 @@ GET /console/lab/date_to_term
 | `date` | timestamp | The timestamp to lookup. | in range | `1498838400000` |
 
 ### Response
-```
+``` js
 {
   term_index,
   session_index,
