@@ -12,6 +12,7 @@ GET /console/lab/date_to_term
 | 🌑 | 🌑 |
 
 ### Parameters
+
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `date` | timestamp | The timestamp to lookup. | in range | `1498838400000` |
