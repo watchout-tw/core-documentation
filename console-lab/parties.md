@@ -6,15 +6,15 @@
 - [Update a party](#update-a-party)
 - [Delete a party](#delete-a-party)
 
-## List Committees
-
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+## List Parties
 
 ```
 GET /console/lab/parties
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ### Parameters
 
@@ -22,41 +22,39 @@ GET /console/lab/parties
 | --- | --- | --- | --- | --- |
 | `name` | string | The name of the party. | partial | `無黨`,`無黨籍` |
 
-
 ### Response
 
 ``` js
-Status: 200 OK
-
-[
-  {
-    id,
-    name,
-    abbreviation,
-    emblem,
-    color,
-    basic_info,
-    add_info
-  },
+{
+  rows: [
+    {
+      id,
+      name,
+      abbreviation,
+      emblem,
+      color,
+      basic_info,
+      add_info
+    }
+    ...
+  ],
   totalRowCount
-]
+}
 ```
 
 ## Get a single party
-
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
 
 ```
 GET /console/lab/parties/:id
 ```
 
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
+
 ### Response
 
 ``` js
-Status: 200 OK
-
 {
   id,
   name,
@@ -70,13 +68,13 @@ Status: 200 OK
 
 ## Create a party
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 POST /console/lab/parties
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ### Input
 
@@ -89,25 +87,22 @@ POST /console/lab/parties
 | `basic_info` | string | Basic information of the party. |
 | `add_info` | string | Additional information of a party. |
 
-
 ### Example
 
 ``` json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO",
-  "basic_info": "something.....",
-  "add_info": "something....."
+  "emblem": "/path/to/emblem.png",
+  "color": "#000,#fff",
+  "basic_info": "Lorem Ipsum.",
+  "add_info": "Lorem Ipsum."
 }
 ```
 
 ### Response
 
-``` json
-Status: 200 OK
-
+``` js
 {
   id,
   name,
@@ -121,13 +116,13 @@ Status: 200 OK
 
 ## Update a party
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 PATCH /console/lab/parties/:id
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ### Input
 
@@ -146,18 +141,16 @@ PATCH /console/lab/parties/:id
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO",
-  "basic_info": "something.....",
-  "add_info": "something....."
+  "emblem": "/path/to/emblem.png",
+  "color": "#000,#fff",
+  "basic_info": "Lorem Ipsum.",
+  "add_info": "Lorem Ipsum."
 }
 ```
 
 ### Response
 
 ``` js
-Status: 200 OK
-
 {
   id,
   name,
@@ -171,16 +164,16 @@ Status: 200 OK
 
 ## Delete a party
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 DELETE /console/lab/parties/:id
 ```
 
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
+
 ### Response
 
-``` JSON
-Status: 204 No Content
+``` js
+204 No Content
 ```

@@ -32,6 +32,7 @@ GET /console/lab/committees
       abbreviation,
       category
     }
+    ...
   ],
   totalRowCount
 }

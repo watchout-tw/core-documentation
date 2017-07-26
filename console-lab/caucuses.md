@@ -8,13 +8,13 @@
 
 ## List Caucuses
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
-
 ```
 GET /console/lab/caucuses
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ### Parameters
 
@@ -25,38 +25,37 @@ GET /console/lab/caucuses
 ### Response
 
 ``` js
-Status: 200 OK
-
-[
-  {
-    name,
-    abbreviation,
-    type,
-    emblem,
-    color,
-    basic_info,
-    add_info,
-    status
-  },
+{
+  rows: [
+    {
+      name,
+      abbreviation,
+      type,
+      emblem,
+      color,
+      basic_info,
+      add_info,
+      status
+    }
+    ...
+  ],
   totalRowCount
-]
+}
 ```
 
 ## Get a single caucus
-
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
 
 ```
 GET /console/lab/caucuses/:id
 ```
 
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
+
 ### Response
 
 ``` js
-Status: 200 OK
-
 {
   id,
   name,
@@ -70,14 +69,13 @@ Status: 200 OK
 
 ## Create a caucus
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
-
 ```
 POST /console/lab/caucuses
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ### Input
 
@@ -90,25 +88,22 @@ POST /console/lab/caucuses
 | `basic_info` | string | Basic information of the caucus. |
 | `add_info` | string | Additional information of a caucus. |
 
-
 ### Example
 
 ``` json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO",
-  "basic_info": "something.....",
-  "add_info": "something....."
+  "emblem": "/path/to/emblem.png",
+  "color": "#000,#fff",
+  "basic_info": "Lorem Ipsum.",
+  "add_info": "Lorem Ipsum."
 }
 ```
 
 ### Response
 
 ``` js
-Status: 200 OK
-
 {
   id,
   name,
@@ -122,13 +117,13 @@ Status: 200 OK
 
 ## Update a caucus
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 PATCH /console/lab/caucuses/:id
 ```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ### Input
 
@@ -147,18 +142,16 @@ PATCH /console/lab/caucuses/:id
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/xxx/xxx/emblem.png",
-  "color": "#EAEAEA,#OOOOOO",
-  "basic_info": "something.....",
-  "add_info": "something....."
+  "emblem": "/path/to/emblem.png",
+  "color": "#000,#fff",
+  "basic_info": "Lorem Ipsum.",
+  "add_info": "Lorem Ipsum."
 }
 ```
 
 ### Response
 
 ``` js
-Status: 200 OK
-
 {
   id,
   name,
@@ -172,16 +165,16 @@ Status: 200 OK
 
 ## Delete a Caucus
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
-
 ```
 DELETE /console/lab/caucuses/:id
 ```
 
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 | 🌑 |
+
 ### Response
 
 ``` js
-Status: 204 No Content
+204 No Content
 ```
