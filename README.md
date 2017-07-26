@@ -1,4 +1,4 @@
-# [Watchout Core API 文件目錄 Documentation Index](https://core-docs.watchout.tw/)
+# [Watchout API Documentation](https://core-docs.watchout.tw/)
 
 ## 草民 Citizen
 > 關於草民的 API endpoints
@@ -18,7 +18,7 @@
 - [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility)
 - [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary)
 
-## 中控室／議題實驗室 Console/Lab
+## 中控室／議題實驗室 Console-Lab
 > 中控室中與《議題實驗室》相關的 API endpoints
 
 ### 立法院 Legislative Yuan
@@ -65,3 +65,5 @@
   - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names)
 - 政府機關
   - [/console/lab/gov_agencies](./console-lab/utilities#government-agencies)
+- 立法流程
+  - [/console/lab/legislative_steps](./console-lab/utilities#legislative-steps)

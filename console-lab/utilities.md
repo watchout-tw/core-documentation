@@ -12,7 +12,6 @@ GET /console/lab/date_to_term
 | 🌑 | 🌑 |
 
 ### Parameters
-
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `date` | timestamp | The timestamp to lookup. | in range | `1498838400000` |
@@ -40,7 +39,6 @@ GET /console/lab/zones
 | 🌑 | 🌑 |
 
 ### Response
-
 ``` js
 {
   rows: [
@@ -80,9 +78,31 @@ GET /console/lab/district_unique_names
 ```
 
 ## Government agencies
-
 ```
 GET /console/lab/gov_agencies
+```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
+
+### Response
+``` js
+{
+  rows: [
+    {
+      id,
+      name
+    }
+    ...
+  ],
+  totalRowCount
+}
+```
+
+## Legislative steps
+```
+GET /console/lab/legislative_steps
 ```
 
 | Auth | Paging |
