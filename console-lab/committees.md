@@ -1,12 +1,12 @@
 # Committee
 
-- [List Committees](#list-committees)
+- [List committees](#list-committees)
 - [Get a single committee](#get-a-single-committee)
 - [Create a committee](#create-a-committee)
 - [Update a committee](#update-a-committee)
 - [Delete a committee](#delete-a-committee)
 
-## List Committees
+## List committees
 
 ```
 GET /console/lab/committees

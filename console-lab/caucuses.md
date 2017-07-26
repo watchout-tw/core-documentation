@@ -1,12 +1,12 @@
 # Caucus
 
-- [List Caucuses](#list-caucuses)
+- [List caucuses](#list-caucuses)
 - [Get a single caucus](#get-a-single-caucus)
 - [Create a caucus](#create-a-caucus)
 - [Update a caucus](#update-a-caucus)
 - [Delete a caucus](#delete-a-caucus)
 
-## List Caucuses
+## List caucuses
 
 ```
 GET /console/lab/caucuses

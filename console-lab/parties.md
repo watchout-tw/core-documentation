@@ -1,12 +1,12 @@
 # Party
 
-- [List Parties](#list-parties)
+- [List parties](#list-parties)
 - [Get a single party](#get-a-single-party)
 - [Create a party](#create-a-party)
 - [Update a party](#update-a-party)
 - [Delete a party](#delete-a-party)
 
-## List Parties
+## List parties
 
 ```
 GET /console/lab/parties
