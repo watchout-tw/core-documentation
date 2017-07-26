@@ -32,16 +32,13 @@
   - [/console/lab/committees](./console-lab/committees)
 - 委員 Representatives
   - [/console/lab/reps](./console-lab/reps)
-- 選區 Districts
-
-- 政團、黨團 Parties & Caucuses
+- 政黨、黨團、政團 Parties & Caucuses
   - [/console/lab/parties](./console-lab/parties)
   - [/console/lab/caucuses](./console-lab/caucuses)
 
 ### 議題及法案 Topics & Acts
-- 大議題 General Topics
+- 議題 Topics
   - [/console/lab/general_topics](./console-lab/general_topics)
-- 小議題 Specific Topics
   - [/console/lab/specific_topics](./console-lab/specific_topics)
 - 議題關係 Topic Relations
   - [/console/lab/topic_relations](./console-lab/topic_relations)
@@ -51,7 +48,6 @@
   - [/console/lab/act_features](./console-lab/act_features)
 - 爭點 Questions
   - [/console/lab/st_questions](./console-lab/st_questions)
-
 
 ### 委員表態 Representatives’ Speeches
 - 發言 Statements
