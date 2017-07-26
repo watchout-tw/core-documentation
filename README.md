@@ -64,7 +64,9 @@
   - [/console/lab/rs_votes](./console-lab/rs_votes)
 
 ### 工具 Utilities
-- 選區
-  - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names)
 - 日期
   - [/console/lab/date_to_term](./console-lab/utilities#date-to-term)
+- 選區
+  - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names)
+- 政府機關
+  - [/console/lab/gov_agencies](./console-lab/utilities#government-agencies)

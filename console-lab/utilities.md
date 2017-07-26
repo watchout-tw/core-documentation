@@ -50,5 +50,29 @@ GET /console/lab/district_unique_names
     ...
   ],
   totalRowCount
-]
+}
+```
+
+## Government agencies
+
+```
+GET /console/lab/gov_agencies
+```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
+
+### Response
+``` js
+{
+  rows: [
+    {
+      id,
+      name
+    }
+    ...
+  ],
+  totalRowCount
+}
 ```
