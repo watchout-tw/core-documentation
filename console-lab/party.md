@@ -18,7 +18,7 @@ GET /console/lab/parties
 
 ### Parameters
 
-| Key | Type | Description | Match | Example
+| Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `name` | string | The name of the party. | partial | `無黨`,`無黨籍` |
 

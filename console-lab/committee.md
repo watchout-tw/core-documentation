@@ -18,7 +18,7 @@ GET /console/lab/committees
 
 ### Parameters
 
-| Key | Type | Description | Match | Example
+| Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `name` | string | The name of the committee. | partial | `交通`,`委員會` |
 
