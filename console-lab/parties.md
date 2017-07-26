@@ -30,6 +30,7 @@ Status: 200 OK
 
 [
   {
+    id,
     name,
     abbreviation,
     emblem,
@@ -57,6 +58,7 @@ GET /console/lab/parties/:id
 Status: 200 OK
 
 {
+  id,
   name,
   abbreviation,
   emblem,
@@ -108,7 +110,7 @@ Status: 200 OK
 
 {
   id,
-  name
+  name,
   abbreviation,
   emblem,
   color,
