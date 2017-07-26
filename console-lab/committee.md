@@ -9,8 +9,8 @@
 ## List Committees
 
 | Auth | Paging |
-| ----- | ----- |
-| False | False |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ```
 GET /console/lab/committees
@@ -19,17 +19,17 @@ GET /console/lab/committees
 ### Parameters
 
 | Key | Type | Description | Match | Example
-| ----- | ----- | ----- | ----- | ----- |
+| --- | --- | --- | --- | --- |
 | `name` | string | The name of the committee. | partial | `交通`,`委員會` |
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 [
   {
-    name
+    name,
     abbreviation,
     category
   },
@@ -40,8 +40,8 @@ Status: 200 OK
 ## Get a single committee
 
 | Auth | Paging |
-| ----- | ----- |
-| False | False |
+| :---: | :---: |
+| 🌑 | 🌑 |
 
 ```
 GET /console/lab/committees/:name
@@ -49,11 +49,11 @@ GET /console/lab/committees/:name
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
-  name
+  name,
   abbreviation,
   category
 }
@@ -62,8 +62,8 @@ Status: 200 OK
 ## Create a committee
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 POST /console/lab/committees
@@ -72,14 +72,14 @@ POST /console/lab/committees
 ### Input
 
 | Key | Type | Description |
-| ----- | ----- | ----- | ----- |
+| --- | --- | --- | --- |
 | `name` | string | **Required.** The name of the committee. |
 | `abbreviation` | string | **Required.** The abbreviation of the committee. |
 | `category` | string | **Required.** The category of the committee. |
 
 ### Example
 
-``` JSON
+``` json
 {
   "name": "交通委員會",
   "abbreviation": "交通",
@@ -89,11 +89,11 @@ POST /console/lab/committees
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
-  name
+  name,
   abbreviation,
   category
 }
@@ -102,8 +102,8 @@ Status: 200 OK
 ## Update a committee
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 PATCH /console/lab/committees/:name
@@ -112,14 +112,14 @@ PATCH /console/lab/committees/:name
 ### Input
 
 | Key | Type | Description |
-| ----- | ----- | ----- | ----- |
+| --- | --- | --- | --- |
 | `name` | string | The name of the committee. |
 | `abbreviation` | string | The abbreviation of the committee. |
 | `category` | string | The category of the committee. |
 
 ### Example
 
-``` JSON
+``` json
 {
   "name": "交通委員會",
   "abbreviation": "交通",
@@ -129,11 +129,11 @@ PATCH /console/lab/committees/:name
 
 ### Response
 
-``` JSON
+``` js
 Status: 200 OK
 
 {
-  name
+  name,
   abbreviation,
   category
 }
@@ -142,8 +142,8 @@ Status: 200 OK
 ## Delete a committee
 
 | Auth | Paging |
-| ----- | ----- |
-| True | False |
+| :---: | :---: |
+| 🌕 | 🌑 |
 
 ```
 DELETE /console/lab/committees/:name
