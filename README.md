@@ -1,46 +1,65 @@
 # Watchout Core API 文件目錄
+> Watchout Core API Documentation Index
 
-## Citizen
+## 草民 Citizen
+> 關於草民的 API endpoints
 
-## 中控室／議題實驗室 | Console/Lab
-### 立法院 | Legislative Yuan
-- 屆期、會期 | Terms & Sessions
+### 註冊
+- [/auth/join](./auth/join)
+
+### 身分認證
+- [/auth/login](./auth/login)
+- [/auth/logout](./auth/logout)
+
+### 草民
+- [/citizen/:handle](./citizen/id)
+- [/citizen/:handle/password](./citizen/password)
+- [/citizen/:handle/emails](./citizen/emails)
+- [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification)
+- [/citizen/:handle/emails/:emailID/confirm_verification/:token](./citizen/emails#confirm-verification)
+- [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility)
+- [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary)
+
+## 中控室／議題實驗室 Console/Lab
+> 中控室中與《議題實驗室》相關的 API endpoints
+
+### 立法院 Legislative Yuan
+- 屆期、會期 Terms & Sessions
   - [/console/lab/terms](./console-lab/terms)
   - [/console/lab/term_sessions](./console-lab/term_sessions)
   - [/console/lab/term_parties](./console-lab/term_parties)
   - [/console/lab/term_caucuses](./console-lab/term_caucuses)
   - [/console/lab/term_districts](./console-lab/term_districts)
-- 委員會 | Committees
+- 委員會 Committees
   - [/console/lab/committees](./console-lab/committees)
-- 立法委員 | Representatives
+- 立法委員 Representatives
   - [/console/lab/reps](./console-lab/reps)
-- 選區 | Districts
+- 選區 Districts
   - [/console/lab/districts](./console-lab/districts)
   - [/console/lab/zones](./console-lab/zones)
-- 政團、黨團 | Parties & Caucuses
+- 政團、黨團 Parties & Caucuses
   - [/console/lab/parties](./console-lab/parties)
   - [/console/lab/caucuses](./console-lab/caucuses)
 
-### 議題、法案 | Topics & Bills
-- 大議題 | General Topics
+### 議題及法案 Topics & Acts
+- 大議題 General Topics
   - [/console/lab/general_topics](./console-lab/general_topics)
   - [/console/lab/topic_relations](./console-lab/topic_relations)
-- 小議題 | Specific Topics
+- 小議題 Specific Topics
   - [/console/lab/specific_topics](./console-lab/specific_topics)
-- 法案 | Bills
+- 法案 Acts
   - [/console/lab/acts](./console-lab/acts)
   - [/console/lab/act_dirs](./console-lab/act_dirs)
-  - /console/lab/st_questions
-  - /console/lab/act_features
+  - [/console/lab/st_questions](./console-lab/st_questions)
+  - [/console/lab/act_features](./console-lab/act_features)
 
-### 委員表態 | Representatives’ Speeches
-- 發言 | Statements
-  - /console/lab/rs_statements
-  - /console/lab/topic_relations
-- 提案、連署 | Bills & Sponsorships
-  - /console/lab/rs_bills
-- 表決 | Votes
-  - /console/lab/rs_votes
+### 委員表態 Representatives’ Speeches
+- 發言 Statements
+  - [/console/lab/rs_statements](./console-lab/rs_statements)
+- 提案、連署 Bills & Sponsorships
+  - [/console/lab/rs_bills](./console-lab/rs_bills)
+- 表決 Votes
+  - [/console/lab/rs_votes](./console-lab/rs_votes)
 
 ### 工具
 - 日期
