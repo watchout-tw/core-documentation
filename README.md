@@ -33,8 +33,7 @@
 - 委員 Representatives
   - [/console/lab/reps](./console-lab/reps)
 - 選區 Districts
-  - [/console/lab/districts](./console-lab/districts)
-  - [/console/lab/zones](./console-lab/zones)
+
 - 政團、黨團 Parties & Caucuses
   - [/console/lab/parties](./console-lab/parties)
   - [/console/lab/caucuses](./console-lab/caucuses)
@@ -66,6 +65,7 @@
 - 日期
   - [/console/lab/date_to_term](./console-lab/utilities#date-to-term)
 - 選區
+  - [/console/lab/zones](./console-lab/utilities#zones)
   - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names)
 - 政府機關
   - [/console/lab/gov_agencies](./console-lab/utilities#government-agencies)

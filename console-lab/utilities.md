@@ -28,6 +28,33 @@ GET /console/lab/date_to_term
   date,
 }
 ```
+## Zones
+> 取得區域名稱；區域是選區的上層結構
+
+```
+GET /console/lab/zones
+```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌑 | 🌑 |
+
+### Response
+
+``` js
+{
+  rows: [
+    {
+      name,
+      abbreviation,
+      category
+    }
+    ...
+  ],
+  totalRowCount
+}
+```
+
 
 ## District unique names
 > 取得系統中所有不重複的選區名稱
