@@ -6,7 +6,7 @@
 - [Update a rep](#update-a-rep)
 - [Delete a rep](#delete-a-rep)
 
-## List Reps
+## List reps
 
 ```
 GET /console/lab/reps
@@ -247,7 +247,7 @@ POST /console/lab/reps
 }
 ```
 
-## Update a caucus
+## Update a rep
 
 ```
 PATCH /console/lab/reps/:id
@@ -276,7 +276,7 @@ PATCH /console/lab/reps/:id
 }
 ```
 
-## Delete a Rep
+## Delete a rep
 
 ```
 DELETE /console/lab/reps/:id

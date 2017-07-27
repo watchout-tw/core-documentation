@@ -16,11 +16,11 @@ GET /console/lab/parties
 | :---: | :---: |
 | 🌑 | 🌑 |
 
-### Parameters
+### Available query parameters
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `name` | string | The name of the party. | partial | `無黨`,`無黨籍` |
+| `name` | string | 用姓名過濾政黨清單 | partial | `無`,`民` |
 
 ### Response
 
@@ -133,7 +133,7 @@ PATCH /console/lab/parties/:id
 | `emblem` | string | The url path of the party's emblem. |
 | `color` | string array | The symbolic color of the party. |
 | `basic_info` | string | Basic information of the party. |
-| `add_info` | string | Additional information of a party. |
+| `add_info` | string | Additional information of the party. |
 
 ### Example
 

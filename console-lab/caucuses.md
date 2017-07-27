@@ -16,11 +16,11 @@ GET /console/lab/caucuses
 | :---: | :---: |
 | 🌑 | 🌑 |
 
-### Parameters
+### Available query parameters
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `name` | string | The name of the caucus. | partial | `無黨`,`無黨籍` |
+| `name` | string | 用姓名過濾黨團清單 | partial | `無`,`國民` |
 
 ### Response
 
@@ -86,7 +86,7 @@ POST /console/lab/caucuses
 | `emblem` | string | The url path of the caucus's emblem. |
 | `color` | string array | The symbolic color of the caucus. |
 | `basic_info` | string | Basic information of the caucus. |
-| `add_info` | string | Additional information of a caucus. |
+| `add_info` | string | Additional information of the caucus. |
 
 ### Example
 
@@ -163,7 +163,7 @@ PATCH /console/lab/caucuses/:id
 }
 ```
 
-## Delete a Caucus
+## Delete a caucus
 
 ```
 DELETE /console/lab/caucuses/:id

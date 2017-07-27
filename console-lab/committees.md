@@ -16,11 +16,11 @@ GET /console/lab/committees
 | :---: | :---: |
 | 🌑 | 🌑 |
 
-### Parameters
+### Available query parameters
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `name` | string | The name of the committee. | partial | `交通`,`委員會` |
+| `name` | string | 用姓名過濾委員會清單 | partial | `交通`,`委員會` |
 
 ### Response
 
@@ -74,7 +74,7 @@ POST /console/lab/committees
 | --- | --- | --- |
 | `name` | string | **Required.** The name of the committee. |
 | `abbreviation` | string | **Required.** The abbreviation of the committee. |
-| `category` | string | **Required.** The category of the committee. |
+| `category` | string: directories.committee_category | **Required.** The category of the committee. |
 
 ### Example
 
@@ -112,7 +112,7 @@ PATCH /console/lab/committees/:name
 | --- | --- | --- |
 | `name` | string | The name of the committee. |
 | `abbreviation` | string | The abbreviation of the committee. |
-| `category` | string | The category of the committee. |
+| `category` | string: directories.committee_category | The category of the committee. |
 
 ### Example
 
