@@ -1,4 +1,4 @@
-# term
+# Term
 
 - [List terms](#list-terms)
 - [Get a single term](#get-a-single-term)
