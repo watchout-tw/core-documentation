@@ -257,24 +257,7 @@ PATCH /console/lab/reps/:id
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-### Input
-
-| Key | Type | Description |
-| --- | --- | --- |
-
-### Example
-
-``` json
-{
-}
-```
-
-### Response
-
-``` js
-{
-}
-```
+> 參考 [Create a rep](#create-a-rep)
 
 ## Delete a rep
 
