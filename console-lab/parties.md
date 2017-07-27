@@ -31,8 +31,8 @@ GET /console/lab/parties
       id,
       name,
       abbreviation,
-      emblem,
       color,
+      emblem,
       basic_info,
       add_info
     }
@@ -59,8 +59,8 @@ GET /console/lab/parties/:id
   id,
   name,
   abbreviation,
-  emblem,
   color,
+  emblem,
   basic_info,
   add_info
 }
@@ -82,8 +82,8 @@ POST /console/lab/parties
 | --- | --- | --- |
 | `name` | string | **Required.** The name of the party. |
 | `abbreviation` | string | **Required.** The abbreviation of the party. |
-| `emblem` | string | The url path of the party's emblem. |
 | `color` | string array | The symbolic color of the party. |
+| `emblem` | string | The url path of the party's emblem. |
 | `basic_info` | string | Basic information of the party. |
 | `add_info` | string | Additional information of a party. |
 
@@ -93,8 +93,8 @@ POST /console/lab/parties
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/path/to/emblem.png",
   "color": "#000,#fff",
+  "emblem": "/path/to/emblem.png",
   "basic_info": "Lorem Ipsum.",
   "add_info": "Lorem Ipsum."
 }
@@ -107,8 +107,8 @@ POST /console/lab/parties
   id,
   name,
   abbreviation,
-  emblem,
   color,
+  emblem,
   basic_info,
   add_info
 }
@@ -130,8 +130,8 @@ PATCH /console/lab/parties/:id
 | --- | --- | --- |
 | `name` | string | The name of the party. |
 | `abbreviation` | string | The abbreviation of the party. |
-| `emblem` | string | The url path of the party's emblem. |
 | `color` | string array | The symbolic color of the party. |
+| `emblem` | string | The url path of the party's emblem. |
 | `basic_info` | string | Basic information of the party. |
 | `add_info` | string | Additional information of the party. |
 
@@ -141,8 +141,8 @@ PATCH /console/lab/parties/:id
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/path/to/emblem.png",
   "color": "#000,#fff",
+  "emblem": "/path/to/emblem.png",
   "basic_info": "Lorem Ipsum.",
   "add_info": "Lorem Ipsum."
 }
@@ -155,8 +155,8 @@ PATCH /console/lab/parties/:id
   id,
   name,
   abbreviation,
-  emblem,
   color,
+  emblem,
   basic_info,
   add_info
 }

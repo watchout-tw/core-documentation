@@ -31,8 +31,8 @@ GET /console/lab/caucuses
       name,
       abbreviation,
       type,
-      emblem,
       color,
+      emblem,
       basic_info,
       add_info,
       status
@@ -60,8 +60,8 @@ GET /console/lab/caucuses/:id
   id,
   name,
   abbreviation,
-  emblem,
   color,
+  emblem,
   basic_info,
   add_info
 }
@@ -83,8 +83,8 @@ POST /console/lab/caucuses
 | --- | --- | --- |
 | `name` | string | **Required.** The name of the caucus. |
 | `abbreviation` | string | **Required.** The abbreviation of the caucus. |
-| `emblem` | string | The url path of the caucus's emblem. |
 | `color` | string array | The symbolic color of the caucus. |
+| `emblem` | string | The url path of the caucus's emblem. |
 | `basic_info` | string | Basic information of the caucus. |
 | `add_info` | string | Additional information of the caucus. |
 
@@ -94,8 +94,8 @@ POST /console/lab/caucuses
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/path/to/emblem.png",
   "color": "#000,#fff",
+  "emblem": "/path/to/emblem.png",
   "basic_info": "Lorem Ipsum.",
   "add_info": "Lorem Ipsum."
 }
@@ -108,8 +108,8 @@ POST /console/lab/caucuses
   id,
   name,
   abbreviation,
-  emblem,
   color,
+  emblem,
   basic_info,
   add_info
 }
@@ -131,8 +131,8 @@ PATCH /console/lab/caucuses/:id
 | --- | --- | --- |
 | `name` | string | The name of the caucus. |
 | `abbreviation` | string | The abbreviation of the caucus. |
-| `emblem` | string | The url path of the caucus's emblem. |
 | `color` | string array | The symbolic color of the caucus. |
+| `emblem` | string | The url path of the caucus's emblem. |
 | `basic_info` | string | Basic information of the caucus. |
 | `add_info` | string | Additional information of a caucus. |
 
@@ -142,8 +142,8 @@ PATCH /console/lab/caucuses/:id
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
-  "emblem": "/path/to/emblem.png",
   "color": "#000,#fff",
+  "emblem": "/path/to/emblem.png",
   "basic_info": "Lorem Ipsum.",
   "add_info": "Lorem Ipsum."
 }
@@ -156,8 +156,8 @@ PATCH /console/lab/caucuses/:id
   id,
   name,
   abbreviation,
-  emblem,
   color,
+  emblem,
   basic_info,
   add_info
 }
