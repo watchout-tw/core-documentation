@@ -176,7 +176,7 @@ POST /console/lab/reps
 | change_date | timestamp | 變更日期 |
 | change_type | string: directories.rep_term_change_type | 變更類型 |
 | district_name | string | 選區名稱 |
-| duty | string: rep_term_duty | 院內職務 |
+| duty | string: directories.rep_term_duty | 院內職務 |
 | note | string | 備註 |
 
 ### Example

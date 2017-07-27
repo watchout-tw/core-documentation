@@ -1,6 +1,6 @@
 # ?
 
-- [List ?s](#list-?)
+- [List ?s](#list-?s)
 - [Get a single ?](#get-a-single-?)
 - [Create a ?](#create-a-?)
 - [Update a ?](#update-a-?)
@@ -25,13 +25,19 @@ GET /console/lab/?s
 
 ``` js
 {
+  rows: [
+    {
+    }
+    ...
+  ],
+  totalRowCount
 }
 ```
 
 ## Get a single ?
 
 ```
-GET /console/lab/?/:id
+GET /console/lab/?s/:id
 ```
 
 | Auth | Paging |
@@ -48,7 +54,7 @@ GET /console/lab/?/:id
 ## Create a ?
 
 ```
-POST /console/lab/?
+POST /console/lab/?s
 ```
 
 | Auth | Paging |
