@@ -19,7 +19,7 @@ GET /console/lab/reps
 ### Available query parameters
 
 | Key | Type | Description | Match | Example |
-| --- | :---: | --- | :---: | --- |
+| --- | --- | --- | --- | --- |
 | `page` | integer | 頁次 | exact | `1` |
 | `all` | - | 要求所有委員的名單 | - | - |
 | `name` | string | 用姓名過濾委員名單 | partial | `陳`,`陳阿草` |

@@ -19,7 +19,7 @@ GET /console/lab/?s
 ### Available query parameters
 
 | Key | Type | Description | Match | Example |
-| --- | :---: | --- | :---: | --- |
+| --- | --- | --- | --- | --- |
 
 ### Response
 

@@ -17,7 +17,7 @@ GET /console/lab/date_to_term
 | :---: | :---: |
 | 🌑 | 🌑 |
 
-### Parameters
+### Available query parameters
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
