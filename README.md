@@ -10,31 +10,31 @@
 - [/auth/login](./auth/login)
 
 ### 草民
-- [/citizen/:handle](./citizen/id)
-- [/citizen/:handle/password](./citizen/password)
-- [/citizen/:handle/emails](./citizen/emails)
-- [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification)
-- [/citizen/:handle/emails/:emailID/confirm_verification/:token](./citizen/emails#confirm-verification)
-- [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility)
-- [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary)
+- [/citizen/:handle](./citizen/id) 🌱
+- [/citizen/:handle/password](./citizen/password) 🌱
+- [/citizen/:handle/emails](./citizen/emails) 🌱
+- [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification) 🌱
+- [/citizen/:handle/emails/:emailID/confirm_verification/:token](./citizen/emails#confirm-verification) 🌱
+- [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility) 🌱
+- [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary) 🌱
 
 ## 中控室／議題實驗室 Console-Lab
 > 中控室中與《議題實驗室》相關的 API endpoints
 
 ### 立法院 Legislative Yuan
 - 屆期、會期 Terms & Sessions
-  - [/console/lab/terms](./console-lab/terms)
+  - [/console/lab/terms](./console-lab/terms) 🌳
   - [/console/lab/term_sessions](./console-lab/term_sessions)
   - [/console/lab/term_parties](./console-lab/term_parties)
   - [/console/lab/term_caucuses](./console-lab/term_caucuses)
   - [/console/lab/term_districts](./console-lab/term_districts)
 - 委員會 Committees
-  - [/console/lab/committees](./console-lab/committees)
+  - [/console/lab/committees](./console-lab/committees) 🌳
 - 委員 Representatives
-  - [/console/lab/reps](./console-lab/reps)
+  - [/console/lab/reps](./console-lab/reps) 🌳
 - 政黨、黨團、政團 Parties & Caucuses
-  - [/console/lab/parties](./console-lab/parties)
-  - [/console/lab/caucuses](./console-lab/caucuses)
+  - [/console/lab/parties](./console-lab/parties) 🌳
+  - [/console/lab/caucuses](./console-lab/caucuses) 🌳
 
 ### 議題及法案 Topics & Acts
 - 議題 Topics
@@ -59,11 +59,11 @@
 
 ### 工具 Utilities
 - 日期
-  - [/console/lab/date_to_term](./console-lab/utilities#date-to-term)
+  - [/console/lab/date_to_term](./console-lab/utilities#date-to-term) 🌳
 - 選區
-  - [/console/lab/zones](./console-lab/utilities#zones)
-  - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names)
+  - [/console/lab/zones](./console-lab/utilities#zones) 🌳
+  - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names) 🌳
 - 政府機關
-  - [/console/lab/gov_agencies](./console-lab/utilities#government-agencies)
+  - [/console/lab/gov_agencies](./console-lab/utilities#government-agencies) 🌳
 - 立法流程
-  - [/console/lab/legislative_steps](./console-lab/utilities#legislative-steps)
+  - [/console/lab/legislative_steps](./console-lab/utilities#legislative-steps) 🌳
