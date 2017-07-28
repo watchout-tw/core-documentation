@@ -21,7 +21,7 @@ GET /console/lab/?s
 | --- | --- | --- | --- | --- |
 
 ### Response
-```javascript
+```
 {
   rows: [
     {
@@ -42,7 +42,7 @@ GET /console/lab/?s/:id
 | 🌑 | 🌑 |
 
 ### Response
-```javascript
+```
 {
 }
 ```

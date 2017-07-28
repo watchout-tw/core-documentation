@@ -22,7 +22,7 @@ GET /console/lab/terms
 | term | integer | 屆期 | exact | `7`,`8` |
 
 ### Response
-```javascript
+```
 {
   rows: [
     {
@@ -36,6 +36,7 @@ GET /console/lab/terms
           start_date,
           end_date
         }
+        ...
       ],
       parties: [
         {
@@ -45,6 +46,7 @@ GET /console/lab/terms
           color,
           emblem
         }
+        ...
       ],
       caucuses: [
         {
@@ -54,6 +56,7 @@ GET /console/lab/terms
           color,
           emblem
         }
+        ...
       ],
       districts: [
         {
@@ -63,6 +66,7 @@ GET /console/lab/terms
           index,
           neighborhoods
         }
+        ...
       ]
     }
   ],
@@ -80,7 +84,7 @@ GET /console/lab/terms/:id
 | 🌑 | 🌑 |
 
 ### Response
-```javascript
+```
 {
   index,
   start_date,
@@ -92,6 +96,7 @@ GET /console/lab/terms/:id
       start_date,
       end_date
     }
+    ...
   ],
   parties: [
     {
@@ -101,6 +106,7 @@ GET /console/lab/terms/:id
       color,
       emblem
     }
+    ...
   ],
   caucuses: [
     {
@@ -119,8 +125,10 @@ GET /console/lab/terms/:id
           color,
           emblem
         }
+        ...
       ]
     }
+    ...
   ],
   districts: [
     {
@@ -130,6 +138,7 @@ GET /console/lab/terms/:id
       index,
       neighborhoods
     }
+    ...
   ]
 }
 ```

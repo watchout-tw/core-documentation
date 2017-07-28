@@ -22,7 +22,7 @@ GET /console/lab/caucuses
 | `name` | string | 用姓名過濾黨團清單 | partial | `無`,`國民` |
 
 ### Response
-```javascript
+```
 {
   rows: [
     {
@@ -51,7 +51,7 @@ GET /console/lab/caucuses/:id
 | 🌑 | 🌑 |
 
 ### Response
-```javascript
+```
 {
   id,
   name,

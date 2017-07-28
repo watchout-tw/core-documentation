@@ -22,7 +22,7 @@ GET /console/lab/parties
 | `name` | string | 用姓名過濾政黨清單 | partial | `無`,`民` |
 
 ### Response
-```javascript
+```
 {
   rows: [
     {
@@ -50,7 +50,7 @@ GET /console/lab/parties/:id
 | 🌑 | 🌑 |
 
 ### Response
-```javascript
+```
 {
   id,
   name,

@@ -22,7 +22,7 @@ GET /console/lab/committees
 | `name` | string | 用姓名過濾委員會清單 | partial | `交通`,`委員會` |
 
 ### Response
-```javascript
+```
 {
   rows: [
     {
@@ -46,7 +46,7 @@ GET /console/lab/committees/:name
 | 🌑 | 🌑 |
 
 ### Response
-```javascript
+```
 {
   name,
   abbreviation,
