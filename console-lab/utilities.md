@@ -26,12 +26,12 @@ GET /console/lab/date_to_term
 ### Response
 ```javascript
 {
-  term_index,
-  session_index,
-  temp_session_index,
-  start_date,
-  end_date,
-  date,
+  term_index: 8,
+  session_index: 1,
+  temp_session_index: 0,
+  start_date: "2017-06-14T00:00:08.000Z",
+  end_date: "2017-06-14T00:00:08.000Z",
+  date: "2017-06-14T00:00:08.000Z"
 }
 ```
 ## Zones
@@ -50,13 +50,13 @@ GET /console/lab/zones
 {
   rows: [
     {
-      name,
-      abbreviation,
-      category
+      name: "台南市",
+      abbreviation: "台南",
+      category: "直轄市"
     }
     /* ... */
   ],
-  totalRowCount
+  totalRowCount: 42
 }
 ```
 
@@ -76,11 +76,11 @@ GET /console/lab/district_unique_names
 {
   rows: [
     {
-      name
+      name: "台南市第一選區"
     }
     /* ... */
   ],
-  totalRowCount
+  totalRowCount: 42
 }
 ```
 
@@ -98,12 +98,12 @@ GET /console/lab/gov_agencies
 {
   rows: [
     {
-      id,
-      name
+      id: 1,
+      name: "行政院"
     }
     /* ... */
   ],
-  totalRowCount
+  totalRowCount: 42
 }
 ```
 
@@ -121,11 +121,11 @@ GET /console/lab/legislative_steps
 {
   rows: [
     {
-      id,
-      name
+      id: 6,
+      name: "三讀"
     }
     /* ... */
   ],
-  totalRowCount
+  totalRowCount: 42
 }
 ```
