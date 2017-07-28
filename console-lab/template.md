@@ -62,7 +62,7 @@ POST /console/lab/?s
 | --- | --- | --- |
 
 ### Sample input
-```javascript
+```json
 {
 }
 ```
@@ -85,7 +85,7 @@ PATCH /console/lab/?s/:id
 | --- | --- | --- |
 
 ### Sample input
-```javascript
+```json
 {
 }
 ```

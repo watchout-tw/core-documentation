@@ -7,7 +7,6 @@
 - [Delete a party](#delete-a-party)
 
 ## List parties
-
 ```
 GET /console/lab/parties
 ```
@@ -23,8 +22,7 @@ GET /console/lab/parties
 | `name` | string | 用姓名過濾政黨清單 | partial | `無`,`民` |
 
 ### Response
-
-``` js
+```javascript
 {
   rows: [
     {
@@ -43,7 +41,6 @@ GET /console/lab/parties
 ```
 
 ## Get a single party
-
 ```
 GET /console/lab/parties/:id
 ```
@@ -53,8 +50,7 @@ GET /console/lab/parties/:id
 | 🌑 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 {
   id,
   name,
@@ -67,7 +63,6 @@ GET /console/lab/parties/:id
 ```
 
 ## Create a party
-
 ```
 POST /console/lab/parties
 ```
@@ -80,16 +75,15 @@ POST /console/lab/parties
 
 | Key | Type | Description |
 | --- | --- | --- |
-| `name` | string | **Required.** The name of the party. |
-| `abbreviation` | string | **Required.** The abbreviation of the party. |
-| `color` | string array | The symbolic color of the party. |
-| `emblem` | string | The url path of the party's emblem. |
-| `basic_info` | string | Basic information of the party. |
-| `add_info` | string | Additional information of a party. |
+| `name` | string | **Required.** 名稱 |
+| `abbreviation` | string | **Required.** 簡稱 |
+| `color` | string array | 代表色 |
+| `emblem` | string | 代表徽章的檔案路徑 |
+| `basic_info` | string | 基本資訊 |
+| `add_info` | string | 補充資訊 |
 
-### Example
-
-``` json
+### Sample input
+```json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
@@ -101,21 +95,9 @@ POST /console/lab/parties
 ```
 
 ### Response
-
-``` js
-{
-  id,
-  name,
-  abbreviation,
-  color,
-  emblem,
-  basic_info,
-  add_info
-}
-```
+> Returns the newly created party
 
 ## Update a party
-
 ```
 PATCH /console/lab/parties/:id
 ```
@@ -124,46 +106,9 @@ PATCH /console/lab/parties/:id
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-### Input
-
-| Key | Type | Description |
-| --- | --- | --- |
-| `name` | string | The name of the party. |
-| `abbreviation` | string | The abbreviation of the party. |
-| `color` | string array | The symbolic color of the party. |
-| `emblem` | string | The url path of the party's emblem. |
-| `basic_info` | string | Basic information of the party. |
-| `add_info` | string | Additional information of the party. |
-
-### Example
-
-``` json
-{
-  "name": "無黨籍",
-  "abbreviation": "無黨籍",
-  "color": "#000,#fff",
-  "emblem": "/path/to/emblem.png",
-  "basic_info": "Lorem Ipsum.",
-  "add_info": "Lorem Ipsum."
-}
-```
-
-### Response
-
-``` js
-{
-  id,
-  name,
-  abbreviation,
-  color,
-  emblem,
-  basic_info,
-  add_info
-}
-```
+> 參考 [Create a party](#create-a-party)
 
 ## Delete a party
-
 ```
 DELETE /console/lab/parties/:id
 ```
@@ -173,7 +118,6 @@ DELETE /console/lab/parties/:id
 | 🌕 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 204 No Content
 ```

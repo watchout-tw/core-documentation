@@ -36,7 +36,6 @@ GET /console/lab/terms
           start_date,
           end_date
         }
-        /* ... */
       ],
       parties: [
         {
@@ -46,7 +45,6 @@ GET /console/lab/terms
           color,
           emblem
         }
-        /* ... */
       ],
       caucuses: [
         {
@@ -56,7 +54,6 @@ GET /console/lab/terms
           color,
           emblem
         }
-        /* ... */
       ],
       districts: [
         {
@@ -66,10 +63,8 @@ GET /console/lab/terms
           index,
           neighborhoods
         }
-        /* ... */
       ]
     }
-    /* ... */
   ],
   totalRowCount
 }
@@ -97,7 +92,6 @@ GET /console/lab/terms/:id
       start_date,
       end_date
     }
-    /* ... */
   ],
   parties: [
     {
@@ -107,7 +101,6 @@ GET /console/lab/terms/:id
       color,
       emblem
     }
-    /* ... */
   ],
   caucuses: [
     {
@@ -126,10 +119,8 @@ GET /console/lab/terms/:id
           color,
           emblem
         }
-        /* ... */
       ]
     }
-    /* ... */
   ],
   districts: [
     {
@@ -139,7 +130,6 @@ GET /console/lab/terms/:id
       index,
       neighborhoods
     }
-    /* ... */
   ]
 }
 ```
@@ -173,7 +163,7 @@ POST /console/lab/terms
 | parties | array of integers: party ID | 與該黨團或政團關聯的政黨 ID 列表 |
 
 ### Sample input
-```javascript
+```json
 {
   "index": 8,
   "start_date": 1498838400000,
@@ -185,21 +175,17 @@ POST /console/lab/terms
       "start_date": 1498838400000,
       "end_date": 1498838400000
     }
-    /* ... */
   ],
   "parties": [
     2, 3, 4
-    /* ... */
   ],
   "caucuses": [
     {
       "caucus": 2,
       "parties": [
         2, 4, 7
-        /* ... */
       ]
     }
-    /* ... */
   ],
   "districts": [
     {
@@ -209,7 +195,6 @@ POST /console/lab/terms
       "index": 1,
       "neighborhoods": "北投區、士林區"
     }
-    /* ... */
   ]
 }
 ```

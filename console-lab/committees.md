@@ -7,7 +7,6 @@
 - [Delete a committee](#delete-a-committee)
 
 ## List committees
-
 ```
 GET /console/lab/committees
 ```
@@ -23,8 +22,7 @@ GET /console/lab/committees
 | `name` | string | 用姓名過濾委員會清單 | partial | `交通`,`委員會` |
 
 ### Response
-
-``` js
+```javascript
 {
   rows: [
     {
@@ -39,7 +37,6 @@ GET /console/lab/committees
 ```
 
 ## Get a single committee
-
 ```
 GET /console/lab/committees/:name
 ```
@@ -49,8 +46,7 @@ GET /console/lab/committees/:name
 | 🌑 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 {
   name,
   abbreviation,
@@ -59,7 +55,6 @@ GET /console/lab/committees/:name
 ```
 
 ## Create a committee
-
 ```
 POST /console/lab/committees
 ```
@@ -72,13 +67,12 @@ POST /console/lab/committees
 
 | Key | Type | Description |
 | --- | --- | --- |
-| `name` | string | **Required.** The name of the committee. |
-| `abbreviation` | string | **Required.** The abbreviation of the committee. |
-| `category` | string: directories.committee_category | **Required.** The category of the committee. |
+| `name` | string | **Required.** 名稱 |
+| `abbreviation` | string | **Required.** 簡稱 |
+| `category` | string: directories.committee_category | **Required.** 分類 |
 
-### Example
-
-``` json
+### Sample input
+```json
 {
   "name": "交通委員會",
   "abbreviation": "交通",
@@ -87,17 +81,9 @@ POST /console/lab/committees
 ```
 
 ### Response
-
-``` js
-{
-  name,
-  abbreviation,
-  category
-}
-```
+> Returns the newly created committee
 
 ## Update a committee
-
 ```
 PATCH /console/lab/committees/:name
 ```
@@ -106,36 +92,9 @@ PATCH /console/lab/committees/:name
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-### Input
-
-| Key | Type | Description |
-| --- | --- | --- |
-| `name` | string | The name of the committee. |
-| `abbreviation` | string | The abbreviation of the committee. |
-| `category` | string: directories.committee_category | The category of the committee. |
-
-### Example
-
-``` json
-{
-  "name": "交通委員會",
-  "abbreviation": "交通",
-  "category": "regular"
-}
-```
-
-### Response
-
-``` js
-{
-  name,
-  abbreviation,
-  category
-}
-```
+> 參考 [Create a committee](#create-a-committee)
 
 ## Delete a committee
-
 ```
 DELETE /console/lab/committees/:name
 ```
@@ -145,7 +104,6 @@ DELETE /console/lab/committees/:name
 | 🌕 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 204 No Content
 ```

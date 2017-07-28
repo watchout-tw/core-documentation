@@ -7,7 +7,6 @@
 - [Delete a caucus](#delete-a-caucus)
 
 ## List caucuses
-
 ```
 GET /console/lab/caucuses
 ```
@@ -23,8 +22,7 @@ GET /console/lab/caucuses
 | `name` | string | 用姓名過濾黨團清單 | partial | `無`,`國民` |
 
 ### Response
-
-``` js
+```javascript
 {
   rows: [
     {
@@ -44,7 +42,6 @@ GET /console/lab/caucuses
 ```
 
 ## Get a single caucus
-
 ```
 GET /console/lab/caucuses/:id
 ```
@@ -54,8 +51,7 @@ GET /console/lab/caucuses/:id
 | 🌑 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 {
   id,
   name,
@@ -68,7 +64,6 @@ GET /console/lab/caucuses/:id
 ```
 
 ## Create a caucus
-
 ```
 POST /console/lab/caucuses
 ```
@@ -81,16 +76,15 @@ POST /console/lab/caucuses
 
 | Key | Type | Description |
 | --- | --- | --- |
-| `name` | string | **Required.** The name of the caucus. |
-| `abbreviation` | string | **Required.** The abbreviation of the caucus. |
-| `color` | string array | The symbolic color of the caucus. |
-| `emblem` | string | The url path of the caucus's emblem. |
-| `basic_info` | string | Basic information of the caucus. |
-| `add_info` | string | Additional information of the caucus. |
+| `name` | string | **Required.** 名稱 |
+| `abbreviation` | string | **Required.** 簡稱 |
+| `color` | string array | 代表色 |
+| `emblem` | string | 代表徽章的檔案路徑 |
+| `basic_info` | string | 基本資訊 |
+| `add_info` | string | 補充資訊 |
 
-### Example
-
-``` json
+### Sample input
+```json
 {
   "name": "無黨籍",
   "abbreviation": "無黨籍",
@@ -102,21 +96,9 @@ POST /console/lab/caucuses
 ```
 
 ### Response
-
-``` js
-{
-  id,
-  name,
-  abbreviation,
-  color,
-  emblem,
-  basic_info,
-  add_info
-}
-```
+> Returns the newly created caucus
 
 ## Update a caucus
-
 ```
 PATCH /console/lab/caucuses/:id
 ```
@@ -125,46 +107,9 @@ PATCH /console/lab/caucuses/:id
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-### Input
-
-| Key | Type | Description |
-| --- | --- | --- |
-| `name` | string | The name of the caucus. |
-| `abbreviation` | string | The abbreviation of the caucus. |
-| `color` | string array | The symbolic color of the caucus. |
-| `emblem` | string | The url path of the caucus's emblem. |
-| `basic_info` | string | Basic information of the caucus. |
-| `add_info` | string | Additional information of a caucus. |
-
-### Example
-
-``` json
-{
-  "name": "無黨籍",
-  "abbreviation": "無黨籍",
-  "color": "#000,#fff",
-  "emblem": "/path/to/emblem.png",
-  "basic_info": "Lorem Ipsum.",
-  "add_info": "Lorem Ipsum."
-}
-```
-
-### Response
-
-``` js
-{
-  id,
-  name,
-  abbreviation,
-  color,
-  emblem,
-  basic_info,
-  add_info
-}
-```
+> 參考 [Create a caucus](#create-a-caucus)
 
 ## Delete a caucus
-
 ```
 DELETE /console/lab/caucuses/:id
 ```
@@ -174,7 +119,6 @@ DELETE /console/lab/caucuses/:id
 | 🌕 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 204 No Content
 ```

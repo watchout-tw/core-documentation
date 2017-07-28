@@ -7,7 +7,6 @@
 - [Delete a rep](#delete-a-rep)
 
 ## List reps
-
 ```
 GET /console/lab/reps
 ```
@@ -28,8 +27,7 @@ GET /console/lab/reps
 | `party` | integer | 用政黨過濾委員名單 | exact | `1` |
 
 ### Response
-
-``` js
+```javascript
 {
   rows: [
     {
@@ -70,7 +68,6 @@ GET /console/lab/reps
 ```
 
 ## Get a single rep
-
 ```
 GET /console/lab/reps/:id
 ```
@@ -80,8 +77,7 @@ GET /console/lab/reps/:id
 | 🌑 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 {
   id,
   name,
@@ -143,7 +139,6 @@ GET /console/lab/reps/:id
 ```
 
 ## Create a rep
-
 ```
 POST /console/lab/reps
 ```
@@ -179,9 +174,8 @@ POST /console/lab/reps
 | duty | string: directories.rep_term_duty | 院內職務 |
 | note | string | 備註 |
 
-### Example
-
-``` json
+### Sample input
+```json
 {
   "name": "陳阿草",
   "birth_date": 1501152358325,
@@ -241,14 +235,9 @@ POST /console/lab/reps
 ```
 
 ### Response
-
-``` js
-{
-}
-```
+> Returns the newly created rep
 
 ## Update a rep
-
 ```
 PATCH /console/lab/reps/:id
 ```
@@ -260,7 +249,6 @@ PATCH /console/lab/reps/:id
 > 參考 [Create a rep](#create-a-rep)
 
 ## Delete a rep
-
 ```
 DELETE /console/lab/reps/:id
 ```
@@ -270,7 +258,6 @@ DELETE /console/lab/reps/:id
 | 🌕 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 204 No Content
 ```
