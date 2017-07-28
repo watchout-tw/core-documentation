@@ -27,7 +27,7 @@ GET /console/lab/reps
 | `party` | integer | 用政黨過濾委員名單 | exact | `1` |
 
 ### Response
-~~~
+~~~ javascript
 {
   rows: [
     {
