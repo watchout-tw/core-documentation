@@ -89,8 +89,8 @@ POST /console/lab/parties
   "abbreviation": "無黨籍",
   "color": "#000,#fff",
   "emblem": "/path/to/emblem.png",
-  "basic_info": "Lorem Ipsum.",
-  "add_info": "Lorem Ipsum."
+  "basic_info": "Lorem ipsum.",
+  "add_info": "Lorem ipsum."
 }
 ```
 
