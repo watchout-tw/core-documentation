@@ -24,7 +24,7 @@ GET /console/lab/date_to_term
 | `date` | timestamp | The timestamp to lookup. | in range | `1498838400000` |
 
 ### Response
-``` js
+```javascript
 {
   term_index,
   session_index,
@@ -46,7 +46,7 @@ GET /console/lab/zones
 | 🌑 | 🌑 |
 
 ### Response
-``` js
+```javascript
 {
   rows: [
     {
@@ -54,7 +54,7 @@ GET /console/lab/zones
       abbreviation,
       category
     }
-    ...
+    /* ... */
   ],
   totalRowCount
 }
@@ -72,13 +72,13 @@ GET /console/lab/district_unique_names
 | 🌑 | 🌑 |
 
 ### Response
-``` js
+```javascript
 {
   rows: [
     {
       name
     }
-    ...
+    /* ... */
   ],
   totalRowCount
 }
@@ -94,14 +94,14 @@ GET /console/lab/gov_agencies
 | 🌑 | 🌑 |
 
 ### Response
-``` js
+```javascript
 {
   rows: [
     {
       id,
       name
     }
-    ...
+    /* ... */
   ],
   totalRowCount
 }
@@ -117,14 +117,14 @@ GET /console/lab/legislative_steps
 | 🌑 | 🌑 |
 
 ### Response
-``` js
+```javascript
 {
   rows: [
     {
       id,
       name
     }
-    ...
+    /* ... */
   ],
   totalRowCount
 }
