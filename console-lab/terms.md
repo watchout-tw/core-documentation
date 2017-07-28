@@ -7,7 +7,6 @@
 - [Delete a term](#delete-a-term)
 
 ## List terms
-
 ```
 GET /console/lab/terms
 ```
@@ -23,8 +22,7 @@ GET /console/lab/terms
 | term | integer | 屆期 | exact | `7`,`8` |
 
 ### Response
-
-``` js
+```javascript
 {
   rows: [
     {
@@ -38,7 +36,7 @@ GET /console/lab/terms
           start_date,
           end_date
         }
-        ...
+        /* ... */
       ],
       parties: [
         {
@@ -48,7 +46,7 @@ GET /console/lab/terms
           color,
           emblem
         }
-        ...
+        /* ... */
       ],
       caucuses: [
         {
@@ -58,7 +56,7 @@ GET /console/lab/terms
           color,
           emblem
         }
-        ...
+        /* ... */
       ],
       districts: [
         {
@@ -68,17 +66,16 @@ GET /console/lab/terms
           index,
           neighborhoods
         }
-        ...
+        /* ... */
       ]
     }
-    ...
+    /* ... */
   ],
   totalRowCount
 }
 ```
 
 ## Get a single term
-
 ```
 GET /console/lab/terms/:id
 ```
@@ -88,8 +85,7 @@ GET /console/lab/terms/:id
 | 🌑 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 {
   index,
   start_date,
@@ -101,7 +97,7 @@ GET /console/lab/terms/:id
       start_date,
       end_date
     }
-    ...
+    /* ... */
   ],
   parties: [
     {
@@ -111,7 +107,7 @@ GET /console/lab/terms/:id
       color,
       emblem
     }
-    ...
+    /* ... */
   ],
   caucuses: [
     {
@@ -130,10 +126,10 @@ GET /console/lab/terms/:id
           color,
           emblem
         }
-        ...
+        /* ... */
       ]
     }
-    ...
+    /* ... */
   ],
   districts: [
     {
@@ -143,13 +139,12 @@ GET /console/lab/terms/:id
       index,
       neighborhoods
     }
-    ...
+    /* ... */
   ]
 }
 ```
 
 ## Create a term
-
 ```
 POST /console/lab/terms
 ```
@@ -177,31 +172,34 @@ POST /console/lab/terms
 | caucus | integer | 黨團或政團的 ID |
 | parties | array of integers: party ID | 與該黨團或政團關聯的政黨 ID 列表 |
 
-### Example
-
-``` json
+### Sample input
+```javascript
 {
   "index": 8,
-  "start_date": 1501152358325,
-  "end_date": 1501152358325,
+  "start_date": 1498838400000,
+  "end_date": 1498838400000,
   "sessions": [
     {
       "session_index": 1,
       "temp_session_index": 0,
-      "start_date": 1501152358325,
-      "end_date": 1501152358325
+      "start_date": 1498838400000,
+      "end_date": 1498838400000
     }
+    /* ... */
   ],
   "parties": [
     2, 3, 4
+    /* ... */
   ],
   "caucuses": [
     {
       "caucus": 2,
       "parties": [
         2, 4, 7
+        /* ... */
       ]
     }
+    /* ... */
   ],
   "districts": [
     {
@@ -211,19 +209,15 @@ POST /console/lab/terms
       "index": 1,
       "neighborhoods": "北投區、士林區"
     }
+    /* ... */
   ]
 }
 ```
 
 ### Response
-
-``` js
-{
-}
-```
+> Returns the newly created term
 
 ## Update a term
-
 ```
 PATCH /console/lab/terms/:id
 ```
@@ -235,7 +229,6 @@ PATCH /console/lab/terms/:id
 > 參考 [Create a term](#create-a-term)
 
 ## Delete a term
-
 ```
 DELETE /console/lab/terms/:id
 ```
@@ -245,7 +238,6 @@ DELETE /console/lab/terms/:id
 | 🌕 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 204 No Content
 ```

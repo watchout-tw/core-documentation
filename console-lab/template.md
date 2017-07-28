@@ -7,7 +7,6 @@
 - [Delete a ?](#delete-a-?)
 
 ## List ?s
-
 ```
 GET /console/lab/?s
 ```
@@ -22,8 +21,7 @@ GET /console/lab/?s
 | --- | --- | --- | --- | --- |
 
 ### Response
-
-``` js
+```javascript
 {
   rows: [
     {
@@ -35,7 +33,6 @@ GET /console/lab/?s
 ```
 
 ## Get a single ?
-
 ```
 GET /console/lab/?s/:id
 ```
@@ -45,14 +42,12 @@ GET /console/lab/?s/:id
 | 🌑 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 {
 }
 ```
 
 ## Create a ?
-
 ```
 POST /console/lab/?s
 ```
@@ -66,22 +61,16 @@ POST /console/lab/?s
 | Key | Type | Description |
 | --- | --- | --- |
 
-### Example
-
-``` json
+### Sample input
+```javascript
 {
 }
 ```
 
 ### Response
-
-``` js
-{
-}
-```
+> Returns the newly created ?
 
 ## Update a ?
-
 ```
 PATCH /console/lab/?s/:id
 ```
@@ -95,22 +84,16 @@ PATCH /console/lab/?s/:id
 | Key | Type | Description |
 | --- | --- | --- |
 
-### Example
-
-``` json
+### Sample input
+```javascript
 {
 }
 ```
 
 ### Response
-
-``` js
-{
-}
-```
+> Returns the updated ?
 
 ## Delete a ?
-
 ```
 DELETE /console/lab/?s/:id
 ```
@@ -120,7 +103,6 @@ DELETE /console/lab/?s/:id
 | 🌕 | 🌑 |
 
 ### Response
-
-``` js
+```javascript
 204 No Content
 ```
