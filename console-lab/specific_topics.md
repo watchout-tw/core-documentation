@@ -19,8 +19,8 @@ GET /console/lab/specific_topics
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| title | string | 用標題過濾小議題清單 | partial | `人`,`正義` |
-| gt | integer | 用關聯大議題 ID 過濾小議題清單 | exact | `1`,`42` |
+| `title` | string | 用標題過濾小議題清單 | partial | `人`,`正義` |
+| `gt` | integer | 用關聯大議題 ID 過濾小議題清單 | exact | `1`,`42` |
 
 ### Response
 ```
@@ -121,13 +121,13 @@ POST /console/lab/specific_topics
 
 | Key | Type | Description |
 | --- | --- | --- |
-| title | string | 標題 |
-| index | integer | 排序 |
-| image | string | 圖像 |
-| description | string | 敘述 |
-| general_topics | array of integers: general topic IDs | 關聯小議題 ID 列表 |
-| act_dirs | array of objects | 這個小議題的修法方向列表 |
-| st_questions | array of objects | 這個小議題的爭點列表 |
+| `title` | string | 標題 |
+| `index` | integer | 排序 |
+| `image` | string | 圖像 |
+| `description` | string | 敘述 |
+| `general_topics` | array of integers: general topic IDs | 關聯小議題 ID 列表 |
+| `act_dirs` | array of objects | 這個小議題的修法方向列表 |
+| `st_questions` | array of objects | 這個小議題的爭點列表 |
 
 
 ### Sample input

@@ -1,4 +1,4 @@
-# act_feature
+# Act Feature
 
 - [List act features](#list-act-features)
 - [Get a single act feature](#get-a-single-act-feature)
@@ -19,9 +19,9 @@ GET /console/lab/act_features
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| st | integer | specific topic ID | exact | `1`,`2` |
-| act | integer | act ID | exact | `1`,`2` |
-| act_dir | integer | act dir ID | exact | `1`,`2` |
+| `st` | integer | specific topic ID | exact | `1`,`2` |
+| `act` | integer | act ID | exact | `1`,`2` |
+| `act_dir` | integer | act dir ID | exact | `1`,`2` |
 
 ### Response
 ```
@@ -108,14 +108,14 @@ POST /console/lab/act_features
 
 | Key | Type | Description |
 | --- | --- | --- |
-| st | integer | 小議題 ID |
-| act | integer | 法案 ID |
-| act_dir | integer | 修法方向 ID |
-| feature | string | 法案比較名稱 |
-| dir | string | 法案比較價值判斷 |
-| content | integer | 內容說明 |
-| scale_score_max | integer | 量尺分數最大值 |
-| scale | array of object | 量尺 |
+| `st` | integer | 小議題 ID |
+| `act` | integer | 法案 ID |
+| `act_dir` | integer | 修法方向 ID |
+| `feature` | string | 法案比較名稱 |
+| `dir` | string | 法案比較價值判斷 |
+| `content` | integer | 內容說明 |
+| `scale_score_max` | integer | 量尺分數最大值 |
+| `scale` | array of object | 量尺 |
 
 ### Sample input
 ```json

@@ -19,8 +19,8 @@ GET /console/lab/acts
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| title | string | 用標題來過濾法案清單 | partial | `民`,`集會` |
-| st | integer | 用關聯小議題來過濾法案清單 | exact | `1`,`2` |
+| `title` | string | 用標題來過濾法案清單 | partial | `民`,`集會` |
+| `st` | integer | 用關聯小議題來過濾法案清單 | exact | `1`,`2` |
 
 ### Response
 ```
@@ -86,9 +86,9 @@ POST /console/lab/acts
 
 | Key | Type | Description |
 | --- | --- | --- |
-| title | string | 標題 |
-| official_seq_no | string | 院總字號；用字串提高彈性 |
-| specific_topics | array of integers: specific topic IDs | 關聯小議題 ID 列表 |
+| `title` | string | 標題 |
+| `official_seq_no` | string | 院總字號；用字串提高彈性 |
+| `specific_topics` | array of integers: specific topic IDs | 關聯小議題 ID 列表 |
 
 ### Sample input
 ```json

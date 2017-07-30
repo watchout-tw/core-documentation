@@ -19,7 +19,7 @@ GET /console/lab/terms
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| term | integer | 屆期 | exact | `7`,`8` |
+| `term` | integer | 屆期 | exact | `7`,`8` |
 
 ### Response
 ```
@@ -156,20 +156,20 @@ POST /console/lab/terms
 
 | Key | Type | Description |
 | --- | --- | --- |
-| index | integer | 屆期 |
-| start_date | timestamp | 起始日 |
-| end_date | timestamp | 終止日 |
-| sessions | array of objects | 這個屆期的會期 |
-| parties | array of integers: party IDs | 這個屆期曾經有席次的政黨 |
-| caucuses | array of objects `[1]` | 這個屆期曾經有席次的黨團或政團 |
-| districts | array of objects | 這個屆期的選區 |
+| `index` | integer | 屆期 |
+| `start_date` | timestamp | 起始日 |
+| `end_date` | timestamp | 終止日 |
+| `sessions` | array of objects | 這個屆期的會期 |
+| `parties` | array of integers: party IDs | 這個屆期曾經有席次的政黨 |
+| `caucuses` | array of objects `[1]` | 這個屆期曾經有席次的黨團或政團 |
+| `districts` | array of objects | 這個屆期的選區 |
 
 `[1]`
 
 | Key | Type | Description |
 | --- | --- | --- |
-| caucus | integer | 黨團或政團的 ID |
-| parties | array of integers: party ID | 與該黨團或政團關聯的政黨 ID 列表 |
+| `caucus` | integer | 黨團或政團的 ID |
+| `parties` | array of integers: party ID | 與該黨團或政團關聯的政黨 ID 列表 |
 
 ### Sample input
 ```json
