@@ -51,7 +51,7 @@
 
 ### 委員表態 Representatives’ Speeches
 - 發言 Statements
-  - [/console/lab/rs_statements](./console-lab/rs_statements)
+  - [/console/lab/rs_statements](./console-lab/rs_statements) 🌳
 - 提案、連署 Bills & Sponsorships
   - [/console/lab/rs_bills](./console-lab/rs_bills)
 - 表決 Votes
