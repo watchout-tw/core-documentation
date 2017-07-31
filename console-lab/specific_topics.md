@@ -20,7 +20,7 @@ GET /console/lab/specific_topics
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `title` | string | 用標題過濾小議題清單 | partial | `人`,`正義` |
-| `gt` | integer | 用關聯大議題 ID 過濾小議題清單 | exact | `1`,`42` |
+| `gt` | integer: general topic ID | 用關聯大議題 ID 過濾小議題清單 | exact | `1`,`42` |
 
 ### Response
 ```

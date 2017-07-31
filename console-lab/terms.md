@@ -19,7 +19,7 @@ GET /console/lab/terms
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `term` | integer | 屆期 | exact | `7`,`8` |
+| `term` | integer: term index | 屆期 | exact | `7`,`8` |
 
 ### Response
 ```
