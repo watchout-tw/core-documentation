@@ -60,9 +60,13 @@
 ### 工具 Utilities
 - 日期
   - [/console/lab/date_to_term](./console-lab/utilities#date-to-term) 🌳
+  - [/console/lab/date_to_rep_info](./console-lab/utilities#date-to-rep-info) 🌳
+- 會期
+  - [/console/lab/unique_sessions](./console-lab/utilities#unique-sessions) 🌳
+  - [/console/lab/unique_temp_sessions](./console-lab/utilities#unique-temp-sessions) 🌳
 - 選區
   - [/console/lab/zones](./console-lab/utilities#zones) 🌳
-  - [/console/lab/district_unique_names](./console-lab/utilities#district-unique-names) 🌳
+  - [/console/lab/unique_districts](./console-lab/utilities#unique-districts) 🌳
 - 政府機關
   - [/console/lab/gov_agencies](./console-lab/utilities#government-agencies) 🌳
 - 立法流程

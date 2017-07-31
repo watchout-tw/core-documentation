@@ -157,9 +157,9 @@ POST /console/lab/bills
   "cosponsors": [
     4, 5, 6
   ],
-  "content",
-  "data_source_link",
-  "progress_source_link",
+  "content": "Lorem ipsum",
+  "data_source_link": "https://something.gov.tw/path/to/source",
+  "progress_source_link": "https://something.gov.tw/path/to/source",
   "tags": [
     2, 4, 12
   ]
