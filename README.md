@@ -55,7 +55,7 @@
 - 提案、連署 Bills & Sponsorships
   - [/console/lab/rs_bills](./console-lab/rs_bills)
 - 表決 Votes
-  - [/console/lab/rs_votes](./console-lab/rs_votes)
+  - [/console/lab/rs_votes](./console-lab/rs_votes) 🌳
 
 ### 工具 Utilities
 - 日期
