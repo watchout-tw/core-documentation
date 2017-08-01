@@ -39,6 +39,8 @@ GET /console/lab/date_to_term
 ```
 
 ## Date to rep info
+> 使用 timestamp 及委員 ID 查詢該位委員在該時刻的政黨、黨團、委員會等資訊
+
 ```
 GET /console/lab/date_to_rep_info
 ```
@@ -104,6 +106,8 @@ GET /console/lab/zones
 ```
 
 ## Unique sessions
+> 取得某個屆期之中不重複的會期編號
+
 ```
 GET /console/lab/unique_sessions
 ```
@@ -134,6 +138,8 @@ GET /console/lab/unique_sessions
 ```
 
 ## Unique temp sessions
+> 取得某個屆期之中不重複的臨時會期編號，也可以進一步限制到某個會期中的臨時會期
+
 ```
 GET /console/lab/unique_temp_sessions
 ```
@@ -188,6 +194,8 @@ GET /console/lab/unique_districts
 ```
 
 ## Government agencies
+> 取得系統中所有政府單位的清單
+
 ```
 GET /console/lab/gov_agencies
 ```
@@ -210,6 +218,8 @@ GET /console/lab/gov_agencies
 ```
 
 ## Legislative steps
+> 取得系統定義的所有立法步驟
+
 ```
 GET /console/lab/legislative_steps
 ```
