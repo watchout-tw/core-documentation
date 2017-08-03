@@ -8,7 +8,7 @@
 
 ## List bills
 ```
-GET /console/lab/bills
+GET /console/lab/rs_bills
 ```
 
 | Auth | Paging |
@@ -81,7 +81,7 @@ GET /console/lab/bills
 
 ## Get a single bill
 ```
-GET /console/lab/bills/:id
+GET /console/lab/rs_bills/:id
 ```
 
 | Auth | Paging |
@@ -112,7 +112,7 @@ GET /console/lab/bills/:id
 
 ## Create a bill
 ```
-POST /console/lab/bills
+POST /console/lab/rs_bills
 ```
 
 | Auth | Paging |
@@ -171,7 +171,7 @@ POST /console/lab/bills
 
 ## Update a bill
 ```
-PATCH /console/lab/bills/:id
+PATCH /console/lab/rs_bills/:id
 ```
 
 | Auth | Paging |
@@ -182,7 +182,7 @@ PATCH /console/lab/bills/:id
 
 ## Delete a bill
 ```
-DELETE /console/lab/bills/:id
+DELETE /console/lab/rs_bills/:id
 ```
 
 | Auth | Paging |

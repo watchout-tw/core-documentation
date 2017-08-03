@@ -8,7 +8,7 @@
 
 ## List votes
 ```
-GET /console/lab/votes
+GET /console/lab/rs_votes
 ```
 
 | Auth | Paging |
@@ -60,7 +60,7 @@ GET /console/lab/votes
 
 ## Get a single vote
 ```
-GET /console/lab/votes/:id
+GET /console/lab/rs_votes/:id
 ```
 
 | Auth | Paging |
@@ -90,7 +90,7 @@ GET /console/lab/votes/:id
 
 ## Create a vote
 ```
-POST /console/lab/votes
+POST /console/lab/rs_votes
 ```
 
 | Auth | Paging |
@@ -151,7 +151,7 @@ POST /console/lab/votes
 
 ## Update a vote
 ```
-PATCH /console/lab/votes/:id
+PATCH /console/lab/rs_votes/:id
 ```
 
 | Auth | Paging |
@@ -162,7 +162,7 @@ PATCH /console/lab/votes/:id
 
 ## Delete a vote
 ```
-DELETE /console/lab/votes/:id
+DELETE /console/lab/rs_votes/:id
 ```
 
 | Auth | Paging |
