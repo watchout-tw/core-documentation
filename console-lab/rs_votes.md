@@ -21,8 +21,8 @@ GET /console/lab/rs_votes
 | --- | --- | --- | --- | --- |
 | `page` | integer | 頁次 | exact | `1` |
 | `all` | - | 要求所有委員表決的清單 | - | - |
-| `st` | integer: specific topic ID | 用關聯小議題過濾委員表決清單 | exact | `1`,`2` |
-| `term` | integer: term index | 用屆期過濾委員表決清單 | exact | `8`,`9` |
+| `st` | integer: specific topic ID | 用關聯小議題過濾委員表決清單 | exact | `1` `2` |
+| `term` | integer: term index | 用屆期過濾委員表決清單 | exact | `8` `9` |
 
 ### Response
 ```

@@ -21,10 +21,10 @@ GET /console/lab/rs_statements
 | --- | --- | --- | --- | --- |
 | `page` | integer | 頁次 | exact | `1` |
 | `all` | - | 要求所有委員發言的清單 | - | - |
-| `term` | integer: term index | 用屆期過濾委員發言清單 | exact | `8`,`9` |
-| `rep` | integer: rep ID | 用發言委員過濾委員發言清單 | `1`,`2` |
-| `rep_party` | integer: party ID | 用發言委員當時所屬政黨過濾委員發言清單 | `1`,`2` |
-| `position` | string: directories.rs_position | 用立場過濾委員發言清單 | `pro`, `against`, `ambiguous` |
+| `term` | integer: term index | 用屆期過濾委員發言清單 | exact | `8` `9` |
+| `rep` | integer: rep ID | 用發言委員過濾委員發言清單 | `1` `2` |
+| `rep_party` | integer: party ID | 用發言委員當時所屬政黨過濾委員發言清單 | `1` `2` |
+| `position` | string: directories.rs_position | 用立場過濾委員發言清單 | `pro` `against` `ambiguous` |
 
 ### Response
 ```

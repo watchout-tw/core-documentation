@@ -21,12 +21,12 @@ GET /console/lab/rs_bills
 | --- | --- | --- | --- | --- |
 | `page` | integer | 頁次 | exact | `1` |
 | `all` | - | 要求所有委員提案的清單 | - | - |
-| `st` | integer: specific topic ID | 用關聯小議題過濾委員提案清單 | exact | `1`,`2` |
-| `act` | integer: act ID | 用關聯法案過濾委員提案清單 | exact | `1`,`2` |
-| `term` | integer: term index | 用屆期過濾委員提案清單 | exact | `8`,`9` |
-| `principle_sponsor_type` | string: directories.principle_sponsor_type | 用第一提案人類別過濾委員提案清單 | exact | `gov_agency`, `caucus`, `rep` |
-| `principle_sponsor_value` | integer: gov agency/caucus/rep ID | 用第一提案人過濾委員提案清單 | exact | `1`,`2` |
-| `principle_sponsor_party` | integer: party ID | 用第一提案人政黨過濾委員提案清單 | `4`,`6` |
+| `st` | integer: specific topic ID | 用關聯小議題過濾委員提案清單 | exact | `1` `2` |
+| `act` | integer: act ID | 用關聯法案過濾委員提案清單 | exact | `1` `2` |
+| `term` | integer: term index | 用屆期過濾委員提案清單 | exact | `8` `9` |
+| `principle_sponsor_type` | string: directories.principle_sponsor_type | 用第一提案人類別過濾委員提案清單 | exact | `gov_agency` `caucus` `rep` |
+| `principle_sponsor_value` | integer: gov agency/caucus/rep ID | 用第一提案人過濾委員提案清單 | exact | `1` `2` |
+| `principle_sponsor_party` | integer: party ID | 用第一提案人政黨過濾委員提案清單 | `4` `6` |
 
 ### Response
 ```

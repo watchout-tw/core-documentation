@@ -19,7 +19,7 @@ GET /console/lab/parties
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `name` | string | 用姓名過濾政黨清單 | partial | `無`,`民` |
+| `name` | string | 用姓名過濾政黨清單 | partial | `無` `民` |
 
 ### Response
 ```

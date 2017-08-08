@@ -19,7 +19,7 @@ GET /console/lab/committees
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `name` | string | 用姓名過濾委員會清單 | partial | `交通`,`委員會` |
+| `name` | string | 用姓名過濾委員會清單 | partial | `交通` `委員會` |
 
 ### Response
 ```

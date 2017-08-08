@@ -19,9 +19,9 @@ GET /console/lab/act_features
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `st` | integer: specific topic ID | 用關聯小議題過濾法案比較清單 | exact | `1`,`2` |
-| `act` | integer: act ID | 用關聯法案過濾法案比較清單 | exact | `1`,`2` |
-| `act_dir` | integer: act dir ID | 用關聯修法方向過濾法案比較清單 | exact | `1`,`2` |
+| `st` | integer: specific topic ID | 用關聯小議題過濾法案比較清單 | exact | `1` `2` |
+| `act` | integer: act ID | 用關聯法案過濾法案比較清單 | exact | `1` `2` |
+| `act_dir` | integer: act dir ID | 用關聯修法方向過濾法案比較清單 | exact | `1` `2` |
 
 ### Response
 ```

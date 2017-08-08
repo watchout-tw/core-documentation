@@ -19,7 +19,7 @@ GET /console/lab/caucuses
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `name` | string | 用姓名過濾黨團清單 | partial | `無`,`國民` |
+| `name` | string | 用姓名過濾黨團清單 | partial | `無` `國民` |
 
 ### Response
 ```

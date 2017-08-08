@@ -21,7 +21,7 @@ GET /console/lab/reps
 | --- | --- | --- | --- | --- |
 | `page` | integer | 頁次 | exact | `1` |
 | `all` | - | 要求所有委員的名單 | - | - |
-| `name` | string | 用姓名過濾委員名單 | partial | `陳`,`陳阿草` |
+| `name` | string | 用姓名過濾委員名單 | partial | `陳` `陳阿草` |
 | `term` | integer: term index | 用屆期過濾委員名單 | exact | `8` |
 | `district` | string: district full name | 用選區名稱過濾委員名單  | exact | `全國不分區` |
 | `party` | integer: party ID | 用政黨過濾委員名單 | exact | `1` |

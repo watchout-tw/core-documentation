@@ -19,7 +19,7 @@ GET /console/lab/general_topics
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `title` | string | 用標題過濾大議題清單 | partial | `人`,`正義` |
+| `title` | string | 用標題過濾大議題清單 | partial | `人` `正義` |
 
 ### Response
 ```

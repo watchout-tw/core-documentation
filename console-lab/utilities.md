@@ -54,7 +54,7 @@ GET /console/lab/date_to_rep_info
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `date` | timestamp | **Required.** The date to lookup. | in range | `1498838400000` |
-| `rep` | integer: rep ID | **Required.** The rep to lookup. | exact | `1`,`2` |
+| `rep` | integer: rep ID | **Required.** The rep to lookup. | exact | `1` `2` |
 
 ### Response
 ```json
@@ -120,7 +120,7 @@ GET /console/lab/unique_sessions
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `term` | integer: term index | **Required.** The term to lookup. | exact | `8`,`9` |
+| `term` | integer: term index | **Required.** The term to lookup. | exact | `8` `9` |
 
 ### Response
 ```json
@@ -152,8 +152,8 @@ GET /console/lab/unique_temp_sessions
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `term` | integer: term index | **Required.** The term to lookup. | exact | `8`,`9` |
-| `session` | integer | Optional. The session to lookup. This session must exist within the term defined above. | exact | `1`,`2` |
+| `term` | integer: term index | **Required.** The term to lookup. | exact | `8` `9` |
+| `session` | integer | Optional. The session to lookup. This session must exist within the term defined above. | exact | `1` `2` |
 
 ### Response
 ```json
