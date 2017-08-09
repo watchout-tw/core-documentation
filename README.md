@@ -24,6 +24,7 @@
 - [/park/polls](./park/polls) 🌱
 
 ### 言論
+- [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌱
 - [/park/citizen_speeches](./park/citizen_speeches) 🌱
 
 ## 中控室／議題實驗室 Console-Lab
