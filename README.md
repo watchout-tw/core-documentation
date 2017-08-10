@@ -7,23 +7,29 @@
 🌳　完整內容
 ```
 
+## 身分認證 Authentication
+
+### 註冊
+- [/auth/join](./auth/join) 🌱
+
+### 登入
+- [/auth/login](./auth/login) 🌱
+
 ## 草民 Citizen
 > 關於草民的 API endpoints
 
-### 註冊
-- [/auth/join](./auth/join)
-
-### 身分認證
-- [/auth/login](./auth/login)
-
-### 草民
-- [/citizen/:handle](./citizen/id) 🌱
+### 基本資訊
+- [/citizen/:handle](./citizen/self) 🌱
 - [/citizen/:handle/password](./citizen/password) 🌱
 - [/citizen/:handle/emails](./citizen/emails) 🌱
 - [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification) 🌱
 - [/citizen/:handle/emails/:emailID/confirm_verification/:token](./citizen/emails#confirm-verification) 🌱
 - [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility) 🌱
 - [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary) 🌱
+
+### 言論
+- [/citizen/speech_targets](./citizen/speech_targets) 🌿
+- [/citizen/speeches](./citizen/speeches) 🌿
 
 ## 野生國會 c0ngress
 
@@ -37,7 +43,6 @@
 
 ### 言論
 - [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌿
-- [/park/citizen_speeches](./park/citizen_speeches) 🌿
 
 ## 中控室／議題實驗室 Console-Lab
 > 中控室中與《議題實驗室》相關的 API endpoints
