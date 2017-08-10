@@ -18,7 +18,7 @@
 - [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility) 🌱
 - [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary) 🌱
 
-## 影子立法院 c0ngress
+## 影子國會 c0ngress
 
 ### 政黨
 - [/c0ngress/parties](./c0ngress/parties) 🌿
