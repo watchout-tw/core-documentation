@@ -1,6 +1,6 @@
 # [Watchout API Documentation](https://core-docs.watchout.tw/)
 
-## 圖例
+### 圖例
 ```
 🌱　僅有標題
 🌿　部分內容
