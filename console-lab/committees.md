@@ -13,7 +13,7 @@ GET /console/lab/committees
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Available query parameters
 
@@ -43,7 +43,7 @@ GET /console/lab/committees/:name
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```

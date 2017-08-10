@@ -13,7 +13,7 @@ GET /console/lab/act_features
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Available query parameters
 
@@ -60,7 +60,7 @@ GET /console/lab/act_features/:id
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```

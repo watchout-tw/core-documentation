@@ -13,7 +13,7 @@ GET /console/lab/caucuses
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Available query parameters
 
@@ -48,7 +48,7 @@ GET /console/lab/caucuses/:id
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```

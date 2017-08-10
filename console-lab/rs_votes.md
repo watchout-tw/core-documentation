@@ -13,7 +13,7 @@ GET /console/lab/rs_votes
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌕 |
+| 🌕 | 🌕 |
 
 ### Available query parameters
 
@@ -65,7 +65,7 @@ GET /console/lab/rs_votes/:id
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```

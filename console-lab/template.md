@@ -13,7 +13,7 @@ GET /console/lab/?s
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌕 |
+| 🌕 | 🌕 |
 
 ### Available query parameters
 
@@ -39,7 +39,7 @@ GET /console/lab/?s/:id
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```

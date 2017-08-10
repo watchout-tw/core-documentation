@@ -13,7 +13,7 @@ GET /console/lab/rs_statements
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌕 |
+| 🌕 | 🌕 |
 
 ### Available query parameters
 
@@ -74,7 +74,7 @@ GET /console/lab/rs_statements/:id
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```

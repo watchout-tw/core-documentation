@@ -13,7 +13,7 @@ GET /console/lab/rs_bills
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌕 |
+| 🌕 | 🌕 |
 
 ### Available query parameters
 
@@ -86,7 +86,7 @@ GET /console/lab/rs_bills/:id
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```

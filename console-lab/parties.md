@@ -13,7 +13,7 @@ GET /console/lab/parties
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Available query parameters
 
@@ -47,7 +47,7 @@ GET /console/lab/parties/:id
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Response
 ```
