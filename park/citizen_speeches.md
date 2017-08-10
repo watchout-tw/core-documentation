@@ -60,7 +60,6 @@ POST /park/citizen_speeches
 
 | Key | Type | Description |
 | --- | --- | --- |
-| citizen_handle | string: citizen handle | 草民代號 |
 | citizen_speech_target_id | integer: citizen speech target ID | citizen speech target ID |
 | type | string | 言論類型 |
 | content | string | 言論內容 |
@@ -68,7 +67,6 @@ POST /park/citizen_speeches
 ### Sample input
 ```json
 {
-  "citizen_handle": "chihao",
   "citizen_speech_target_id": 1,
   "type": "ballot",
   "content": "黃培閎"
