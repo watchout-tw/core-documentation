@@ -1,5 +1,12 @@
 # [Watchout API Documentation](https://core-docs.watchout.tw/)
 
+## 圖例
+```
+🌱　僅有標題
+🌿　部分內容
+🌳　完整內容
+```
+
 ## 草民 Citizen
 > 關於草民的 API endpoints
 
@@ -18,7 +25,7 @@
 - [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility) 🌱
 - [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary) 🌱
 
-## 影子國會 c0ngress
+## 野生國會 c0ngress
 
 ### 政黨
 - [/c0ngress/parties](./c0ngress/parties) 🌿
