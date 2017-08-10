@@ -18,14 +18,19 @@
 - [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility) 🌱
 - [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary) 🌱
 
+## 影子立法院 c0ngress
+
+### 政黨
+- [/c0ngress/parties](./c0ngress/parties) 🌿
+
 ## 中央公園 Park
 
 ### 民調
-- [/park/polls](./park/polls) 🌱
+- [/park/polls](./park/polls) 🌿
 
 ### 言論
-- [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌱
-- [/park/citizen_speeches](./park/citizen_speeches) 🌱
+- [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌿
+- [/park/citizen_speeches](./park/citizen_speeches) 🌿
 
 ## 中控室／議題實驗室 Console-Lab
 > 中控室中與《議題實驗室》相關的 API endpoints
