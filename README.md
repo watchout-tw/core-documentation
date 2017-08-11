@@ -19,7 +19,7 @@
 > 關於草民的 API endpoints
 
 ### 基本資訊
-- [/citizen/:handle](./citizen/self) 🌱
+- [/citizen](./citizen/self) 🌱
 - [/citizen/:handle/password](./citizen/password) 🌱
 - [/citizen/:handle/emails](./citizen/emails) 🌱
 - [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification) 🌱
