@@ -2,7 +2,7 @@
 
 ## Get self
 ```
-GET /citizen/:handle
+GET /citizen
 ```
 
 | Auth | Paging |
@@ -11,7 +11,7 @@ GET /citizen/:handle
 
 ## Update self
 ```
-PATCH /citizen/:handle
+PATCH /citizen
 ```
 
 | Auth | Paging |
