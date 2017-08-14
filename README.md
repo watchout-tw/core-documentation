@@ -20,12 +20,16 @@
 
 ### 基本資訊
 - [/citizen](./citizen/self) 🌱
-- [/citizen/:handle/password](./citizen/password) 🌱
 - [/citizen/:handle/emails](./citizen/emails) 🌱
 - [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification) 🌱
 - [/citizen/:handle/emails/:emailID/confirm_verification/:token](./citizen/emails#confirm-verification) 🌱
 - [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility) 🌱
 - [/citizen/:handle/emails/:emailID/set_primary](./citizen/emails#set-primary) 🌱
+
+### 密碼
+- [/citizen/password](./citizen/password) 🌿
+- [/citizen/request_reset_password](./citizen/password) 🌿
+- [/citizen/reset_password](./citizen/password) 🌿
 
 ### 言論
 - [/citizen/speech_targets](./citizen/speech_targets) 🌿
