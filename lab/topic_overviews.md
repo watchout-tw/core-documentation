@@ -3,7 +3,7 @@
 - [List topic overviews](#list-topic-overviews)
 - [Get a single topic overview](#get-a-single-topic-overview)
 
-## List act features
+## List topic overviews
 ```
 GET /lab/topic_overviews
 ```
@@ -33,7 +33,7 @@ GET /lab/topic_overviews
 }
 ```
 
-## Get a single topic overviews
+## Get a single topic overview
 ```
 GET /lab/topic_overviews/:id
 ```
