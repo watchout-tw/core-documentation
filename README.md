@@ -35,11 +35,6 @@
 - [/citizen/speech_targets](./citizen/speech_targets) 🌿
 - [/citizen/speeches](./citizen/speeches) 🌿
 
-## 野生國會 c0ngress
-
-### 政黨
-- [/c0ngress/parties](./c0ngress/parties) 🌿
-
 ## 中央公園 Park
 
 ### 民調
@@ -47,6 +42,22 @@
 
 ### 言論
 - [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌿
+
+## 野生國會 c0ngress
+
+### 政黨
+- [/c0ngress/parties](./c0ngress/parties) 🌿
+
+## 議題實驗室 Lab
+
+### 議題綜覽
+- [/lab/topic_overviews](./lab/topic_overviews) 🌿
+
+### 數據分析報告
+- [/lab/data_reports](./lab/data_reports) 🌿
+
+### 圖表
+- [/lab/figures](./lab/figures) 🌿
 
 ## 中控室／議題實驗室 Console-Lab
 > 中控室中與《議題實驗室》相關的 API endpoints
@@ -86,6 +97,10 @@
   - [/console/lab/rs_bills](./console-lab/rs_bills) 🌳
 - 表決 Votes
   - [/console/lab/rs_votes](./console-lab/rs_votes) 🌳
+
+### 內容組成 Compositions
+
+### 議題實驗室 Lab
 
 ### 工具 Utilities
 - 日期
