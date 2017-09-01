@@ -33,47 +33,47 @@ GET /console/lab/rs_bills
 {
   rows: [
     {
-      id,
+      id
       specific_topics: [
         {
-          id,
+          id
           title
         }
         ...
-      ],
+      ]
       act: {
-        id,
+        id
         title
-      },
-      is_law,
-      version_no,
-      date,
-      term_index,
-      session_index,
-      principle_sponsor_type,
+      }
+      is_law
+      version_no
+      date
+      term_index
+      session_index
+      principle_sponsor_type
       principle_sponsor_value: {
-        id,
+        id
         name
-      },
+      }
       principle_sponsor_parties: [
         {
-          id,
-          name,
-          abbreviation,
-          color,
+          id
+          name
+          abbreviation
+          color
           emblem
         }
         ...
       ]
     }
     ...
-  ],
-  totalRowCount,
+  ]
+  totalRowCount
   paging: {
-    page,
-    pages,
-    pageSize,
-    previous,
+    page
+    pages
+    pageSize
+    previous
     next
   }
 }
@@ -91,22 +91,44 @@ GET /console/lab/rs_bills/:id
 ### Response
 ```
 {
-  id,
-  act_id,
-  is_law,
-  version_no,
-  date,
-  term_index,
-  session_index,
-  temp_session_index,
-  principle_sponsor_type,
-  principle_sponsor_value,
-  sponsors: [int, ...],
-  cosponsors: [int, ...],
-  content,
-  data_source_link,
-  progress_source_link,
+  id
+  act_id
+  is_law
+  version_no
+  date
+  term_index
+  session_index
+  temp_session_index
+  principle_sponsor_type
+  principle_sponsor_value
+  sponsors: [int, ...]
+  cosponsors: [int, ...]
+  content
+  data_source_link
+  progress_source_link
   tags: [int, ...]
+  legislative_steps: [
+    {
+      date
+      legislative_step_id
+    }
+    ...
+  ]
+  st_questions: [
+    {
+      st_question_id
+      position
+    }
+    ...
+  ]
+  act_features: [
+    {
+      act_dir_id
+      act_feature_id
+      short_content
+      content
+    }
+  ]
 }
 ```
 
@@ -162,6 +184,26 @@ POST /console/lab/rs_bills
   "progress_source_link": "https://something.gov.tw/path/to/source",
   "tags": [
     2, 4, 12
+  ],
+  "legislative_steps": [
+    {
+      "date": 1498838400000,
+      "legislative_step_id": 1
+    }
+  ],
+  "st_questions": [
+    {
+      "st_question_id": 1,
+      "position": "pro"
+    }
+  ],
+  "act_features": [
+    {
+      "act_dir_id": 1,
+      "act_feature_id": 1,
+      "short_content": "Lorem.",
+      "content": "Lorem ipsum."
+    }
   ]
 }
 ```
