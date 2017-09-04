@@ -96,6 +96,8 @@ GET /lab/topic_overviews/:id
 > type為`LAB_Bill_Data_Set`的data_set忽略`bills`及`scores`
 > type為`LAB_Statement_Data_Set`的data_set忽略`should_have_spoken_*`及`statements`
 
+> 如果`figure_data_set_type`是`LAB_Bill_Data_Set`的話⋯
+
 ```
 figure_data_set_type: 'LAB_Bill_Data_Set'
 figure_data_set: {
@@ -137,6 +139,8 @@ figure_data_set: {
   ]
 }
 ```
+
+> 如果`figure_data_set_type`是`LAB_Statement_Data_Set`的話⋯
 
 ```
 figure_data_set_type: 'LAB_Statement_Data_Set'

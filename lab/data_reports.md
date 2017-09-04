@@ -42,6 +42,8 @@ GET /lab/data_reports/:id
 }
 ```
 
+> 如果`figure_data_set_type`是`LAB_Bill_Data_Set`的話⋯
+
 ```
 figure_data_set_type: 'LAB_Bill_Data_Set'
 figure_data_set: {
@@ -148,6 +150,8 @@ figure_data_set: {
   scores: *JSON*
 }
 ```
+
+> 如果`figure_data_set_type`是`LAB_Statement_Data_Set`的話⋯
 
 ```
 figure_data_set_type: 'LAB_Statement_Data_Set'
