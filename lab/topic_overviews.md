@@ -59,7 +59,27 @@ GET /lab/topic_overviews/:id
   intro
   description
   timeline: {
-
+    id
+    status
+    slug
+    type
+    image
+    title
+    description
+    events: [
+      {
+        id
+        status
+        slug
+        type
+        image
+        title
+        description
+        link
+        data: *JSON*
+      }
+      ...
+    ]
   }
   data_reports: [
     {
@@ -86,9 +106,7 @@ GET /lab/topic_overviews/:id
       title
     }
   ]
-  related_links: [
-
-  ]
+  related_links: *JSON*
 }
 ```
 
