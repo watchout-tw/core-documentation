@@ -93,8 +93,8 @@ GET /lab/topic_overviews/:id
 ```
 
 > 以下與[`GET /lab/data_reports/:id`](./data_reports#get-a-single-data-report)格式保持一致
-> type為`LAB_Bill_Data_Set`的data_set忽略`bills`及`scores`
-> type為`LAB_Statement_Data_Set`的data_set忽略`should_have_spoken_*`及`statements`
+> - type為`LAB_Bill_Data_Set`的data_set忽略`bills`及`scores`
+> - type為`LAB_Statement_Data_Set`的data_set忽略`should_have_spoken_*`及`statements`
 
 > 如果`figure_data_set_type`是`LAB_Bill_Data_Set`的話⋯
 
