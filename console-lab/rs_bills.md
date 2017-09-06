@@ -160,6 +160,9 @@ POST /console/lab/rs_bills
 | `data_source_link` | string | 資料來源連結 |
 | `progress_source_link` | string | 進程來源連結 |
 | `tags` | array of integers: tag IDs | 標籤 ID 清單 |
+| `legislative_steps` | array of objects | 審議進度物件清單 |
+| `st_questions` | array of objects | 爭點物件清單 |
+| `act_features` | array of objects | 法案比較物件清單 |
 
 ### Sample input
 ```json
