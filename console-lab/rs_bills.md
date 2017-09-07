@@ -116,7 +116,7 @@ GET /console/lab/rs_bills/:id
   ]
   st_questions: [
     {
-      st_id
+      st_id // 與樓下爭點（st_question_id）相關連的小議題 ID
       st_question_id
       position
     }
@@ -124,7 +124,7 @@ GET /console/lab/rs_bills/:id
   ]
   act_features: [
     {
-      st_id
+      st_id // 與樓下修法方向（act_dir_id）相關連的小議題 ID
       act_dir_id
       act_feature_id
       short_content
