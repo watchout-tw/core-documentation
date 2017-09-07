@@ -116,6 +116,7 @@ GET /console/lab/rs_bills/:id
   ]
   st_questions: [
     {
+      st_id
       st_question_id
       position
     }
@@ -123,6 +124,7 @@ GET /console/lab/rs_bills/:id
   ]
   act_features: [
     {
+      st_id
       act_dir_id
       act_feature_id
       short_content
