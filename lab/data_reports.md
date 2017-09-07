@@ -22,7 +22,7 @@ GET /lab/data_reports/:id
   title
   st: {
     id
-    name
+    title
   }
   figure_data_set_type
   figure_data_set
@@ -56,7 +56,7 @@ figure_data_set: {
   end_date
   st: {
     id
-    name
+    title
   }
   act: {
     id
@@ -165,7 +165,7 @@ figure_data_set: {
   end_date
   st: {
     id
-    name
+    title
   }
   st_question: {
     id
