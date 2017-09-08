@@ -26,6 +26,7 @@ GET /lab/topic_overviews
         title
       }
       tagline
+      title
       intro
       description
     }
@@ -56,6 +57,7 @@ GET /lab/topic_overviews/:id
     title
   }
   tagline
+  title
   intro
   description
   timeline: {
@@ -111,8 +113,8 @@ GET /lab/topic_overviews/:id
 ```
 
 > 以下與[`GET /lab/data_reports/:id`](./data_reports#get-a-single-data-report)格式保持一致
-> - type為`LAB_Bill_Data_Set`的data_set忽略`bills`及`scores`
-> - type為`LAB_Statement_Data_Set`的data_set忽略`should_have_spoken_*`及`statements`
+> - type為`LAB_Bill_Data_Set`的data_set忽略`act_features`、`bills`及`scores`
+> - type為`LAB_Statement_Data_Set`的data_set忽略`should_have_spoken_*`及`acts`、`statements`
 
 > 如果`figure_data_set_type`是`LAB_Bill_Data_Set`的話⋯
 
@@ -138,23 +140,6 @@ figure_data_set: {
     id
     name
   }
-  act_features: [
-    {
-      id
-      feature
-      dir
-      content
-      scale_score_max
-      scale: [
-        {
-          score
-          description
-        }
-        ...
-      ]
-    }
-    ...
-  ]
 }
 ```
 
@@ -178,12 +163,5 @@ figure_data_set: {
     id
     question
   }
-  acts: [
-    {
-      id
-      title
-    }
-    ...
-  ]
 }
 ```
