@@ -105,7 +105,13 @@ GET /lab/topic_overviews/:id
       id
       status
       slug
+      image
       title
+      description
+      st: {
+        id
+        title
+      }
     }
   ]
   related_links: *JSON*
