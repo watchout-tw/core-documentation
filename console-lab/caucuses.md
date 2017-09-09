@@ -26,13 +26,14 @@ GET /console/lab/caucuses
 {
   rows: [
     {
-      name,
-      abbreviation,
-      type,
-      color,
-      emblem,
-      basic_info,
-      add_info,
+      id
+      name
+      abbreviation
+      color
+      emblem
+      basic_info
+      add_info
+      type
       status
     }
     ...
@@ -53,13 +54,15 @@ GET /console/lab/caucuses/:id
 ### Response
 ```
 {
-  id,
-  name,
-  abbreviation,
-  color,
-  emblem,
-  basic_info,
+  id
+  name
+  abbreviation
+  color
+  emblem
+  basic_info
   add_info
+  type
+  status
 }
 ```
 
