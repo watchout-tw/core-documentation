@@ -1,8 +1,8 @@
-# Party
+# Rep
 
-## List parties
+## List reps
 ```
-GET /c0ngress/parties
+GET /c0ngress/reps
 ```
 
 | Auth | Paging |
@@ -13,7 +13,7 @@ GET /c0ngress/parties
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `name` | string | 用姓名過濾政黨清單 | partial | `無` `民` |
+| `name` | string | 用姓名過濾委員名單 | partial | `陳` `陳阿草` |
 
 ### Response
 ```
@@ -22,11 +22,6 @@ GET /c0ngress/parties
     {
       id
       name
-      abbreviation
-      color
-      emblem
-      basic_info
-      add_info
     }
     ...
   ],
