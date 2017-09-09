@@ -45,6 +45,9 @@
 
 ## 野生國會 c0ngress
 
+### 委員
+- [/c0ngress/reps](./c0ngress/reps) 🌿
+
 ### 政黨
 - [/c0ngress/parties](./c0ngress/parties) 🌿
 
