@@ -95,13 +95,13 @@ figure_data_set: {
       principle_sponsor_type
       principle_sponsor_value
       principle_sponsor_parties: [
-
+        int, int, int ...
       ]
       sponsors: [
-
+        int, int, int ...
       ]
       cosponsors: [
-
+        int, int, int ...
       ]
       content
       data_source_link
@@ -179,10 +179,10 @@ figure_data_set: {
     ...
   ]
   should_have_spoken_committees: [
-    str, str, str
+    str, str, str ...
   ]
   should_have_spoken_sessions: [
-    int, int, int
+    int, int, int ...
   ]
   statements: [
     {
@@ -194,14 +194,14 @@ figure_data_set: {
       rep_party
       principle_committee
       joint_committees: [
-        str, str, str
+        str, str, str ...
       ]
       content
       position
       position_summary
       source_link
       tags: [
-        int, int, int
+        int, int, int ...
       ]
     }
   ]
