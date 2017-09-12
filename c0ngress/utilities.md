@@ -13,12 +13,12 @@
 > 使用 timestamp 查詢該時刻是落在哪一個屆期、會期、臨時會期之中
 
 ```
-GET /console/lab/date_to_term
+GET /c0ngress/date_to_term
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Available query parameters
 
@@ -42,12 +42,12 @@ GET /console/lab/date_to_term
 > 使用 timestamp 及委員 ID 列表查詢委員們在該時刻的政黨、黨團、委員會等資訊
 
 ```
-GET /console/lab/date_to_rep_info
+GET /c0ngress/date_to_rep_info
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Available query parameters
 
@@ -90,12 +90,12 @@ GET /console/lab/date_to_rep_info
 > 取得區域名稱；區域是選區的上層結構
 
 ```
-GET /console/lab/zones
+GET /c0ngress/zones
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Response
 ```json
@@ -115,12 +115,12 @@ GET /console/lab/zones
 > 取得某個屆期之中不重複的會期編號
 
 ```
-GET /console/lab/unique_sessions
+GET /c0ngress/unique_sessions
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Available query parameters
 
@@ -147,12 +147,12 @@ GET /console/lab/unique_sessions
 > 取得某個屆期之中不重複的臨時會期編號，也可以進一步限制到某個會期中的臨時會期
 
 ```
-GET /console/lab/unique_temp_sessions
+GET /c0ngress/unique_temp_sessions
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Available query parameters
 
@@ -180,12 +180,12 @@ GET /console/lab/unique_temp_sessions
 > 取得系統中所有不重複的選區名稱
 
 ```
-GET /console/lab/unique_districts
+GET /c0ngress/unique_districts
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Response
 ```json
@@ -203,12 +203,12 @@ GET /console/lab/unique_districts
 > 取得系統中所有政府單位的清單
 
 ```
-GET /console/lab/gov_agencies
+GET /c0ngress/gov_agencies
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Response
 ```json
@@ -227,12 +227,12 @@ GET /console/lab/gov_agencies
 > 取得系統定義的所有立法步驟
 
 ```
-GET /console/lab/legislative_steps
+GET /c0ngress/legislative_steps
 ```
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Response
 ```json

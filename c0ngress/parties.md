@@ -1,4 +1,4 @@
-# Party
+# c0ngress/parties
 
 ## List parties
 ```
