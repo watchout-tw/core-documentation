@@ -39,7 +39,7 @@ GET /console/lab/date_to_term
 ```
 
 ## Date to rep info
-> 使用 timestamp 及委員 ID 查詢該位委員在該時刻的政黨、黨團、委員會等資訊
+> 使用 timestamp 及委員 ID 列表查詢委員們在該時刻的政黨、黨團、委員會等資訊
 
 ```
 GET /console/lab/date_to_rep_info
@@ -53,22 +53,28 @@ GET /console/lab/date_to_rep_info
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `date` | timestamp | **Required.** The date to lookup. | in range | `1498838400000` |
-| `rep` | integer: rep ID | **Required.** The rep to lookup. | exact | `1` `2` |
+| `date` | timestamp | **Required.** The date to lookup. | exact | `1498838400000` |
+| `reps` | array of integers: rep IDs | **Required.** The reps to lookup. | exact | `[1]` `[1,2,3]` |
 
 ### Response
 ```json
 {
-  "party_id": 3,
-  "caucus_id": 3,
-  "committees": [
+  "reps": [
     {
-      "name": "修憲委員會",
-      "is_convener": true
-    },
-    {
-      "name": "司法及法制委員會",
-      "is_convener": false
+      "id": 1,
+      "name": "陳阿草",
+      "party_id": 3,
+      "caucus_id": 3,
+      "committees": [
+        {
+          "name": "修憲委員會",
+          "is_convener": true
+        },
+        {
+          "name": "司法及法制委員會",
+          "is_convener": false
+        }
+      ]
     }
   ],
   "term_index": 8,
