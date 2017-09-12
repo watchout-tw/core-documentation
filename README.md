@@ -45,11 +45,27 @@
 
 ## 野生國會 c0ngress
 
-### 委員
+### 委員 Reps
 - [/c0ngress/reps](./c0ngress/reps) 🌿
 
-### 政黨
+### 政黨 Parties
 - [/c0ngress/parties](./c0ngress/parties) 🌿
+
+### 工具 Utilities
+- 日期、會期
+  - [/c0ngress/date_to_term](./console-lab/utilities#date-to-term) 🌳
+  - [/c0ngress/date_to_rep_info](./console-lab/utilities#date-to-rep-info) 🌳
+  - [/c0ngress/unique_sessions](./console-lab/utilities#unique-sessions) 🌳
+  - [/c0ngress/unique_temp_sessions](./console-lab/utilities#unique-temp-sessions) 🌳
+- 選區
+  - [/c0ngress/zones](./console-lab/utilities#zones) 🌳
+  - [/c0ngress/unique_districts](./console-lab/utilities#unique-districts) 🌳
+- 政府機關
+  - [/c0ngress/gov_agencies](./console-lab/utilities#government-agencies) 🌳
+- 立法流程
+  - [/c0ngress/legislative_steps](./console-lab/utilities#legislative-steps) 🌳
+
+## 內容組成 Compositions
 
 ## 議題實驗室 Lab
 
@@ -100,22 +116,3 @@
   - [/console/lab/rs_bills](./console-lab/rs_bills) 🌳
 - 表決 Votes
   - [/console/lab/rs_votes](./console-lab/rs_votes) 🌳
-
-### 內容組成 Compositions
-
-### 議題實驗室 Lab
-
-### 工具 Utilities
-- 日期
-  - [/console/lab/date_to_term](./console-lab/utilities#date-to-term) 🌳
-  - [/console/lab/date_to_rep_info](./console-lab/utilities#date-to-rep-info) 🌳
-- 會期
-  - [/console/lab/unique_sessions](./console-lab/utilities#unique-sessions) 🌳
-  - [/console/lab/unique_temp_sessions](./console-lab/utilities#unique-temp-sessions) 🌳
-- 選區
-  - [/console/lab/zones](./console-lab/utilities#zones) 🌳
-  - [/console/lab/unique_districts](./console-lab/utilities#unique-districts) 🌳
-- 政府機關
-  - [/console/lab/gov_agencies](./console-lab/utilities#government-agencies) 🌳
-- 立法流程
-  - [/console/lab/legislative_steps](./console-lab/utilities#legislative-steps) 🌳
