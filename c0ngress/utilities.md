@@ -54,7 +54,7 @@ GET /c0ngress/date_to_rep_info
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `date` | timestamp | **Required.** The date to lookup. | exact | `1498838400000` |
-| `reps` | array of integers: rep IDs | **Required.** The reps to lookup. | exact | `[1]` `[1,2,3]` |
+| `reps` | array of integers: rep IDs | **Required.** The reps to lookup. | exact | [1] or [1,2,3] |
 
 ### Response
 ```json
