@@ -73,21 +73,9 @@ GET /console/lab/lab_bill_data_sets/:id
   term_index,
   start_date,
   end_date,
-  st: {
-    id,
-    title,
-    image,
-    index
-  },
-  act: {
-    id,
-    title,
-    official_seq_no
-  },
-  act_dir: {
-    id,
-    name
-  },
+  st_id,
+  act_id,
+  act_dir_id,
   act_feature_ids: [
     id,
     ...
@@ -96,19 +84,7 @@ GET /console/lab/lab_bill_data_sets/:id
     id,
     ...
   ],
-  scores: [
-    {
-      bill_id,
-      score_per_act_feature: [
-        {
-          score,
-          act_feature_id
-        },
-        ...
-      ]
-    },
-    ...
-  ]
+  scores: TBD...
 }
 ```
 
