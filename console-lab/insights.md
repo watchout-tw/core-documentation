@@ -1,12 +1,12 @@
-# Lab Insights
+# Insights
 
-- [List lab insights](#list-lab-insights)
-- [Get a single lab insight](#get-a-single-lab-insight)
-- [Create a lab insight](#create-a-lab-insight)
-- [Update a lab insight](#update-a-lab-insight)
-- [Delete a lab insight](#delete-a-lab-insight)
+- [List insights](#list-insights)
+- [Get a single insight](#get-a-single-insight)
+- [Create a insight](#create-a-insight)
+- [Update a insight](#update-a-insight)
+- [Delete a insight](#delete-a-insight)
 
-## List lab insights
+## List insights
 ```
 GET /console/lab/lab_insights
 ```
@@ -44,7 +44,7 @@ GET /console/lab/lab_insights
 }
 ```
 
-## Get a single lab insight
+## Get a single insight
 ```
 GET /console/lab/lab_insight/:id
 ```
@@ -72,7 +72,7 @@ GET /console/lab/lab_insight/:id
 }
 ```
 
-## Create a lab insight
+## Create a insight
 ```
 POST /console/lab/lab_insight
 ```
@@ -103,9 +103,9 @@ POST /console/lab/lab_insight
 ```
 
 ### Response
-> Returns the newly created lab insight
+> Returns the newly created insight
 
-## Update a lab insight
+## Update a insight
 ```
 PATCH /console/lab/lab_insight/:id
 ```
@@ -114,9 +114,9 @@ PATCH /console/lab/lab_insight/:id
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-> 參考 [Create a lab insight](#create-a-lab-insight)
+> 參考 [Create a insight](#create-a-insight)
 
-## Delete a lab insight
+## Delete a insight
 ```
 DELETE /console/lab/lab_insight/:id
 ```

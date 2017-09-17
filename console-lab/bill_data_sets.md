@@ -1,12 +1,12 @@
-# Lab Bill Data Sets
+# Bill Data Sets
 
-- [List lab bill data sets](#list-lab-bill-data-sets)
-- [Get a single lab bill data set](#get-a-single-lab-bill-data-set)
-- [Create a lab bill data set](#create-a-lab-bill-data-set)
-- [Update a lab bill data set](#update-a-lab-bill-data-set)
-- [Delete a lab bill data set](#delete-a-lab-bill-data-set)
+- [List bill data sets](#list-bill-data-sets)
+- [Get a single bill data set](#get-a-single-bill-data-set)
+- [Create a bill data set](#create-a-bill-data-set)
+- [Update a bill data set](#update-a-bill-data-set)
+- [Delete a bill data set](#delete-a-bill-data-set)
 
-## List lab bill data sets
+## List bill data sets
 ```
 GET /console/lab/lab_bill_data_sets
 ```
@@ -54,7 +54,7 @@ GET /console/lab/lab_bill_data_sets
 }
 ```
 
-## Get a single lab bill data set
+## Get a single bill data set
 ```
 GET /console/lab/lab_bill_data_sets/:id
 ```
@@ -88,7 +88,7 @@ GET /console/lab/lab_bill_data_sets/:id
 }
 ```
 
-## Create a lab bill data set
+## Create a bill data set
 ```
 POST /console/lab/lab_bill_data_set
 ```
@@ -144,9 +144,9 @@ POST /console/lab/lab_bill_data_set
 ```
 
 ### Response
-> Returns the newly created lab bill data set
+> Returns the newly created bill data set
 
-## Update a lab bill data set
+## Update a bill data set
 ```
 PATCH /console/lab/lab_bill_data_set/:id
 ```
@@ -155,9 +155,9 @@ PATCH /console/lab/lab_bill_data_set/:id
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-> 參考 [Create a lab bill data set](#create-a-lab-bill-data-set)
+> 參考 [Create a bill data set](#create-a-bill-data-set)
 
-## Delete a lab bill data set
+## Delete a bill data set
 ```
 DELETE /console/lab/lab_bill_data_set/:id
 ```

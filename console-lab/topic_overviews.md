@@ -1,12 +1,12 @@
 # Lab Topic Overviews
 
-- [List lab topic overviews](#list-lab-topic-overviews)
-- [Get a single act feature](#get-a-single-lab-topic-overview)
-- [Create a lab topic overviews](#create-a-lab-topic-overview)
-- [Update a lab topic overviews](#update-a-lab-topic-overview)
-- [Delete a lab topic overviews](#delete-a-lab-topic-overview)
+- [List topic overviews](#list-topic-overviews)
+- [Get a single act feature](#get-a-single-topic-overview)
+- [Create a topic overviews](#create-a-topic-overview)
+- [Update a topic overviews](#update-a-topic-overview)
+- [Delete a topic overviews](#delete-a-topic-overview)
 
-## List lab topic overviews
+## List topic overviews
 ```
 GET /console/lab/lab_topic_overviews
 ```
@@ -48,7 +48,7 @@ GET /console/lab/lab_topic_overviews
 }
 ```
 
-## Get a single lab topic overview
+## Get a single topic overview
 ```
 GET /console/lab/lab_topic_overview/:id
 ```
@@ -101,7 +101,7 @@ GET /console/lab/lab_topic_overview/:id
 }
 ```
 
-## Create a lab topic overview
+## Create a topic overview
 ```
 POST /console/lab/lab_topic_overview
 ```
@@ -151,9 +151,9 @@ POST /console/lab/lab_topic_overview
 ```
 
 ### Response
-> Returns the newly created lab topic overview
+> Returns the newly created topic overview
 
-## Update a lab topic overview
+## Update a topic overview
 ```
 PATCH /console/lab/lab_topic_overview/:id
 ```
@@ -162,9 +162,9 @@ PATCH /console/lab/lab_topic_overview/:id
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-> 參考 [Create a lab topic overview](#create-a-lab-topic-overview)
+> 參考 [Create a topic overview](#create-a-topic-overview)
 
-## Delete a lab topic overview
+## Delete a topic overview
 ```
 DELETE /console/lab/lab_topic_overview/:id
 ```

@@ -1,12 +1,12 @@
-# Lab Statement Data Sets
+# Statement Data Sets
 
-- [List lab statement data sets](#list-lab-statement-data-sets)
-- [Get a single lab statement data set](#get-a-single-lab-statement-data-set)
-- [Create a lab statement data set](#create-a-lab-statement-data-set)
-- [Update a lab statement data set](#update-a-lab-statement-data-set)
-- [Delete a lab statement data set](#delete-a-lab-statement-data-set)
+- [List statement data sets](#list-statement-data-sets)
+- [Get a single statement data set](#get-a-single-statement-data-set)
+- [Create a statement data set](#create-a-statement-data-set)
+- [Update a statement data set](#update-a-statement-data-set)
+- [Delete a statement data set](#delete-a-statement-data-set)
 
-## List lab statement data sets
+## List statement data sets
 ```
 GET /console/lab/lab_statement_data_sets
 ```
@@ -56,7 +56,7 @@ GET /console/lab/lab_statement_data_sets
 }
 ```
 
-## Get a single lab statement data set
+## Get a single statement data set
 ```
 GET /console/lab/lab_statement_data_sets/:id
 ```
@@ -106,7 +106,7 @@ GET /console/lab/lab_statement_data_sets/:id
 }
 ```
 
-## Create a lab statement data set
+## Create a statement data set
 ```
 POST /console/lab/lab_statement_data_set
 ```
@@ -147,9 +147,9 @@ POST /console/lab/lab_statement_data_set
 ```
 
 ### Response
-> Returns the newly created lab statement data set
+> Returns the newly created statement data set
 
-## Update a lab statement data set
+## Update a statement data set
 ```
 PATCH /console/lab/lab_statement_data_set/:id
 ```
@@ -158,9 +158,9 @@ PATCH /console/lab/lab_statement_data_set/:id
 | :---: | :---: |
 | 🌕 | 🌑 |
 
-> 參考 [Create a lab statement data set](#create-a-lab-statement-data-set)
+> 參考 [Create a statement data set](#create-a-statement-data-set)
 
-## Delete a lab statement data set
+## Delete a statement data set
 ```
 DELETE /console/lab/lab_statement_data_set/:id
 ```
