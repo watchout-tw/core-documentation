@@ -75,34 +75,20 @@ GET /console/lab/lab_statement_data_sets/:id
   term_index,
   start_date,
   end_date,
-  st: {
+  st_id,
+  st_question_id,
+  act_ids: [
     id,
-    title,
-    image,
-    index
-  },
-  st_question: {
-    id,
-    question
-  },
-  acts: [
-    {
-      id,
-      title,
-      official_seq_no
-    },
+    ...
   ],
-  should_have_spoken_committees: {
-    name,
-    abbreviation,
-    category
-  },
-  should_have_sopken_sessions: {
-    session_index,
-    temp_session_index,
-    start_date,
-    end_date
-  }
+  should_have_spoken_committees: [
+    id,
+    ...
+  ],
+  should_have_spoken_sessions: [
+    index,
+    ...
+  ]
 }
 ```
 
@@ -127,22 +113,22 @@ POST /console/lab/lab_statement_data_set
 | `end_date` | timestamp | 終止日 |
 | `st_id` | integer | 關聯小議題 ID |
 | `st_question_id` | integer | 爭點 ID |
-| `should_have_spoken_committees` | integer | 應發言委員會 ID |
-| `should_have_spoken_sessions` | integer | 應發言屆期 |
+| `should_have_spoken_committees` | array of integers | 應發言委員會 ID |
+| `should_have_spoken_sessions` | array of integers | 應發言屆期 |
 
 ### Sample input
 ```json
 {
   "name": "罷免x第九屆",
   "version_no": "1.0.0",
-  "slug": "http://goog.le/UH7bh8nsk",
+  "slug": "bill-comp/recall/xxxx",
   "term_index": 9,
   "start_date": "2016-02-01 00:00:00",
   "end_date": "2020-01-31 00:00:00",
   "st_id": 1,
   "st_question_id": 1,
-  "should_have_spoken_committees": 2,
-  "should_have_spoken_sessions": 9
+  "should_have_spoken_committees": [2, 5, 7],
+  "should_have_spoken_sessions": [8, 9]
 }
 ```
 

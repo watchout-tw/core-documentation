@@ -1,4 +1,4 @@
-# Lab Topic Overviews
+# Topic Overviews
 
 - [List topic overviews](#list-topic-overviews)
 - [Get a single act feature](#get-a-single-topic-overview)
@@ -13,7 +13,7 @@ GET /console/lab/lab_topic_overviews
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌑 | 🌑 |
+| 🌕 | 🌑 |
 
 ### Available query parameters
 
@@ -64,39 +64,12 @@ GET /console/lab/lab_topic_overview/:id
   status,
   slug,
   image,
-  st: {
-    id,
-    title,
-    image,
-    index
-  },
+  st_id,
   tagline,
   title,
   intro,
   description,
-  timeline: {
-    id,
-    status,
-    slug,
-    type,
-    image,
-    title,
-    description,
-    event: [
-      {
-        id,
-        status,
-        slug,
-        type,
-        image,
-        title,
-        description,
-        link,
-        data
-      }
-      ...
-    ]
-  },
+  timeline_id,
   related_links
 }
 ```
@@ -130,8 +103,8 @@ POST /console/lab/lab_topic_overview
 ```json
 {
   "status": "active",
-  "slug": "http://goog.le/UH7bh8nsk",
-  "image": "",
+  "slug": "bill-comp/recall/xxxx",
+  "image": "path/image.png",
   "st_id": 1,
   "tagline": "選賢與能，選錯了怎麼辦？",
   "title": "數據分析報告",

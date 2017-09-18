@@ -60,15 +60,8 @@ GET /console/lab/lab_insight/:id
   status,
   slug,
   image,
-  st: {
-    id,
-    title,
-    image,
-    index
-  },
-  doc: {
-    TBD...
-  }
+  st_id,
+  doc_id
 }
 ```
 
@@ -90,15 +83,17 @@ POST /console/lab/lab_insight
 | `image` | string | 圖像的路徑 |
 | `title` | integer | 標語 |
 | `st_id` | integer | 關聯小議題 ID |
+| `doc_id` | integer | 文件 ID |
 
 ### Sample input
 ```json
 {
   "status": "active",
-  "slug": "http://goog.le/UH7bh8nsk",
-  "image": "",
+  "slug": "bill-comp/recall/xxxx",
+  "image": "path/image.png",
   "title": "數據分析報告",
-  "st_id": 1
+  "st_id": 1,
+  "doc_id": 3
 }
 ```
 

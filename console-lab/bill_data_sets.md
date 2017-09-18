@@ -118,7 +118,7 @@ POST /console/lab/lab_bill_data_set
 {
   "name": "罷免x第九屆",
   "version_no": "1.0.0",
-  "slug": "http://goog.le/UH7bh8nsk",
+  "slug": "bill-comp/recall/xxxx",
   "term_index": 9,
   "start_date": "2016-02-01 00:00:00",
   "end_date": "2020-01-31 00:00:00",
