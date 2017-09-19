@@ -73,8 +73,10 @@ GET /lab/topic_overviews/:id
         id
         status
         slug
+        date
         type
         image
+        tagline
         title
         description
         link
