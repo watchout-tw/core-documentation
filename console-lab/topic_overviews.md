@@ -70,6 +70,8 @@ GET /console/lab/lab_topic_overview/:id
   intro,
   description,
   timeline_id,
+  data_report_id,
+  insight_id,
   related_links
 }
 ```
