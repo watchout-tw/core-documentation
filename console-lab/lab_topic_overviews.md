@@ -120,7 +120,6 @@ POST /console/lab/lab_topic_overview
       "url": "http://abc.com.tw",
       "title": "???"
     }
-    ...
   ]
 }
 ```

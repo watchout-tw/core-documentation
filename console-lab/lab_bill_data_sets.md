@@ -134,11 +134,9 @@ POST /console/lab/lab_bill_data_set
         {
           "score": 1,
           "act_feature_id": 3
-        },
-        ...
+        }
       ]
-    },
-    ...
+    }
   ]
 }
 ```
