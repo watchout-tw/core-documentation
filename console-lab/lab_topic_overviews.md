@@ -1,10 +1,10 @@
-# Topic Overviews
+# Topic Overview
 
 - [List topic overviews](#list-topic-overviews)
-- [Get a single act feature](#get-a-single-topic-overview)
-- [Create a topic overviews](#create-a-topic-overview)
-- [Update a topic overviews](#update-a-topic-overview)
-- [Delete a topic overviews](#delete-a-topic-overview)
+- [Get a single topic overview](#get-a-single-topic-overview)
+- [Create a topic overview](#create-a-topic-overview)
+- [Update a topic overview](#update-a-topic-overview)
+- [Delete a topic overview](#delete-a-topic-overview)
 
 ## List topic overviews
 ```
@@ -20,26 +20,26 @@ GET /console/lab/lab_topic_overviews
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
 | `st` | integer: specific topic ID | 用關聯小議題過濾議題綜覽 | exact | `1` `2` |
-| `timeline` | integer: timeline ID | 用大事紀過濾議題綜覽 | exact | `1` `2` |
+| `title` | string | 用標題過濾議題綜覽 | partial | `罷` `罷免` |
 
 ### Response
 ```
 {
   rows: [
     {
-      id,
-      status,
-      slug,
-      image,
+      id
+      status
+      slug
+      image
       st: {
-        id,
-        title,
-        image,
+        id
+        title
+        image
         index
-      },
-      tagline,
-      title,
-      intro,
+      }
+      tagline
+      title
+      intro
       description
     }
     ...
@@ -60,18 +60,16 @@ GET /console/lab/lab_topic_overview/:id
 ### Response
 ```
 {
-  id,
-  status,
-  slug,
-  image,
-  st_id,
-  tagline,
-  title,
-  intro,
-  description,
-  timeline_id,
-  data_report_id,
-  insight_id,
+  id
+  status
+  slug
+  image
+  st_id
+  tagline
+  title
+  intro
+  description
+  timeline_id
   related_links
 }
 ```
@@ -97,30 +95,20 @@ POST /console/lab/lab_topic_overview
 | `title` | integer | 標語 |
 | `intro` | integer | 敘述 |
 | `timeline_id` | integer | 大事紀 ID |
-| `data_report_id` | integer | 大事紀 ID |
-| `insight_id` | integer | 數據分析報告 ID |
-| `related_links` | array of objects | 相關連結 |
+| `related_links` | JSON | 相關連結 |
 
 ### Sample input
 ```json
 {
   "status": "active",
-  "slug": "bill-comp/recall/xxxx",
+  "slug": "a/b/c",
   "image": "path/image.png",
   "st_id": 1,
   "tagline": "選賢與能，選錯了怎麼辦？",
-  "title": "數據分析報告",
+  "title": "罷免議題綜覽",
   "intro": "從歐巴馬這個例子，更加可以理解到，連美國人自己針對台灣問題也經常說不清楚。",
   "timeline_id": 1,
-  "data_report_id": 2,
-  "insight_id": 3,
-  "related_links": [
-    {
-      "type": "???",
-      "url": "http://abc.com.tw",
-      "title": "???"
-    }
-  ]
+  "related_links": "{}"
 }
 ```
 
