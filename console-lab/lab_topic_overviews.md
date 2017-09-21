@@ -95,7 +95,7 @@ POST /console/lab/lab_topic_overview
 | `title` | integer | 標語 |
 | `intro` | integer | 敘述 |
 | `timeline_id` | integer | 大事紀 ID |
-| `related_links` | JSON | 相關連結 |
+| `related_links` | array of objects | 相關連結列表 |
 
 ### Sample input
 ```json
@@ -108,7 +108,13 @@ POST /console/lab/lab_topic_overview
   "title": "罷免議題綜覽",
   "intro": "從歐巴馬這個例子，更加可以理解到，連美國人自己針對台灣問題也經常說不清楚。",
   "timeline_id": 1,
-  "related_links": "{}"
+  "related_links": [
+    {
+      "type": "type",
+      "url": "https://path/to/dest",
+      "title": "Lorem ipsum."
+    }
+  ]
 }
 ```
 
