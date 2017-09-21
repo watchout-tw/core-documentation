@@ -1,10 +1,10 @@
 # Data Reports
 
 - [List data reports](#list-data-reports)
-- [Get a single act feature](#get-a-single-data-report)
-- [Create a data reports](#create-a-data-report)
-- [Update a data reports](#update-a-data-report)
-- [Delete a data reports](#delete-a-data-report)
+- [Get a single data report](#get-a-single-data-report)
+- [Create a data report](#create-a-data-report)
+- [Update a data report](#update-a-data-report)
+- [Delete a data report](#delete-a-data-report)
 
 ## List data reports
 ```
@@ -19,37 +19,89 @@ GET /console/lab/lab_data_reports
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `st` | integer: specific topic ID | 用關聯小議題過濾議題綜覽 | exact | `1` `2` |
-| `timeline` | integer: timeline ID | 用大事紀過濾議題綜覽 | exact | `1` `2` |
+| `st` | integer: specific topic ID | 用關聯小議題過濾數據分析報告 | exact | `1` `2` |
 
 ### Response
 ```
 {
   rows: [
     {
-      id,
-      status,
+      id
+      status
+      slug
+      type
+      image
+      title
       st: {
-        id,
-        title,
-        image,
-        index
-      },
-      figure_data_set: {
-        id,
-        figure_data_set_type,
-        name,
-        version_no
-      },
-      figure: {
-        id,
-        type,
+        id
         title
+        image
+        index
       }
+      figure_data_set_type
+      figure_data_set
+      figures: [
+        {
+          id
+          status
+          slug
+          type
+          image
+          title
+        }
+      ]
     }
     ...
-  ],
+  ]
   totalRowCount
+}
+```
+
+> 如果`figure_data_set_type`是`LAB_Bill_Data_Set`的話⋯
+
+```
+figure_data_set: {
+  id
+  name
+  version_no
+  slug
+  term_index
+  start_date
+  end_date
+  st: {
+    id
+    title
+  }
+  act: {
+    id
+    title
+  }
+  act_dir: {
+    id
+    name
+  }
+}
+```
+
+> 如果`figure_data_set_type`是`LAB_Statement_Data_Set`的話⋯
+
+```
+figure_data_set: {
+  id
+  name
+  version_no
+  slug
+  term_index
+  state_date
+  end_date
+  st: {
+    id
+    title
+  }
+  st_question: {
+    id
+    question
+  }
 }
 ```
 
@@ -65,14 +117,14 @@ GET /console/lab/lab_data_report/:id
 ### Response
 ```
 {
-  id,
-  status,
-  slug,
-  type,
-  image,
-  title,
-  st_id,
-  figure_data_set_type,
+  id
+  status
+  slug
+  type
+  image
+  title
+  st_id
+  figure_data_set_type
   figure_data_set_id
 }
 ```
@@ -93,9 +145,9 @@ POST /console/lab/lab_data_report
 | `status` | string | 狀態 |
 | `slug` | string | 短網址 |
 | `type` | string | 類別 |
-| `st_id` | integer | 關聯小議題 ID |
 | `image` | string | 圖像的路徑 |
 | `title` | integer | 標題 |
+| `st_id` | integer | 關聯小議題 ID |
 | `figure_data_set_type` | string | 資料源類型 |
 | `figure_data_set_id` | integer | 資料源 ID |
 
@@ -103,11 +155,11 @@ POST /console/lab/lab_data_report
 ```json
 {
   "status": "active",
-  "slug": "bill-comp/recall/xxxx",
-  "type": "bill_comparison",
-  "st_id": 1,
+  "slug": "a/b/c",
+  "type": "type",
   "image": "path/image.png",
   "title": "數據分析報告",
+  "st_id": 1,
   "figure_data_set_type": "LAB_Bill_Data_Set",
   "figure_data_set_id": 2
 }
