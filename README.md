@@ -116,3 +116,15 @@
   - [/console/lab/rs_bills](./console-lab/rs_bills) 🌳
 - 表決 Votes
   - [/console/lab/rs_votes](./console-lab/rs_votes) 🌳
+
+### 議題實驗室 Lab
+- 議題綜覽 Topic Overviews
+  - [/console/lab/lab_topic_overviews](./console-lab/lab_topic_overviews) 🌳
+- 分析評論 Insights
+  - [/console/lab/lab_insights](./console-lab/lab_insights) 🌳
+- 提案資料集 Bill Data Sets
+  - [/console/lab/lab_bill_data_sets](./console-lab/lab_bill_data_sets) 🌳
+- 發言資料集 Statement Data Sets
+  - [/console/lab/lab_statement_data_sets](./console-lab/lab_statement_data_sets) 🌳
+- 數據分析報告 Data Reports
+  - [/console/lab/lab_data_reports](./console-lab/lab_data_reports) 🌳
