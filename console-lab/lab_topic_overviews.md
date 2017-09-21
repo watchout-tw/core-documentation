@@ -43,7 +43,7 @@ GET /console/lab/lab_topic_overviews
       description
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```

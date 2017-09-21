@@ -52,9 +52,9 @@ GET /console/lab/lab_bill_data_sets
         id
         name
       }
-    },
+    }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -88,7 +88,7 @@ GET /console/lab/lab_bill_data_sets/:id
   bill_ids: [
     id
     ...
-  ],
+  ]
   scores: [] // JSON
 }
 ```
