@@ -81,11 +81,11 @@ GET /console/lab/lab_bill_data_sets/:id
   st_id
   act_id
   act_dir_id
-  act_features: [
+  act_feature_ids: [
     id
     ...
   ],
-  bills: [
+  bill_ids: [
     id
     ...
   ],
@@ -115,8 +115,8 @@ POST /console/lab/lab_bill_data_set
 | `st_id` | integer | 關聯小議題 ID |
 | `act_id` | integer | 關聯法案 ID |
 | `act_dir_id` | integer | 關聯修法方向 ID |
-| `act_features` | array of integers: act feature IDs | 關聯法案比較 ID 列表 |
-| `bills` | array of integers: bill IDs | 委員提案 ID 列表 |
+| `act_feature_ids` | array of integers: act feature IDs | 關聯法案比較 ID 列表 |
+| `bill_ids` | array of integers: bill IDs | 委員提案 ID 列表 |
 | `scores` | array of objects | 提案各項評分 |
 
 ### Sample input
@@ -131,8 +131,8 @@ POST /console/lab/lab_bill_data_set
   "st_id": 1,
   "act_id": 1,
   "act_dir_id": 2,
-  "act_features": [1, 2, 3],
-  "bills": [21, 29, 33, 36],
+  "act_feature_ids": [1, 2, 3],
+  "bill_ids": [21, 29, 33, 36],
   "scores": [
     {
       "bill_id": 21,
