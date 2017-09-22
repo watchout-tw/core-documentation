@@ -88,3 +88,5 @@ GET /lab/topic_overviews/:id
   related_links: *JSON*
 }
 ```
+
+> timeline的細節可以參考[GET /comp/timelines](/comp/timelines)
