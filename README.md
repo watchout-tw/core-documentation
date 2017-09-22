@@ -48,8 +48,17 @@
 ### 委員 Reps
 - [/c0ngress/reps](./c0ngress/reps) 🌿
 
-### 政黨 Parties
+### 政黨、黨團 Parties & Caucuses
 - [/c0ngress/parties](./c0ngress/parties) 🌿
+- [/c0ngress/caucuses](./c0ngress/caucuses) 🌿
+
+### 委員表態 Rep speeches
+- [/c0ngress/rs_statements](./c0ngress/rs_statements) 🌿
+- [/c0ngress/rs_bills](./c0ngress/rs_bills) 🌿
+- [/c0ngress/rs_votes](./c0ngress/rs_votes) 🌿
+
+### 法案 Acts
+- [/c0ngress/acts](./c0ngress/acts) 🌿
 
 ### 工具 Utilities
 - 日期、會期
@@ -65,18 +74,22 @@
 - 立法流程
   - [/c0ngress/legislative_steps](./console-lab/utilities#legislative-steps) 🌳
 
-## 內容組成 Compositions
+## 內容組成 Composition
+
+- [/comp/timelines](./comp/timelines) 🌿
+- [/comp/figures](./comp/figures) 🌿
 
 ## 議題實驗室 Lab
+
+### 基本設定
+- [/lab/specific_topics](./lab/specific_topics) 🌿
+- [/lab/st_questions](./lab/st_questions) 🌿
 
 ### 議題綜覽
 - [/lab/topic_overviews](./lab/topic_overviews) 🌿
 
 ### 數據分析報告
 - [/lab/data_reports](./lab/data_reports) 🌿
-
-### 圖表
-- [/lab/figures](./lab/figures) 🌿
 
 ## 中控室／議題實驗室 Console-Lab
 > 中控室中與《議題實驗室》相關的 API endpoints
