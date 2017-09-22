@@ -52,7 +52,7 @@
 - [/c0ngress/parties](./c0ngress/parties) 🌿
 - [/c0ngress/caucuses](./c0ngress/caucuses) 🌿
 
-### 委員表態 Rep speeches
+### 委員表態 Rep Speeches
 - [/c0ngress/rs_statements](./c0ngress/rs_statements) 🌿
 - [/c0ngress/rs_bills](./c0ngress/rs_bills) 🌿
 - [/c0ngress/rs_votes](./c0ngress/rs_votes) 🌿
@@ -122,7 +122,7 @@
 - 爭點 Questions
   - [/console/lab/st_questions](./console-lab/st_questions)
 
-### 委員表態 Representatives’ Speeches
+### 委員表態 Rep Speeches
 - 發言 Statements
   - [/console/lab/rs_statements](./console-lab/rs_statements) 🌳
 - 提案、連署 Bills & Sponsorships
