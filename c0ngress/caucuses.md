@@ -1,4 +1,4 @@
-# c0ngress/caucuses
+# Caucus
 
 ## List caucuses
 ```
