@@ -62,17 +62,17 @@
 
 ### 工具 Utilities
 - 日期、會期
-  - [/c0ngress/date_to_term](./console-lab/utilities#date-to-term) 🌳
-  - [/c0ngress/date_to_rep_info](./console-lab/utilities#date-to-rep-info) 🌳
-  - [/c0ngress/unique_sessions](./console-lab/utilities#unique-sessions) 🌳
-  - [/c0ngress/unique_temp_sessions](./console-lab/utilities#unique-temp-sessions) 🌳
+  - [/c0ngress/date_to_term](./c0ngress/utilities#date-to-term) 🌳
+  - [/c0ngress/date_to_rep_info](./c0ngress/utilities#date-to-rep-info) 🌳
+  - [/c0ngress/unique_sessions](./c0ngress/utilities#unique-sessions) 🌳
+  - [/c0ngress/unique_temp_sessions](./c0ngress/utilities#unique-temp-sessions) 🌳
 - 選區
-  - [/c0ngress/zones](./console-lab/utilities#zones) 🌳
-  - [/c0ngress/unique_districts](./console-lab/utilities#unique-districts) 🌳
+  - [/c0ngress/zones](./c0ngress/utilities#zones) 🌳
+  - [/c0ngress/unique_districts](./c0ngress/utilities#unique-districts) 🌳
 - 政府機關
-  - [/c0ngress/gov_agencies](./console-lab/utilities#government-agencies) 🌳
+  - [/c0ngress/gov_agencies](./c0ngress/utilities#government-agencies) 🌳
 - 立法流程
-  - [/c0ngress/legislative_steps](./console-lab/utilities#legislative-steps) 🌳
+  - [/c0ngress/legislative_steps](./c0ngress/utilities#legislative-steps) 🌳
 
 ## 內容組成 Composition
 
