@@ -1,6 +1,6 @@
 # List acts
 ```
-GET /lab/acts
+GET /c0ngress/acts
 ```
 
 | Auth | Paging |
