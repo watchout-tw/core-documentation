@@ -129,6 +129,9 @@ GET /lab/data_reports/:id
 > 與[`GET /lab/data_reports`](#list-data-reports)格式保持一致
 > - type為`LAB_Bill_Data_Set`的data_set增加`act_features`、`bills`及`scores`
 > - type為`LAB_Statement_Data_Set`的data_set增加`acts`、`should_have_spoken_*`及`statements`
+
+> `rep_info_list`是`principle_sponsor_value`、`sponsors`、`cosponsors`之中所有不重複委員在該提案當下的政黨、黨團資訊。array中每個object與[`/c0ngress/date_to_rep_info`](../c0ngress/utilities#date-to-rep-info)格式保持一致
+
 > 如果`figure_data_set_type`是`LAB_Bill_Data_Set`的話⋯
 
 ```
@@ -189,6 +192,22 @@ figure_data_set: {
       ]
       cosponsors: [
         int, int, int ...
+      ]
+      rep_info_list: [
+        {
+          id
+          name
+          party_id
+          caucus_id
+          committees: [
+            {
+              name
+              is_convener
+            }
+            ...
+          ]
+        }
+        ...
       ]
       content
       data_source_link
