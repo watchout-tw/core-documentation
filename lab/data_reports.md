@@ -267,7 +267,7 @@ figure_data_set: {
   version_no
   slug
   term_index
-  state_date
+  start_date
   end_date
   st: {
     id
