@@ -277,13 +277,6 @@ figure_data_set: {
     id
     question
   }
-  acts: [
-    {
-      id
-      title
-    }
-    ...
-  ]
   should_have_spoken_committees: [
     str, str, str ...
   ]

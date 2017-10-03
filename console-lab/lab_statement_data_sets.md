@@ -23,7 +23,6 @@ GET /console/lab/lab_statement_data_sets
 | `term` | integer: term index | 用屆期過濾發言資料集 | exact | `8` `9` |
 | `st` | integer: specific topic ID | 用關聯小議題過濾發言資料集 | exact | `1` `2` |
 | `st_question` | integer: specific topic question ID | 用爭點過濾發言資料集 | exact | `1` `2` |
-| `act` | integer: act ID | 用法案過濾發言資料集 | exact | `1` `2` |
 
 ### Response
 ```
@@ -47,14 +46,6 @@ GET /console/lab/lab_statement_data_sets
         id
         question
       }
-      acts: [
-        {
-          id
-          title
-          official_seq_no
-        }
-        ...
-      ]
     }
     ...
   ]
@@ -83,10 +74,6 @@ GET /console/lab/lab_statement_data_sets/:id
   end_date
   st_id
   st_question_id
-  act_ids: [
-    id
-    ...
-  ]
   should_have_spoken_committees: [
     name
     ...
@@ -119,7 +106,6 @@ POST /console/lab/lab_statement_data_set
 | `end_date` | timestamp | 終止日 |
 | `st_id` | integer | 關聯小議題 ID |
 | `st_question_id` | integer | 爭點 ID |
-| `act_ids` | array of integer | 法案 ID 列表 |
 | `should_have_spoken_committees` | array of strings | 應發言委員會名稱列表 |
 | `should_have_spoken_sessions` | array of integers | 應發言屆期 index |
 
@@ -134,7 +120,6 @@ POST /console/lab/lab_statement_data_set
   "end_date": "2020-01-31 00:00:00",
   "st_id": 1,
   "st_question_id": 1,
-  "act_ids": [1, 2, 3],
   "should_have_spoken_committees": ["交通委員會", "內政委員會"],
   "should_have_spoken_sessions": [8, 9]
 }
