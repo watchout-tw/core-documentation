@@ -8,7 +8,7 @@
 
 ## List statement data sets
 ```
-GET /console/lab/lab_statement_data_sets
+GET /console/lab/statement_data_sets
 ```
 
 | Auth | Paging |
@@ -55,7 +55,7 @@ GET /console/lab/lab_statement_data_sets
 
 ## Get a single statement data set
 ```
-GET /console/lab/lab_statement_data_sets/:id
+GET /console/lab/statement_data_sets/:id
 ```
 
 | Auth | Paging |
@@ -87,7 +87,7 @@ GET /console/lab/lab_statement_data_sets/:id
 
 ## Create a statement data set
 ```
-POST /console/lab/lab_statement_data_set
+POST /console/lab/statement_data_set
 ```
 
 | Auth | Paging |
@@ -130,7 +130,7 @@ POST /console/lab/lab_statement_data_set
 
 ## Update a statement data set
 ```
-PATCH /console/lab/lab_statement_data_set/:id
+PATCH /console/lab/statement_data_set/:id
 ```
 
 | Auth | Paging |
@@ -141,7 +141,7 @@ PATCH /console/lab/lab_statement_data_set/:id
 
 ## Delete a statement data set
 ```
-DELETE /console/lab/lab_statement_data_set/:id
+DELETE /console/lab/statement_data_set/:id
 ```
 
 | Auth | Paging |

@@ -8,7 +8,7 @@
 
 ## List topic overviews
 ```
-GET /console/lab/lab_topic_overviews
+GET /console/lab/topic_overviews
 ```
 
 | Auth | Paging |
@@ -50,7 +50,7 @@ GET /console/lab/lab_topic_overviews
 
 ## Get a single topic overview
 ```
-GET /console/lab/lab_topic_overview/:id
+GET /console/lab/topic_overview/:id
 ```
 
 | Auth | Paging |
@@ -76,7 +76,7 @@ GET /console/lab/lab_topic_overview/:id
 
 ## Create a topic overview
 ```
-POST /console/lab/lab_topic_overview
+POST /console/lab/topic_overview
 ```
 
 | Auth | Paging |
@@ -123,7 +123,7 @@ POST /console/lab/lab_topic_overview
 
 ## Update a topic overview
 ```
-PATCH /console/lab/lab_topic_overview/:id
+PATCH /console/lab/topic_overview/:id
 ```
 
 | Auth | Paging |
@@ -134,7 +134,7 @@ PATCH /console/lab/lab_topic_overview/:id
 
 ## Delete a topic overview
 ```
-DELETE /console/lab/lab_topic_overview/:id
+DELETE /console/lab/topic_overview/:id
 ```
 
 | Auth | Paging |

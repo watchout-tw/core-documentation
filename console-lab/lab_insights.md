@@ -8,7 +8,7 @@
 
 ## List insights
 ```
-GET /console/lab/lab_insights
+GET /console/lab/insights
 ```
 
 | Auth | Paging |
@@ -46,7 +46,7 @@ GET /console/lab/lab_insights
 
 ## Get a single insight
 ```
-GET /console/lab/lab_insight/:id
+GET /console/lab/insight/:id
 ```
 
 | Auth | Paging |
@@ -67,7 +67,7 @@ GET /console/lab/lab_insight/:id
 
 ## Create a insight
 ```
-POST /console/lab/lab_insight
+POST /console/lab/insight
 ```
 
 | Auth | Paging |
@@ -102,7 +102,7 @@ POST /console/lab/lab_insight
 
 ## Update a insight
 ```
-PATCH /console/lab/lab_insight/:id
+PATCH /console/lab/insight/:id
 ```
 
 | Auth | Paging |
@@ -113,7 +113,7 @@ PATCH /console/lab/lab_insight/:id
 
 ## Delete a insight
 ```
-DELETE /console/lab/lab_insight/:id
+DELETE /console/lab/insight/:id
 ```
 
 | Auth | Paging |
