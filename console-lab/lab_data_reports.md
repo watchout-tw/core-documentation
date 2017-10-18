@@ -126,6 +126,10 @@ GET /console/lab/lab_data_report/:id
   st_id
   figure_data_set_type
   figure_data_set_id
+  figure_ids: [
+    id
+    ...
+  ]
 }
 ```
 
