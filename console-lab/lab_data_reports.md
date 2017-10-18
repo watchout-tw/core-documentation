@@ -165,7 +165,8 @@ POST /console/lab/data_report
   "title": "數據分析報告",
   "st_id": 1,
   "figure_data_set_type": "LAB_Bill_Data_Set",
-  "figure_data_set_id": 2
+  "figure_data_set_id": 2,
+  "figure_ids": [1, 2, 3]
 }
 ```
 
