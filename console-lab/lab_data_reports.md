@@ -126,8 +126,11 @@ GET /console/lab/data_report/:id
   st_id
   figure_data_set_type
   figure_data_set_id
-  figure_ids: [
-    id
+  figures: [
+    {
+      id
+      index
+    }
     ...
   ]
 }
@@ -166,7 +169,16 @@ POST /console/lab/data_report
   "st_id": 1,
   "figure_data_set_type": "LAB_Bill_Data_Set",
   "figure_data_set_id": 2,
-  "figure_ids": [1, 2, 3]
+  "figures": [
+    {
+      "id": 1,
+      "index": 1
+    },
+    {
+      "id": 2,
+      "index": 2
+    }
+  ]
 }
 ```
 
