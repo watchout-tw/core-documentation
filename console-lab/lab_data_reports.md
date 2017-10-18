@@ -8,7 +8,7 @@
 
 ## List data reports
 ```
-GET /console/lab/lab_data_reports
+GET /console/lab/data_reports
 ```
 
 | Auth | Paging |
@@ -107,7 +107,7 @@ figure_data_set: {
 
 ## Get a single data report
 ```
-GET /console/lab/lab_data_report/:id
+GET /console/lab/data_report/:id
 ```
 
 | Auth | Paging |
@@ -135,7 +135,7 @@ GET /console/lab/lab_data_report/:id
 
 ## Create a data report
 ```
-POST /console/lab/lab_data_report
+POST /console/lab/data_report
 ```
 
 | Auth | Paging |
@@ -174,7 +174,7 @@ POST /console/lab/lab_data_report
 
 ## Update a data report
 ```
-PATCH /console/lab/lab_data_report/:id
+PATCH /console/lab/data_report/:id
 ```
 
 | Auth | Paging |
@@ -185,7 +185,7 @@ PATCH /console/lab/lab_data_report/:id
 
 ## Delete a data report
 ```
-DELETE /console/lab/lab_data_report/:id
+DELETE /console/lab/data_report/:id
 ```
 
 | Auth | Paging |

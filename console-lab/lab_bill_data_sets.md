@@ -8,7 +8,7 @@
 
 ## List bill data sets
 ```
-GET /console/lab/lab_bill_data_sets
+GET /console/lab/bill_data_sets
 ```
 
 | Auth | Paging |
@@ -61,7 +61,7 @@ GET /console/lab/lab_bill_data_sets
 
 ## Get a single bill data set
 ```
-GET /console/lab/lab_bill_data_sets/:id
+GET /console/lab/bill_data_sets/:id
 ```
 
 | Auth | Paging |
@@ -95,7 +95,7 @@ GET /console/lab/lab_bill_data_sets/:id
 
 ## Create a bill data set
 ```
-POST /console/lab/lab_bill_data_set
+POST /console/lab/bill_data_set
 ```
 
 | Auth | Paging |
@@ -152,7 +152,7 @@ POST /console/lab/lab_bill_data_set
 
 ## Update a bill data set
 ```
-PATCH /console/lab/lab_bill_data_set/:id
+PATCH /console/lab/bill_data_set/:id
 ```
 
 | Auth | Paging |
@@ -163,7 +163,7 @@ PATCH /console/lab/lab_bill_data_set/:id
 
 ## Delete a bill data set
 ```
-DELETE /console/lab/lab_bill_data_set/:id
+DELETE /console/lab/bill_data_set/:id
 ```
 
 | Auth | Paging |
