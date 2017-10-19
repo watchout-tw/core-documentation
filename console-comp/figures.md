@@ -52,6 +52,7 @@ GET /console/lab/figure/:id
   id,
   status,
   slug,
+  type,
   image,
   title,
   description,
@@ -89,7 +90,7 @@ POST /console/lab/figure
 {
   "status": "active",
   "slug": "bill-comp/recall/xxxx",
-  "type": "基本",
+  "type": "histogram",
   "image": "path/image.png",
   "title": "法條比一比",
   "description": "在提案連署過程中⋯",
