@@ -92,10 +92,10 @@ POST /console/lab/figure
   "type": "基本",
   "image": "path/image.png",
   "title": "法條比一比",
-  "description": "在提案連署過程中…",
-  "summary": "能否讓罷免順利成功…",
-  "data_set_type": "LAB_BILL_DATA_SET",
-  "data_set_id": "1",
+  "description": "在提案連署過程中⋯",
+  "summary": "能否讓罷免順利成功⋯",
+  "data_set_type": "LAB_Bill_Data_Set",
+  "data_set_id": 1,
 }
 ```
 

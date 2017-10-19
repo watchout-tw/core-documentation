@@ -91,6 +91,11 @@
 ### 數據分析報告
 - [/lab/data_reports](./lab/data_reports) 🌿
 
+## 中控室／內容組成 Console-Composition
+
+- [/console/comp/timelines](./console-comp/timelines) 🌿
+- [/console/comp/figures](./console-comp/figures) 🌿
+
 ## 中控室／議題實驗室 Console-Lab
 > 中控室中與《議題實驗室》相關的 API endpoints
 
