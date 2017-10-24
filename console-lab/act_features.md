@@ -115,7 +115,14 @@ POST /console/lab/act_features
 | `dir` | string | 🌕 | 法案比較價值判斷 |
 | `content` | string | 🌕 | 內容說明 |
 | `scale_score_max` | integer | 🌕 | 量尺分數最大值 |
-| `scale` | array of object | 🌕 | 量尺 |
+| `scale` **[1]** | array of object | 🌕 | 量尺 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `score` | integer | 🌕 | 分數 |
+| `description` | string | 🌕 | 敘述 |
 
 ### Sample input
 ```json
