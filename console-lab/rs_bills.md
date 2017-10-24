@@ -145,33 +145,58 @@ POST /console/lab/rs_bills
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `act_id` | integer: act ID | 關聯法案 ID |
-| `is_law` | boolean | 是否為法律？ |
-| `version_no` | string | 提案或法律版本號 |
-| `date` | timestamp | 日期 |
-| `term_index` | integer: term_index | 屆期 |
-| `session_index` | integer | 會期 |
-| `temp_session_index` | integer | 臨時會期 |
-| `principle_sponsor_type` | string: directories.principle_sponsor_type | 第一提案人類別 |
-| `principle_sponsor_value` | int: gov agency/caucus/rep ID | 第一提案人 |
-| `sponsors` | array of integers: rep IDs | 提案委員 ID 清單 |
-| `cosponsors` | array of integers: rep IDs | 連署委員 ID 清單 |
-| `content` | string | 內容 |
-| `data_source_link` | string | 資料來源連結 |
-| `progress_source_link` | string | 進程來源連結 |
-| `tags` | array of integers: tag IDs | 標籤 ID 清單 |
-| `legislative_steps` | array of objects | 審議進度物件清單 |
-| `st_questions` | array of objects | 爭點物件清單 |
-| `act_features` | array of objects | 法案比較物件清單 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `act_id` | integer: act ID | 🌕 | 關聯法案 ID |
+| `is_law` | boolean | 🌕 | 是否為法律？ |
+| `version_no` | string | 🌕 | 提案或法律版本號 |
+| `date` | timestamp | 🌕 | 日期 |
+| `term_index` | integer: term_index | 🌕 | 屆期 |
+| `session_index` | integer | 🌕 | 會期 |
+| `temp_session_index` | integer | 🌕 | 臨時會期 |
+| `principle_sponsor_type` | string: directories.principle_sponsor_type | 🌕 | 第一提案人類別 |
+| `principle_sponsor_value` | int: gov agency/caucus/rep ID | 🌕 | 第一提案人 |
+| `sponsors` | array of integers: rep IDs | 🌕 | 提案委員 ID 清單 |
+| `cosponsors` | array of integers: rep IDs | 🌕 | 連署委員 ID 清單 |
+| `content` | string | 🌕 | 內容 |
+| `data_source_link` | string | 🌕 | 資料來源連結 |
+| `progress_source_link` | string | 🌕 | 進程來源連結 |
+| `tags` | array of integers: tag IDs | 🌑 | 標籤 ID 清單 |
+| `legislative_steps` **[1]** | array of objects | 🌑 | 審議進度物件清單 |
+| `st_questions` **[2]** | array of objects | 🌑 | 爭點物件清單 |
+| `act_features` **[3]** | array of objects | 🌕 | 法案比較物件清單 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| date | timestamp | 🌕 | 日期 |
+| legislative_step_id | Integer | 🌕 | 審議進度 ID |
+
+`[2]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| st_id | Integer | 🌕 | 小議題 ID |
+| st_question_id | Integer | 🌕 | 爭點 ID |
+| position | string | 🌕 | 立場 |
+
+`[3]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| st_id | Integer | 🌕 | 小議題 ID |
+| act_dir_id | Integer | 🌕 | 修法方向 ID |
+| act_feature_id | Integer | 🌕 | 法案比較 ID |
+| short_content | string | 🌕 | 簡短內容 |
+| content | string | 🌕 | 完整內容 |
 
 ### Sample input
 ```json
 {
   "act_id": 1,
   "is_law": false,
-  "version_no": "委員提案第18278號",
+  "version_no": "18278",
   "date": 1498838400000,
   "term_index": 9,
   "session_index": 1,
@@ -198,6 +223,7 @@ POST /console/lab/rs_bills
   ],
   "st_questions": [
     {
+      "st_id": 1,
       "st_question_id": 1,
       "position": "pro"
     }

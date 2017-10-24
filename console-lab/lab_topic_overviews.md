@@ -85,17 +85,25 @@ POST /console/lab/topic_overview
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `status` | string | 狀態 |
-| `slug` | string | 短網址 |
-| `image` | string | 圖像的路徑 |
-| `st_id` | integer | 關聯小議題 ID |
-| `tagline` | string | 簡介 |
-| `title` | integer | 標語 |
-| `intro` | integer | 敘述 |
-| `timeline_id` | integer | 大事紀 ID |
-| `related_links` | array of objects | 相關連結列表 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `image` | string | 🌕 | 圖像的路徑 |
+| `st_id` | integer | 🌕 | 關聯小議題 ID |
+| `tagline` | string | 🌕 | 簡介 |
+| `title` | integer | 🌕 | 標語 |
+| `intro` | integer | 🌕 | 敘述 |
+| `timeline_id` | integer | 🌕 | 大事紀 ID |
+| `related_links` **[1]** | array of objects | 🌑 | 相關連結列表 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `type` | string | 🌕 | 類型 |
+| `url` | string | 🌕 | 網址 |
+| `title` | string | 🌕 | 標題 |
 
 ### Sample input
 ```json

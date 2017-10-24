@@ -104,20 +104,34 @@ POST /console/lab/bill_data_set
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `name` | string | 名稱 |
-| `version_no` | string | 版本號 |
-| `slug` | string | 短網址 |
-| `term_index` | integer | 屆期 |
-| `start_date` | timestamp | 起始日 |
-| `end_date` | timestamp | 終止日 |
-| `st_id` | integer | 關聯小議題 ID |
-| `act_id` | integer | 關聯法案 ID |
-| `act_dir_id` | integer | 關聯修法方向 ID |
-| `act_feature_ids` | array of integers: act feature IDs | 關聯法案比較 ID 列表 |
-| `bill_ids` | array of integers: bill IDs | 委員提案 ID 列表 |
-| `scores` | array of objects | 提案各項評分 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `name` | string | 🌕 | 名稱 |
+| `version_no` | string | 🌕 | 版本號 |
+| `slug` | string | 🌕 | 短網址 |
+| `term_index` | integer | 🌕 | 屆期 |
+| `start_date` | timestamp | 🌕 | 起始日 |
+| `end_date` | timestamp | 🌕 | 終止日 |
+| `st_id` | integer | 🌕 | 關聯小議題 ID |
+| `act_id` | integer | 🌕 | 關聯法案 ID |
+| `act_dir_id` | integer | 🌕 | 關聯修法方向 ID |
+| `act_feature_ids` | array of integers: act feature IDs | 🌕 | 關聯法案比較 ID 列表 |
+| `bill_ids` | array of integers: bill IDs | 🌕 | 委員提案 ID 列表 |
+| `scores` **[1]** | array of objects | 🌕 | 提案各項評分 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `bill_id` | Integer | 🌕 | 委員提案 ID |
+| `score_per_act_feature` **[2]** | array of objects | 🌕 | 此提案於各個法案比較項目之評分 |
+
+`[2]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `act_feature_id` | Integer | 🌕 | 法案比較項目 ID |
+| `score` | Integer | 🌕 | 評分 |
 
 ### Sample input
 ```json
@@ -138,8 +152,8 @@ POST /console/lab/bill_data_set
       "bill_id": 21,
       "score_per_act_feature": [
         {
-          "score": 1,
-          "act_feature_id": 3
+          "act_feature_id": 3,
+          "score": 1
         }
       ]
     }

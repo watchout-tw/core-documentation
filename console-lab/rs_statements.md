@@ -109,23 +109,23 @@ POST /console/lab/rs_statements
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `st_id` | integer | 關聯小議題 ID |
-| `date` | timestamp | 日期 |
-| `term_index` | integer | 屆期 |
-| `session_index` | integer | 會期 |
-| `temp_session_index` | integer | 臨時會期 |
-| `rep_id` | integer: rep ID | 委員 |
-| `rep_party_id` | integer: party ID | 委員當時所屬政黨 ID |
-| `principle_committee` | string: committee name | 主審委員會 |
-| `joint_committees` | array of strings: committee names | 聯席委員會名稱清單 |
-| `content` | string | 內容 |
-| `st_question_id` | integer: st_question ID | 爭點 ID |
-| `position` | string: directories.rs_position | 立場 |
-| `position_summary` | string | 立場摘要 |
-| `source_link` | string | 原始資料連結 |
-| `tags` | array of integers: tag IDs | 標籤 ID 清單 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `st_id` | integer | 🌕 | 關聯小議題 ID |
+| `date` | timestamp | 🌕 | 日期 |
+| `term_index` | integer | 🌕 | 屆期 |
+| `session_index` | integer | 🌕 | 會期 |
+| `temp_session_index` | integer | 🌕 | 臨時會期 |
+| `rep_id` | integer: rep ID | 🌕 | 委員 |
+| `rep_party_id` | integer: party ID | 🌕 | 委員當時所屬政黨 ID |
+| `principle_committee` | string: committee name | 🌕 | 主審委員會 |
+| `joint_committees` | array of strings: committee names | 🌑 | 聯席委員會名稱清單 |
+| `content` | string | 🌕 | 內容 |
+| `st_question_id` | integer: st_question ID | 🌕 | 爭點 ID |
+| `position` | string: directories.rs_position | 🌕 | 立場 |
+| `position_summary` | string | 🌕 | 立場摘要 |
+| `source_link` | string | 🌕 | 原始資料連結 |
+| `tags` | array of integers: tag IDs | 🌑 | 標籤 ID 清單 |
 
 ### Sample input
 ```json

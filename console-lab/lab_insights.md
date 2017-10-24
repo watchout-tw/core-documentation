@@ -76,14 +76,14 @@ POST /console/lab/insight
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `status` | string | 狀態 |
-| `slug` | string | 短網址 |
-| `image` | string | 圖像的路徑 |
-| `title` | integer | 標語 |
-| `st_id` | integer | 關聯小議題 ID |
-| `doc_id` | integer | 文件 ID |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `image` | string | 🌑 | 圖像的路徑 |
+| `title` | integer | 🌕 | 標語 |
+| `st_id` | integer | 🌕 | 關聯小議題 ID |
+| `doc_id` | integer | 🌑 | 文件 ID |
 
 ### Sample input
 ```json

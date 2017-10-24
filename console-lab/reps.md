@@ -149,30 +149,60 @@ POST /console/lab/reps
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| name | string | 姓名 |
-| birth_date | timestamp | 生日 |
-| gender | integer: [-100, 100] | 性別；-100表示100%女性、+100表示100%男性 |
-| highest_edu_degree | string: directories.edu_degree | 最高學歷 |
-| edu_record | array of strings (JSON) | 學歷 |
-| experience | array of strings (JSON) | 經歷 |
-| policy_proposal | array of strings (JSON) | 政見 |
-| contacts | array of objects | 聯絡方式 |
-| parties | array of objects | 政黨歷史 |
-| terms`[1]` | array of objects | 選任歷史 |
-| sessions | array of objects | 委員會歷史 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| name | string | 🌕 | 姓名 |
+| birth_date | timestamp | 🌕 | 生日 |
+| gender | integer: [-100, 100] | 🌕 | 性別；-100表示100%女性、+100表示100%男性 |
+| highest_edu_degree | string: directories.edu_degree | 🌕 | 最高學歷 |
+| edu_record | array of strings (JSON) | 🌑 | 學歷 |
+| experience | array of strings (JSON) | 🌑 | 經歷 |
+| policy_proposal | array of strings (JSON) | 🌑 | 政見 |
+| contacts`[1]` | array of objects | 🌑 | 聯絡方式 |
+| parties`[2]` | array of objects | 🌕 | 政黨歷史 |
+| terms`[3]` | array of objects | 🌕 | 選任歷史 |
+| sessions`[4]` | array of objects | 🌕 | 委員會歷史 |
 
 `[1]`
 
-| Key | Type | Description |
-| --- | --- | --- |
-| term_index | integer | 屆期 |
-| change_date | timestamp | 變更日期 |
-| change_type | string: directories.rep_term_change_type | 變更類型 |
-| district_name | string | 選區名稱 |
-| duty | string: directories.rep_term_duty | 院內職務 |
-| note | string | 備註 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| is_active | Boolean | 🌕 | 是否為最新聯絡方式 |
+| name | string | 🌕 | 名稱 |
+| phone | string | 🌕 | 電話 |
+| fax | string | 🌑 | 傳真 |
+| address | string | 🌑 | 地址 |
+
+`[2]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| start_date | timestamp | 🌕 | 起始日期 |
+| term_index | integer | 🌕 | 屆期 |
+| party | integer | 🌕 | 政黨 |
+| caucus | integer | 🌕 | 黨團或政團 |
+| officer_title | string | 🌑 | 幹部職稱 |
+| note | string | 🌑 | 備註 |
+
+`[3]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| term_index | integer | 🌕 | 屆期 |
+| change_date | timestamp | 🌕 | 變更日期 |
+| change_type | string: directories.rep_term_change_type | 🌕 | 變更類型 |
+| district_name | string | 🌕 | 選區名稱 |
+| duty | string: directories.rep_term_duty | 🌑 | 院內職務 |
+| note | string | 🌑 | 備註 |
+
+`[4]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| term_index | integer | 🌕 | 屆期 |
+| session_index | integer | 🌕 | 會期 |
+| committee_name | string | 🌕 | 委員會 |
+| is_convener | Boolean | 🌕 | 是否為召委 |
 
 ### Sample input
 ```json

@@ -147,16 +147,24 @@ POST /console/lab/data_report
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `status` | string | 狀態 |
-| `slug` | string | 短網址 |
-| `type` | string | 類別 |
-| `image` | string | 圖像的路徑 |
-| `title` | integer | 標題 |
-| `st_id` | integer | 關聯小議題 ID |
-| `figure_data_set_type` | string | 資料源類型 |
-| `figure_data_set_id` | integer | 資料源 ID |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `type` | string | 🌕 | 類別 |
+| `image` | string | 🌕 | 圖像的路徑 |
+| `title` | integer | 🌕 | 標題 |
+| `st_id` | integer | 🌕 | 關聯小議題 ID |
+| `figure_data_set_type` | string | 🌕 | 資料源類型 |
+| `figure_data_set_id` | integer | 🌕 | 資料源 ID |
+| `figures` **[1]** | array of objects | 🌕 | 資料源 ID |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `id` | Integer | 🌕 | 圖表 ID |
+| `index` | Integer | 🌕 | 排序 |
 
 ### Sample input
 ```json

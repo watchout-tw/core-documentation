@@ -96,18 +96,18 @@ POST /console/lab/statement_data_set
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `name` | string | 名稱 |
-| `version_no` | string | 版本號 |
-| `slug` | string | 短網址 |
-| `term_index` | integer | 屆期 |
-| `start_date` | timestamp | 起始日 |
-| `end_date` | timestamp | 終止日 |
-| `st_id` | integer | 關聯小議題 ID |
-| `st_question_id` | integer | 爭點 ID |
-| `should_have_spoken_committees` | array of strings | 應發言委員會名稱列表 |
-| `should_have_spoken_sessions` | array of integers | 應發言屆期 index |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `name` | string | 🌕 | 名稱 |
+| `version_no` | string | 🌕 | 版本號 |
+| `slug` | string | 🌑 | 短網址 |
+| `term_index` | integer | 🌕 | 屆期 |
+| `start_date` | timestamp | 🌕 | 起始日 |
+| `end_date` | timestamp | 🌕 | 終止日 |
+| `st_id` | integer | 🌕 | 關聯小議題 ID |
+| `st_question_id` | integer | 🌕 | 爭點 ID |
+| `should_have_spoken_committees` | array of strings | 🌕 | 應發言委員會名稱列表 |
+| `should_have_spoken_sessions` | array of integers | 🌕 | 應發言屆期 index |
 
 ### Sample input
 ```json

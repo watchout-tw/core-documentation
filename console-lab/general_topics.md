@@ -86,13 +86,13 @@ POST /console/lab/general_topics
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `title` | string | 標題 |
-| `index` | integer | 排序 |
-| `image` | string | 圖像 |
-| `description` | string | 敘述 |
-| `specific_topics` | array of integers: specific topic IDs | 關聯小議題 ID 列表 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `title` | string | 🌕 | 標題 |
+| `index` | integer | 🌕 | 排序 |
+| `image` | string | 🌕 | 圖像 |
+| `description` | string | 🌕 | 敘述 |
+| `specific_topics` | array of integers: specific topic IDs | 🌕 | 關聯小議題 ID 列表 |
 
 
 ### Sample input

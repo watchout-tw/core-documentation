@@ -73,15 +73,28 @@ POST /console/lab/timeline
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `status` | string | 狀態 |
-| `slug` | string | 短網址 |
-| `type` | string | 類型 |
-| `image` | string | 圖像的路徑 |
-| `title` | string | 標題 |
-| `description` | string | 敘述 |
-| `events` | array of objects | 事件 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `type` | string | 🌕 | 類型 |
+| `image` | string | 🌑 | 圖像的路徑 |
+| `title` | string | 🌕 | 標題 |
+| `description` | string | 🌑 | 敘述 |
+| `events` **[1]**  | array of objects | 🌑 | 事件 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `date` | timestamp | 🌕 | 日期 |
+| `type` | string | 🌕 | 類型 |
+| `image` | string | 🌑 | 圖像 |
+| `tagline` | string | 🌑 | 標語 |
+| `title` | string | 🌕 | 標題 |
+| `content` | string | 🌑 | 內容 |
 
 ### Sample input
 ```json

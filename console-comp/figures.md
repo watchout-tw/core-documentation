@@ -73,17 +73,17 @@ POST /console/lab/figure
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `status` | string | 狀態 |
-| `slug` | string | 短網址 |
-| `type` | string | 類型 |
-| `image` | string | 圖像的路徑 |
-| `title` | string | 標題 |
-| `description` | string | 敘述 |
-| `summary` | string | 摘要 |
-| `data_set_type` | string | 資料集型別 |
-| `data_set_id` | integer | 資料集 ID |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `type` | string | 🌕 | 類型 |
+| `image` | string | 🌕 | 圖像的路徑 |
+| `title` | string | 🌕 | 標題 |
+| `description` | string | 🌑 | 敘述 |
+| `summary` | string | 🌑 | 摘要 |
+| `data_set_type` | string | 🌕 | 資料集型別 |
+| `data_set_id` | integer | 🌕 | 資料集 ID |
 
 ### Sample input
 ```json
