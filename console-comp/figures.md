@@ -8,7 +8,7 @@
 
 ## List figures
 ```
-GET /console/lab/figures
+GET /console/comp/figures
 ```
 
 | Auth | Paging |
@@ -39,7 +39,7 @@ GET /console/lab/figures
 
 ## Get a single figure
 ```
-GET /console/lab/figure/:id
+GET /console/comp/figure/:id
 ```
 
 | Auth | Paging |
@@ -64,7 +64,7 @@ GET /console/lab/figure/:id
 
 ## Create a figure
 ```
-POST /console/lab/figure
+POST /console/comp/figure
 ```
 
 | Auth | Paging |
@@ -105,7 +105,7 @@ POST /console/lab/figure
 
 ## Update a figure
 ```
-PATCH /console/lab/figure/:id
+PATCH /console/comp/figure/:id
 ```
 
 | Auth | Paging |
@@ -116,7 +116,7 @@ PATCH /console/lab/figure/:id
 
 ## Delete a figure
 ```
-DELETE /console/lab/figure/:id
+DELETE /console/comp/figure/:id
 ```
 
 | Auth | Paging |

@@ -8,7 +8,7 @@
 
 ## List timelines
 ```
-GET /console/lab/timelines
+GET /console/comp/timelines
 ```
 
 | Auth | Paging |
@@ -39,7 +39,7 @@ GET /console/lab/timelines
 
 ## Get a single timeline
 ```
-GET /console/lab/timeline/:id
+GET /console/comp/timeline/:id
 ```
 
 | Auth | Paging |
@@ -64,7 +64,7 @@ GET /console/lab/timeline/:id
 
 ## Create a timeline
 ```
-POST /console/lab/timeline
+POST /console/comp/timeline
 ```
 
 | Auth | Paging |
@@ -125,7 +125,7 @@ POST /console/lab/timeline
 
 ## Update a timeline
 ```
-PATCH /console/lab/timeline/:id
+PATCH /console/comp/timeline/:id
 ```
 
 | Auth | Paging |
