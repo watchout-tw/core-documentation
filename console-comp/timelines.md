@@ -95,6 +95,8 @@ POST /console/comp/timeline
 | `tagline` | string | 🌑 | 標語 |
 | `title` | string | 🌕 | 標題 |
 | `content` | string | 🌑 | 內容 |
+| `link` | string | 🌑 | 連結 |
+| `data` | object | 🌑 | 與此事件相關之資料 |
 
 ### Sample input
 ```json
@@ -114,7 +116,9 @@ POST /console/comp/timeline
       "image": "path/image.png",
       "tagline": "體育選手只能相忍為國？",
       "title": "打開黑箱協會的第一步",
-      "content": "關於台灣獨立與台灣建國"
+      "content": "關於台灣獨立與台灣建國",
+      "link": "https://xxx.ooo.tw",
+      "data": **JSON**
     }
   ]
 }
