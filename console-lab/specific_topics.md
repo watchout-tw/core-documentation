@@ -123,7 +123,7 @@ POST /console/lab/specific_topics
 | --- | --- | :---: | --- |
 | `title` | string | 🌕 | 標題 |
 | `index` | integer | 🌕 | 排序 |
-| `image` | string | 🌕 | 圖像 |
+| `image` | string | 🌑 | 圖像 |
 | `description` | string | 🌕 | 敘述 |
 | `general_topics` | array of integers: general topic IDs | 🌕 | 關聯大議題 ID 列表 |
 | `act_dirs` **[1]** | array of objects | 🌑 | 這個小議題的修法方向列表 |

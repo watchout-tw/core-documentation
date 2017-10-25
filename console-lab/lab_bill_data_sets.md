@@ -108,7 +108,7 @@ POST /console/lab/bill_data_set
 | --- | --- | :---: | --- |
 | `name` | string | 🌕 | 名稱 |
 | `version_no` | string | 🌕 | 版本號 |
-| `slug` | string | 🌕 | 短網址 |
+| `slug` | string | 🌑 | 短網址 |
 | `term_index` | integer | 🌕 | 屆期 |
 | `start_date` | timestamp | 🌕 | 起始日 |
 | `end_date` | timestamp | 🌕 | 終止日 |

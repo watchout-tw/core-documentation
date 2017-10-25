@@ -152,7 +152,7 @@ POST /console/lab/reps
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
 | name | string | 🌕 | 姓名 |
-| birth_date | timestamp | 🌕 | 生日 |
+| birth_date | timestamp | 🌑 | 生日 |
 | gender | integer: [-100, 100] | 🌕 | 性別；-100表示100%女性、+100表示100%男性 |
 | highest_edu_degree | string: directories.edu_degree | 🌕 | 最高學歷 |
 | edu_record | array of strings (JSON) | 🌑 | 學歷 |
