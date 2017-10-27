@@ -21,6 +21,7 @@ GET /console/lab/specific_topics
 | --- | --- | --- | --- | --- |
 | `title` | string | 用標題過濾小議題清單 | partial | `人` `正義` |
 | `gt` | integer: general topic ID | 用關聯大議題 ID 過濾小議題清單 | exact | `1` `42` |
+| `act` | integer: act ID | 用關聯法案 ID 過濾小議題清單 | exact | `1` `2` |
 
 ### Response
 ```
