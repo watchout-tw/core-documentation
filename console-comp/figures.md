@@ -8,7 +8,7 @@
 
 ## List figures
 ```
-GET /console/lab/figures
+GET /console/comp/figures
 ```
 
 | Auth | Paging |
@@ -39,7 +39,7 @@ GET /console/lab/figures
 
 ## Get a single figure
 ```
-GET /console/lab/figure/:id
+GET /console/comp/figure/:id
 ```
 
 | Auth | Paging |
@@ -64,7 +64,7 @@ GET /console/lab/figure/:id
 
 ## Create a figure
 ```
-POST /console/lab/figure
+POST /console/comp/figure
 ```
 
 | Auth | Paging |
@@ -73,17 +73,17 @@ POST /console/lab/figure
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `status` | string | 狀態 |
-| `slug` | string | 短網址 |
-| `type` | string | 類型 |
-| `image` | string | 圖像的路徑 |
-| `title` | string | 標題 |
-| `description` | string | 敘述 |
-| `summary` | string | 摘要 |
-| `data_set_type` | string | 資料集型別 |
-| `data_set_id` | integer | 資料集 ID |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `type` | string | 🌕 | 類型 |
+| `image` | string | 🌕 | 圖像的路徑 |
+| `title` | string | 🌕 | 標題 |
+| `description` | string | 🌑 | 敘述 |
+| `summary` | string | 🌑 | 摘要 |
+| `data_set_type` | string | 🌕 | 資料集型別 |
+| `data_set_id` | integer | 🌕 | 資料集 ID |
 
 ### Sample input
 ```json
@@ -105,7 +105,7 @@ POST /console/lab/figure
 
 ## Update a figure
 ```
-PATCH /console/lab/figure/:id
+PATCH /console/comp/figure/:id
 ```
 
 | Auth | Paging |
@@ -116,7 +116,7 @@ PATCH /console/lab/figure/:id
 
 ## Delete a figure
 ```
-DELETE /console/lab/figure/:id
+DELETE /console/comp/figure/:id
 ```
 
 | Auth | Paging |

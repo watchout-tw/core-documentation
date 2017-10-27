@@ -77,14 +77,14 @@ POST /console/lab/caucuses
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `name` | string | **Required.** 名稱 |
-| `abbreviation` | string | **Required.** 簡稱 |
-| `color` | string array | 代表色 |
-| `emblem` | string | 代表徽章的檔案路徑 |
-| `basic_info` | string | 基本資訊 |
-| `add_info` | string | 補充資訊 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `name` | string | 🌕 | 名稱 |
+| `abbreviation` | string | 🌕 | 簡稱 |
+| `color` | string array | 🌑 | 代表色 |
+| `emblem` | string | 🌑 | 代表徽章的檔案路徑 |
+| `basic_info` | string | 🌑 | 基本資訊 |
+| `add_info` | string | 🌑 | 補充資訊 |
 
 ### Sample input
 ```json

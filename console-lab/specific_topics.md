@@ -120,15 +120,29 @@ POST /console/lab/specific_topics
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `title` | string | 標題 |
-| `index` | integer | 排序 |
-| `image` | string | 圖像 |
-| `description` | string | 敘述 |
-| `general_topics` | array of integers: general topic IDs | 關聯小議題 ID 列表 |
-| `act_dirs` | array of objects | 這個小議題的修法方向列表 |
-| `st_questions` | array of objects | 這個小議題的爭點列表 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `title` | string | 🌕 | 標題 |
+| `index` | integer | 🌕 | 排序 |
+| `image` | string | 🌑 | 圖像 |
+| `description` | string | 🌕 | 敘述 |
+| `general_topics` | array of integers: general topic IDs | 🌕 | 關聯大議題 ID 列表 |
+| `act_dirs` **[1]** | array of objects | 🌑 | 這個小議題的修法方向列表 |
+| `st_questions` **[2]** | array of objects | 🌑 | 這個小議題的爭點列表 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `name` | string | 🌕 | 標題 |
+| `index` | integer | 🌕 | 排序 |
+
+`[2]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `question` | string | 🌕 | 標題 |
+| `index` | integer | 🌕 | 排序 |
 
 
 ### Sample input

@@ -8,7 +8,7 @@
 
 ## List timelines
 ```
-GET /console/lab/timelines
+GET /console/comp/timelines
 ```
 
 | Auth | Paging |
@@ -39,7 +39,7 @@ GET /console/lab/timelines
 
 ## Get a single timeline
 ```
-GET /console/lab/timeline/:id
+GET /console/comp/timeline/:id
 ```
 
 | Auth | Paging |
@@ -64,7 +64,7 @@ GET /console/lab/timeline/:id
 
 ## Create a timeline
 ```
-POST /console/lab/timeline
+POST /console/comp/timeline
 ```
 
 | Auth | Paging |
@@ -73,15 +73,30 @@ POST /console/lab/timeline
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `status` | string | 狀態 |
-| `slug` | string | 短網址 |
-| `type` | string | 類型 |
-| `image` | string | 圖像的路徑 |
-| `title` | string | 標題 |
-| `description` | string | 敘述 |
-| `events` | array of objects | 事件 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `type` | string | 🌕 | 類型 |
+| `image` | string | 🌑 | 圖像的路徑 |
+| `title` | string | 🌕 | 標題 |
+| `description` | string | 🌑 | 敘述 |
+| `events` **[1]**  | array of objects | 🌑 | 事件 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `status` | string | 🌕 | 狀態 |
+| `slug` | string | 🌑 | 短網址 |
+| `date` | timestamp | 🌕 | 日期 |
+| `type` | string | 🌕 | 類型 |
+| `image` | string | 🌑 | 圖像 |
+| `tagline` | string | 🌑 | 標語 |
+| `title` | string | 🌕 | 標題 |
+| `content` | string | 🌑 | 內容 |
+| `link` | string | 🌑 | 連結 |
+| `data` | object | 🌑 | 與此事件相關之資料 |
 
 ### Sample input
 ```json
@@ -101,7 +116,9 @@ POST /console/lab/timeline
       "image": "path/image.png",
       "tagline": "體育選手只能相忍為國？",
       "title": "打開黑箱協會的第一步",
-      "content": "關於台灣獨立與台灣建國"
+      "content": "關於台灣獨立與台灣建國",
+      "link": "https://xxx.ooo.tw",
+      "data": **JSON**
     }
   ]
 }
@@ -112,7 +129,7 @@ POST /console/lab/timeline
 
 ## Update a timeline
 ```
-PATCH /console/lab/timeline/:id
+PATCH /console/comp/timeline/:id
 ```
 
 | Auth | Paging |

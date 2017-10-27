@@ -84,11 +84,11 @@ POST /console/lab/acts
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `title` | string | 標題 |
-| `official_seq_no` | string | 院總字號；用字串提高彈性 |
-| `specific_topics` | array of integers: specific topic IDs | 關聯小議題 ID 列表 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `title` | string | 🌕 | 標題 |
+| `official_seq_no` | string | 🌕 | 院總字號；用字串提高彈性 |
+| `specific_topics` | array of integers: specific topic IDs | 🌕 | 關聯小議題 ID 列表 |
 
 ### Sample input
 ```json

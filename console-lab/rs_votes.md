@@ -99,22 +99,22 @@ POST /console/lab/rs_votes
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `st_id` | integer: specific topic ID | 關聯小議題 ID |
-| `date` | timestamp | 日期 |
-| `term_index` | integer | 屆期 |
-| `session_index` | integer | 會期 |
-| `temp_session_index` | integer | 臨時會期 |
-| `title` | string | 標題 |
-| `content` | string | 內容 |
-| `aye` | array of integers: rep IDs | 贊成委員 ID 清單 |
-| `nay` | array of integers: rep IDs | 反對委員 ID 清單 |
-| `abstain` | array of integers: rep IDs | 棄權委員 ID 清單 |
-| `absence` | array of integers: rep IDs | 缺席委員 ID 清單 |
-| `g0v_link` | string | 公民科技社群連結 |
-| `source_link` | string | 原始資料連結 |
-| `tags` | array of integers: tag IDs | 標籤 ID 清單 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `st_id` | integer: specific topic ID | 🌕 | 關聯小議題 ID |
+| `date` | timestamp | 🌕 | 日期 |
+| `term_index` | integer | 🌕 | 屆期 |
+| `session_index` | integer | 🌕 | 會期 |
+| `temp_session_index` | integer | 🌕 | 臨時會期 |
+| `title` | string | 🌕 | 標題 |
+| `content` | string | 🌕 | 內容 |
+| `aye` | array of integers: rep IDs | 🌑 | 贊成委員 ID 清單 |
+| `nay` | array of integers: rep IDs | 🌑 | 反對委員 ID 清單 |
+| `abstain` | array of integers: rep IDs | 🌑 | 棄權委員 ID 清單 |
+| `absence` | array of integers: rep IDs | 🌑 | 缺席委員 ID 清單 |
+| `g0v_link` | string | 🌑 | 公民科技社群連結 |
+| `source_link` | string | 🌕 | 原始資料連結 |
+| `tags` | array of integers: tag IDs | 🌑 | 標籤 ID 清單 |
 
 ### Sample input
 ```json

@@ -65,11 +65,11 @@ POST /console/lab/committees
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `name` | string | **Required.** 名稱 |
-| `abbreviation` | string | **Required.** 簡稱 |
-| `category` | string: directories.committee_category | **Required.** 分類 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `name` | string | 🌕 | 名稱 |
+| `abbreviation` | string | 🌕 | 簡稱 |
+| `category` | string: directories.committee_category | 🌕 | 分類 |
 
 ### Sample input
 ```json

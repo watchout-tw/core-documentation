@@ -106,16 +106,23 @@ POST /console/lab/act_features
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `st` | integer | 小議題 ID |
-| `act` | integer | 法案 ID |
-| `act_dir` | integer | 修法方向 ID |
-| `feature` | string | 法案比較名稱 |
-| `dir` | string | 法案比較價值判斷 |
-| `content` | integer | 內容說明 |
-| `scale_score_max` | integer | 量尺分數最大值 |
-| `scale` | array of object | 量尺 |
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `st` | integer | 🌕 | 小議題 ID |
+| `act` | integer | 🌕 | 法案 ID |
+| `act_dir` | integer | 🌕 | 修法方向 ID |
+| `feature` | string | 🌕 | 法案比較名稱 |
+| `dir` | string | 🌕 | 法案比較價值判斷 |
+| `content` | string | 🌕 | 內容說明 |
+| `scale_score_max` | integer | 🌕 | 量尺分數最大值 |
+| `scale` **[1]** | array of object | 🌕 | 量尺 |
+
+`[1]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `score` | integer | 🌕 | 分數 |
+| `description` | string | 🌕 | 敘述 |
 
 ### Sample input
 ```json
