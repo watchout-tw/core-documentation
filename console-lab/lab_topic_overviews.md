@@ -91,9 +91,10 @@ POST /console/lab/topic_overview
 | `slug` | string | 🌑 | 短網址 |
 | `image` | string | 🌕 | 圖像的路徑 |
 | `st_id` | integer | 🌕 | 關聯小議題 ID |
-| `tagline` | string | 🌕 | 簡介 |
-| `title` | integer | 🌕 | 標語 |
-| `intro` | integer | 🌕 | 敘述 |
+| `tagline` | string | 🌕 | 標語 |
+| `title` | string | 🌕 | 標題 |
+| `intro` | string | 🌕 | 簡介 |
+| `description` | string | 🌕 | 敘述 |
 | `timeline_id` | integer | 🌕 | 大事紀 ID |
 | `related_links` **[1]** | array of objects | 🌑 | 相關連結列表 |
 
@@ -115,6 +116,7 @@ POST /console/lab/topic_overview
   "tagline": "選賢與能，選錯了怎麼辦？",
   "title": "罷免議題綜覽",
   "intro": "從歐巴馬這個例子，更加可以理解到，連美國人自己針對台灣問題也經常說不清楚。",
+  "description": "從歐巴馬這個例子，更加可以理解到，連美國人自己針對台灣問題也經常說不清楚。",
   "timeline_id": 1,
   "related_links": [
     {
