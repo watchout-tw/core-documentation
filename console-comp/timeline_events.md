@@ -85,7 +85,7 @@ POST /console/comp/timeline_events
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
 | `status` | string | 🌕 | 狀態 |
-| `slug` | string | 🌑 | 短網址 |
+| `slug` | string | 🌕 | 短網址 |
 | `date` | timestamp | 🌕 | 日期 |
 | `type` | string | 🌕 | 類型 |
 | `image` | string | 🌑 | 圖像 |
