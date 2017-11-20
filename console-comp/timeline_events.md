@@ -13,7 +13,7 @@ GET /console/comp/timeline_events
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌕 | 🌕 |
 
 ### Available query parameters
 
@@ -21,7 +21,7 @@ GET /console/comp/timeline_events
 | --- | --- | --- | --- | --- |
 | `date` | timestamp | 用日期來過濾大事紀事件清單 | exact | `1498838400000` |
 | `type` | string | 用類型來過濾大事紀事件清單 | exact | `general_update` `data_reports` |
-| `q` | string | 用關鍵字對標語（tagline）、標題（title）、內容（content）來過濾大事紀事件清單 | partial | `民` `集會` |
+| `q` | string | 用關鍵字對標語（tagline）、標題（title）、內容（content）來過濾大事紀事件清單 | partial | `建` `建國` |
 
 ### Response
 ```
