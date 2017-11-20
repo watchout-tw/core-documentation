@@ -1,10 +1,10 @@
 # Timeline Events
 
 - [List timeline events](#list-timeline-events)
-- [Get a single timeline event](#get-a-single-timeline-events)
-- [Create a timeline event](#create-a-timeline-events)
-- [Update a timeline event](#update-a-timeline-events)
-- [Delete a timeline event](#delete-a-timeline-events)
+- [Get a single timeline event](#get-a-single-timeline-event)
+- [Create a timeline event](#create-a-timeline-event)
+- [Update a timeline event](#update-a-timeline-event)
+- [Delete a timeline event](#delete-a-timeline-event)
 
 ## List timeline events
 ```
@@ -19,6 +19,8 @@ GET /console/comp/timeline_events
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
+| `page` | integer | 頁次 | exact | `1` |
+| `all` | - | 要求所有大事紀的清單 | - | - |
 | `date` | timestamp | 用日期來過濾大事紀事件清單 | exact | `1498838400000` |
 | `type` | string | 用類型來過濾大事紀事件清單 | exact | `general_update` `data_reports` |
 | `q` | string | 用關鍵字對標語（tagline）、標題（title）、內容（content）來過濾大事紀事件清單 | partial | `建` `建國` |
@@ -41,7 +43,14 @@ GET /console/comp/timeline_events
     }
     ...
   ],
-  totalRowCount
+  totalRowCount,
+  paging: {
+    pages,
+    pageSize,
+    previous,
+    next,
+    page
+  }
 }
 ```
 
