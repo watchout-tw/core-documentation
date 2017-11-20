@@ -19,7 +19,9 @@ GET /console/comp/timeline_events
 
 | Key | Type | Description | Match | Example |
 | --- | --- | --- | --- | --- |
-| `timeline` | integer: timeline ID | 用大事紀來過濾大事紀事件清單 | exact | `1` `2` |
+| `date` | timestamp | 用日期來過濾大事紀事件清單 | exact | `1498838400000` |
+| `type` | string | 用類型來過濾大事紀事件清單 | exact | `general_update` `data_reports` |
+| `q` | string | 用關鍵字對標語（tagline）、標題（title）、內容（content）來過濾大事紀事件清單 | partial | `民` `集會` |
 
 ### Response
 ```
@@ -45,7 +47,7 @@ GET /console/comp/timeline_events
 
 ## Get a single timeline event
 ```
-GET /console/comp/timeline_event/:id
+GET /console/comp/timeline_events/:id
 ```
 
 | Auth | Paging |
@@ -58,13 +60,14 @@ GET /console/comp/timeline_event/:id
   id,
   status,
   slug,
+  date,
+  type,
   image,
+  tagline,
   title,
-  description,
-  event_ids: [
-    id
-    ...
-  ]
+  content,
+  link,
+  data
 }
 ```
 
@@ -97,13 +100,13 @@ POST /console/comp/timeline_events
 {
   "status": "active",
   "slug": "bill-comp/recall/xxxx",
-  "date": "2014-01-01",
+  "date": 1498838400000,
   "type": "基本",
   "image": "path/image.png",
   "tagline": "體育選手只能相忍為國？",
   "title": "打開黑箱協會的第一步",
   "content": "關於台灣獨立與台灣建國",
-  "link": "https://xxx.ooo.tw",
+  "link": "https://g0v.tw",
   "data": **JSON**
 }
 ```
@@ -124,7 +127,7 @@ PATCH /console/comp/timeline_events/:id
 
 ## Delete a timeline event
 ```
-DELETE /console/lab/timeline_event/:id
+DELETE /console/lab/timeline_events/:id
 ```
 
 | Auth | Paging |

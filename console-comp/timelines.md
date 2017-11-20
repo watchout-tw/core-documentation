@@ -39,7 +39,7 @@ GET /console/comp/timelines
 
 ## Get a single timeline
 ```
-GET /console/comp/timeline/:id
+GET /console/comp/timelines/:id
 ```
 
 | Auth | Paging |
@@ -64,7 +64,7 @@ GET /console/comp/timeline/:id
 
 ## Create a timeline
 ```
-POST /console/comp/timeline
+POST /console/comp/timelines
 ```
 
 | Auth | Paging |
@@ -81,45 +81,21 @@ POST /console/comp/timeline
 | `image` | string | 🌑 | 圖像的路徑 |
 | `title` | string | 🌕 | 標題 |
 | `description` | string | 🌑 | 敘述 |
-| `events` **[1]**  | array of objects | 🌑 | 事件 |
-
-`[1]`
-
-| Key | Type | Required | Description |
-| --- | --- | :---: | --- |
-| `status` | string | 🌕 | 狀態 |
-| `slug` | string | 🌑 | 短網址 |
-| `date` | timestamp | 🌕 | 日期 |
-| `type` | string | 🌕 | 類型 |
-| `image` | string | 🌑 | 圖像 |
-| `tagline` | string | 🌑 | 標語 |
-| `title` | string | 🌕 | 標題 |
-| `content` | string | 🌑 | 內容 |
-| `link` | string | 🌑 | 連結 |
-| `data` | object | 🌑 | 與此事件相關之資料 |
+| `event_ids` | array of integers: Timeline_Event IDs | 🌑 | 大事紀事件 ID 列表 |
 
 ### Sample input
 ```json
 {
   "status": "active",
-  "slug": "bill-comp/recall/xxxx",
+  "slug": "bill-comp/recall/aXj0Q",
   "type": "基本",
   "image": "path/image.png",
   "title": "台灣建國大世紀",
   "description": "關於台灣獨立與台灣建國",
-  "events": [
-    {
-      "status": "active",
-      "slug": "bill-comp/recall/xxxx",
-      "date": "2014-01-01",
-      "type": "基本",
-      "image": "path/image.png",
-      "tagline": "體育選手只能相忍為國？",
-      "title": "打開黑箱協會的第一步",
-      "content": "關於台灣獨立與台灣建國",
-      "link": "https://xxx.ooo.tw",
-      "data": **JSON**
-    }
+  "event_ids": [
+    1,
+    2,
+    3
   ]
 }
 ```
@@ -129,7 +105,7 @@ POST /console/comp/timeline
 
 ## Update a timeline
 ```
-PATCH /console/comp/timeline/:id
+PATCH /console/comp/timelines/:id
 ```
 
 | Auth | Paging |
@@ -140,7 +116,7 @@ PATCH /console/comp/timeline/:id
 
 ## Delete a timeline
 ```
-DELETE /console/lab/timeline/:id
+DELETE /console/lab/timelines/:id
 ```
 
 | Auth | Paging |
