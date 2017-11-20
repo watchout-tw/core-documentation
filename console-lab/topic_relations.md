@@ -33,10 +33,10 @@ GET /console/lab/topic_relations
 | --- | --- | --- | --- | --- |
 | `X` | - | - | - | `from_type IS X` OR `to_type IS X` |
 | - | `1` | - | - | `from_id IS 1` OR `to_id IS 1` |
-| `X` | `1` | - | - | EITHER (1) `from_type IS X` AND `from_id IS 1` **OR** (2) `to_type IS X` AND `to_id IS 1` |
-| `X` | - | `Y` | - | EITHER (1) `from_type IS X` AND `to_type IS Y` **OR** (2) vice versa |
-| `X` | `1` | `Y` | - | EITHER (1) `from_type IS X` AND `from_id IS 1` AND `to_type IS Y` **OR** (2) `from_type IS Y` AND `to_type IS X` AND `to_id IS 1` |
-| `X` | `1` | `Y` | `2` | EITHER (1) `from_type IS X` AND `from_id IS 1` AND `to_type IS Y` AND `to_type IS 2` **OR** (2) `from_type IS Y` AND `from_id IS 2` AND `to_type IS X` AND `to_type IS 1` |
+| `X` | `1` | - | - | EITHER ① `from_type IS X` AND `from_id IS 1` **OR** ② `to_type IS X` AND `to_id IS 1` |
+| `X` | - | `Y` | - | EITHER ① `from_type IS X` AND `to_type IS Y` **OR** ② vice versa |
+| `X` | `1` | `Y` | - | EITHER ① `from_type IS X` AND `from_id IS 1` AND `to_type IS Y` **OR** ② `from_type IS Y` AND `to_type IS X` AND `to_id IS 1` |
+| `X` | `1` | `Y` | `2` | EITHER ① `from_type IS X` AND `from_id IS 1` AND `to_type IS Y` AND `to_type IS 2` **OR** ② `from_type IS Y` AND `from_id IS 2` AND `to_type IS X` AND `to_type IS 1` |
 
 > 當`search_directionally`為`true`，則
 
