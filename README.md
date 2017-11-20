@@ -94,6 +94,7 @@
 ## 中控室／內容組成 Console-Composition
 
 - [/console/comp/timelines](./console-comp/timelines) 🌿
+- [/console/comp/timeline_events](./console-comp/timeline_events) 🌿
 - [/console/comp/figures](./console-comp/figures) 🌿
 
 ## 中控室／議題實驗室 Console-Lab
