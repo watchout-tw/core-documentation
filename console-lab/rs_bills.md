@@ -149,18 +149,18 @@ POST /console/lab/rs_bills
 | --- | --- | :---: | --- |
 | `act_id` | integer: act ID | 🌕 | 關聯法案 ID |
 | `is_law` | boolean | 🌕 | 是否為法律？ |
-| `version_no` | string | 🌕 | 提案或法律版本號 |
-| `date` | timestamp | 🌕 | 日期 |
-| `term_index` | integer: term_index | 🌕 | 屆期 |
-| `session_index` | integer | 🌕 | 會期 |
-| `temp_session_index` | integer | 🌕 | 臨時會期 |
-| `principle_sponsor_type` | string: directories.principle_sponsor_type | 🌕 | 第一提案人類別 |
-| `principle_sponsor_value` | int: gov agency/caucus/rep ID | 🌕 | 第一提案人 |
-| `sponsors` | array of integers: rep IDs | 🌕 | 提案委員 ID 清單 |
-| `cosponsors` | array of integers: rep IDs | 🌕 | 連署委員 ID 清單 |
-| `content` | string | 🌕 | 內容 |
-| `data_source_link` | string | 🌕 | 資料來源連結 |
-| `progress_source_link` | string | 🌕 | 進程來源連結 |
+| `version_no` | string | 🌑 | 提案或法律版本號 |
+| `date` | timestamp | 🌑 | 日期 |
+| `term_index` | integer: term_index | 🌑 | 屆期 |
+| `session_index` | integer | 🌑 | 會期 |
+| `temp_session_index` | integer | 🌑 | 臨時會期 |
+| `principle_sponsor_type` | string: directories.principle_sponsor_type | 🌑 | 第一提案人類別 |
+| `principle_sponsor_value` | int: gov agency/caucus/rep ID | 🌑 | 第一提案人 |
+| `sponsors` | array of integers: rep IDs | 🌑 | 提案委員 ID 清單 |
+| `cosponsors` | array of integers: rep IDs | 🌑 | 連署委員 ID 清單 |
+| `content` | string | 🌑 | 內容 |
+| `data_source_link` | string | 🌑 | 資料來源連結 |
+| `progress_source_link` | string | 🌑 | 進程來源連結 |
 | `tags` | array of integers: tag IDs | 🌑 | 標籤 ID 清單 |
 | `legislative_steps` **[1]** | array of objects | 🌑 | 審議進度物件清單 |
 | `st_questions` **[2]** | array of objects | 🌑 | 爭點物件清單 |
