@@ -96,7 +96,9 @@ POST /console/lab/caucuses
   "color": "#000,#fff",
   "emblem": "/path/to/emblem.png",
   "basic_info": "Lorem ipsum.",
-  "add_info": "Lorem ipsum."
+  "add_info": "Lorem ipsum.",
+  "type": "政團",
+  "status": "active"
 }
 ```
 
