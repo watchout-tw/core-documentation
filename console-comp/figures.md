@@ -29,7 +29,18 @@ GET /console/comp/figures
       id,
       status,
       type,
-      title
+      title,
+      st: {
+        id
+        title
+        image
+        index
+      },
+      data_set: {
+        id,
+        name,
+        type
+      }
     }
     ...
   ],
