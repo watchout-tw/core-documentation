@@ -13,7 +13,7 @@ GET /console/comp/figures
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌕 | 🌕 |
 
 ### Available query parameters
 
