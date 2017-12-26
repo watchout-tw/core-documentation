@@ -85,6 +85,8 @@ POST /console/lab/caucuses
 | `emblem` | string | 🌑 | 代表徽章的檔案路徑 |
 | `basic_info` | string | 🌑 | 基本資訊 |
 | `add_info` | string | 🌑 | 補充資訊 |
+| `type` | string | 🌑 | 黨團/政團 |
+| `status` | string | 🌑 | active/inactive… |
 
 ### Sample input
 ```json
@@ -94,7 +96,9 @@ POST /console/lab/caucuses
   "color": "#000,#fff",
   "emblem": "/path/to/emblem.png",
   "basic_info": "Lorem ipsum.",
-  "add_info": "Lorem ipsum."
+  "add_info": "Lorem ipsum.",
+  "type": "政團",
+  "status": "active"
 }
 ```
 
