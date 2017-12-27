@@ -30,16 +30,16 @@ GET /console/comp/figures
       status,
       type,
       title,
-      st: {
-        id
-        title
-        image
-        index
-      },
       data_set: {
         id,
         name,
-        type
+        type,
+        st: {
+          id
+          title
+          image
+          index
+        },
       }
     }
     ...
