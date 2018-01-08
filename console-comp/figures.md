@@ -87,7 +87,7 @@ POST /console/comp/figure
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
 | `status` | string | 🌕 | 狀態 |
-| `slug` | string | 🌑 | 短網址 |
+| `slug` | string | 🌕 | 短網址 |
 | `type` | string | 🌕 | 類型 |
 | `image` | string | 🌕 | 圖像的路徑 |
 | `title` | string | 🌕 | 標題 |
