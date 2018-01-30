@@ -7,7 +7,7 @@ GET /park/citizen_speeches
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 `editor` OR `god` | 🌑 |
+| 🌕 `editor` | 🌑 |
 
 ### Available query parameters
 
