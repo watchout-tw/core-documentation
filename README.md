@@ -20,6 +20,8 @@
 
 ### 基本資訊
 - [/citizen](./citizen/self) 🌱
+
+### Email
 - [/citizen/:handle/emails](./citizen/emails) 🌱
 - [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification) 🌱
 - [/citizen/:handle/emails/:emailID/confirm_verification/:token](./citizen/emails#confirm-verification) 🌱
@@ -42,6 +44,7 @@
 
 ### 言論
 - [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌿
+- [/park/citizen_speeches](./park/citizen_speeches) 🌿
 
 ## 野生國會 c0ngress
 
