@@ -7,7 +7,7 @@ GET /citizen/speeches
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌕 `citizen` | 🌑 |
 
 ### Available query parameters
 
@@ -44,6 +44,9 @@ GET /citizen/speeches
 ```
 
 ## Get a single citizen speech
+```
+GET /citizen/speeches/:id
+```
 
 ## Create a citizen speech
 ```
@@ -52,7 +55,7 @@ POST /citizen/speeches
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌕 `citizen` | 🌑 |
 
 ### Input
 

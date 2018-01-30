@@ -1,8 +1,17 @@
 # Citizen’s password
 
+- [Update password](#update-password)
 - [Request reset password](#request-reset-password)
 - [Reset password](#reset-password)
-- [Update password](#update-password)
+
+## Update password
+```
+PATCH /citizen/password
+```
+
+| Auth | Paging |
+| :---: | :---: |
+| 🌕 `citizen` | 🌑 |
 
 ## Request reset password
 ```
@@ -15,9 +24,9 @@ POST /citizen/request_reset_password
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `email` | string | **Required.** Email |
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| `email` | string | 🌕 | Email |
 
 ### Sample input
 ```json
@@ -33,13 +42,13 @@ POST /citizen/reset_password
 
 | Auth | Paging |
 | :---: | :---: |
-| 🌕 | 🌑 |
+| 🌑 | 🌑 |
 
 ### Input
 
-| Key | Type | Description |
-| --- | --- | --- |
-| `new_password` | string | **Required.** 新的密碼 |
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| `new_password` | string | 🌕 | 新的密碼 |
 
 ### Sample input
 ```json
@@ -47,12 +56,3 @@ POST /citizen/reset_password
   "new_password": "sEcr1t"
 }
 ```
-
-## Update password
-```
-PATCH /citizen/:handle/password
-```
-
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
