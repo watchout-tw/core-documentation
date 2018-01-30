@@ -1,8 +1,8 @@
-# Speech target
+# Citizen speech target
 
-## List speech targets
+## List citizen speech targets
 ```
-GET /citizen/speech_targets
+GET /park/citizen_speech_targets
 ```
 
 | Auth | Paging |
