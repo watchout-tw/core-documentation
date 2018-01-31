@@ -34,7 +34,6 @@
 - [/citizen/reset_password](./citizen/password) 🌿
 
 ### 言論
-- [/citizen/speech_targets](./citizen/speech_targets) 🌿
 - [/citizen/speeches](./citizen/speeches) 🌿
 
 ## 中央公園 Park
