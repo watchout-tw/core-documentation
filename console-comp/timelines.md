@@ -28,13 +28,13 @@ NO
 {
   rows: [
     {
-      id,
-      status,
-      type,
+      id
+      status
+      type
       title
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -53,12 +53,12 @@ NO
 ### Response
 ```
 {
-  id,
-  status,
-  slug,
-  image,
-  title,
-  description,
+  id
+  status
+  slug
+  image
+  title
+  description
   event_ids: [
     id
     ...

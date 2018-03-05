@@ -191,15 +191,9 @@ figure_data_set: {
       version_no
       principle_sponsor_type
       principle_sponsor_value
-      principle_sponsor_parties: [
-        int, int, int ...
-      ]
-      sponsors: [
-        int, int, int ...
-      ]
-      cosponsors: [
-        int, int, int ...
-      ]
+      principle_sponsor_parties: [int ...]
+      sponsors: [int ...]
+      cosponsors: [int ...]
       rep_info_list: [
         {
           id
@@ -284,12 +278,8 @@ figure_data_set: {
     id
     question
   }
-  should_have_spoken_committees: [
-    str, str, str ...
-  ]
-  should_have_spoken_sessions: [
-    int, int, int ...
-  ]
+  should_have_spoken_committees: [str ...]
+  should_have_spoken_sessions: [int ...]
   statements: [
     {
       date
@@ -299,16 +289,12 @@ figure_data_set: {
       rep
       rep_party
       principle_committee
-      joint_committees: [
-        str, str, str ...
-      ]
+      joint_committees: [str ...]
       content
       position
       position_summary
       source_link
-      tags: [
-        int, int, int ...
-      ]
+      tags: [int ...]
     }
   ]
 }

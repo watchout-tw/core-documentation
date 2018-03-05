@@ -105,12 +105,12 @@ NO
   temp_session_index
   principle_sponsor_type
   principle_sponsor_value
-  sponsors: [int, ...]
-  cosponsors: [int, ...]
+  sponsors: [int ...]
+  cosponsors: [int ...]
   content
   data_source_link
   progress_source_link
-  tags: [int, ...]
+  tags: [int ...]
   legislative_steps: [
     {
       date

@@ -36,16 +36,16 @@ YES
         title
         image
         index
-      },
+      }
       act: {
         id
         title
         official_seq_no
-      },
+      }
       act_dir: {
         id
         name
-      },
+      }
       feature
       dir
     }

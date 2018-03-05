@@ -28,22 +28,22 @@ NO
 {
   rows: [
     {
-      id,
-      title,
-      index,
-      image,
+      id
+      title
+      index
+      image
       specific_topics: [
         {
-          id,
-          title,
-          index,
+          id
+          title
+          index
           image
         }
         ...
       ]
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -62,16 +62,16 @@ NO
 ### Response
 ```
 {
-  id,
-  title,
-  index,
-  image,
-  description,
+  id
+  title
+  index
+  image
+  description
   specific_topics: [
     {
-      id,
-      title,
-      index,
+      id
+      title
+      index
       image
     }
     ...

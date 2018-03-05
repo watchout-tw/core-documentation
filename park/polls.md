@@ -16,9 +16,9 @@ NO
 {
   rows: [
     {
-      id,
-      slug,
-      name,
+      id
+      slug
+      name
       options: [
         {
           ?... /* NoSQL */
@@ -26,7 +26,7 @@ NO
         ...
       ]
     }
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -56,7 +56,7 @@ NO
   ]
   tally: [
     {
-      content: [citizen_speech_content],
+      content: [citizen_speech_content]
       count: [number of appearances of identical content]
     }
     ...

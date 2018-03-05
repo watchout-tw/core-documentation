@@ -28,16 +28,16 @@ NO
 {
   rows: [
     {
-      id,
-      name,
-      abbreviation,
-      color,
-      emblem,
-      basic_info,
+      id
+      name
+      abbreviation
+      color
+      emblem
+      basic_info
       add_info
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -56,12 +56,12 @@ NO
 ### Response
 ```
 {
-  id,
-  name,
-  abbreviation,
-  color,
-  emblem,
-  basic_info,
+  id
+  name
+  abbreviation
+  color
+  emblem
+  basic_info
   add_info
 }
 ```

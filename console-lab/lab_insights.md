@@ -29,19 +29,19 @@ NO
 {
   rows: [
     {
-      id,
-      status,
-      slug,
-      image,
+      id
+      status
+      slug
+      image
       st: {
-        id,
-        title,
-        image,
+        id
+        title
+        image
         index
       }
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -60,11 +60,11 @@ NO
 ### Response
 ```
 {
-  id,
-  status,
-  slug,
-  image,
-  st_id,
+  id
+  status
+  slug
+  image
+  st_id
   doc_id
 }
 ```

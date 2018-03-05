@@ -43,7 +43,7 @@ NO
       ]
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -62,14 +62,14 @@ NO
 ### Response
 ```
 {
-  id,
-  title,
-  official_seq_no,
+  id
+  title
+  official_seq_no
   specific_topics: [
     {
-      id,
-      title,
-      index,
+      id
+      title
+      index
       image
     }
     ...

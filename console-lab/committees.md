@@ -28,12 +28,12 @@ NO
 {
   rows: [
     {
-      name,
-      abbreviation,
+      name
+      abbreviation
       category
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -52,8 +52,8 @@ NO
 ### Response
 ```
 {
-  name,
-  abbreviation,
+  name
+  abbreviation
   category
 }
 ```

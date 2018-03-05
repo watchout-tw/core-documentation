@@ -44,8 +44,8 @@ YES
       data
     }
     ...
-  ],
-  totalRowCount,
+  ]
+  totalRowCount
   paging: {
     pages
     pageSize
@@ -70,16 +70,16 @@ NO
 ### Response
 ```
 {
-  id,
-  status,
-  slug,
-  date,
-  type,
-  image,
-  tagline,
-  title,
-  content,
-  link,
+  id
+  status
+  slug
+  date
+  type
+  image
+  tagline
+  title
+  content
+  link
   data
 }
 ```

@@ -88,7 +88,7 @@ NO
   act_feature_ids: [
     id
     ...
-  ],
+  ]
   bill_ids: [
     id
     ...

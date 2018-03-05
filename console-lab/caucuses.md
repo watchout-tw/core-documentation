@@ -39,7 +39,7 @@ NO
       status
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```

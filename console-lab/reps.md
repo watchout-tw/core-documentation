@@ -33,37 +33,37 @@ YES
 {
   rows: [
     {
-      id,
-      name,
+      id
+      name
       history: [
         {
-          term,
+          term
           party: {
-            id,
-            name,
-            color,
-            emblem,
+            id
+            name
+            color
+            emblem
             abbreviation
-          },
+          }
           district: {
-            name,
-            abbreviation,
-            zone_name,
+            name
+            abbreviation
+            zone_name
             index
-          },
+          }
           change_type
         }
         ...
       ]
     }
     ...
-  ],
-  totalRowCount,
+  ]
+  totalRowCount
   paging: {
-    pages,
-    pageSize,
-    previous,
-    next,
+    pages
+    pageSize
+    previous
+    next
     page
   }
 }
@@ -83,58 +83,58 @@ NO
 ### Response
 ```
 {
-  id,
-  name,
-  birth_date,
-  gender,
-  highest_edu_degree,
-  edu_record: [str, ...],
-  experience: [str, ...],
-  policy_proposal: [str, ...],
+  id
+  name
+  birth_date
+  gender
+  highest_edu_degree
+  edu_record: [str ...]
+  experience: [str ...]
+  policy_proposal: [str ...]
   contacts: [
     {
-      seq_no,
-      name,
-      phone,
-      fax,
-      address,
+      seq_no
+      name
+      phone
+      fax
+      address
       is_active
     }
     ...
-  ],
+  ]
   parties: [
     {
-      term_index,
+      term_index
       party: {
-        id,
+        id
         name
-      },
+      }
       caucus: {
-        id,
+        id
         name
-      },
-      start_date,
-      officer_title,
+      }
+      start_date
+      officer_title
       note
     }
     ...
-  ],
+  ]
   terms: [
     {
-      term_index,
-      change_date,
-      change_type,
-      district_name,
-      duty,
+      term_index
+      change_date
+      change_type
+      district_name
+      duty
       note
     }
     ...
-  ],
+  ]
   sessions: [
     {
-      term_index,
-      session_index,
-      committee_name,
+      term_index
+      session_index
+      committee_name
       is_convener
     }
     ...

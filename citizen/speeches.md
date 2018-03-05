@@ -28,19 +28,19 @@ NO
 {
   rows: [
     {
-      id,
+      id
       citizen_speech_target: {
-        id,
-        type,
-        source_entity,
+        id
+        type
+        source_entity
         source_id
-      },
-      date,
-      type,
+      }
+      date
+      type
       content
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```

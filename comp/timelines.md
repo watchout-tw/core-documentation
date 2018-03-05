@@ -64,6 +64,7 @@ NO
 {
   reps: [
     *repObject* // GET /c0ngress/date-to-rep-info?date=[date of timeline event]
+    ...
   ]
 }
 ```
@@ -73,6 +74,7 @@ NO
 {
   rs_statements: [
     *rsStatementObject* // GET /c0ngress/rs_statements/:id
+    ...
   ]
 }
 ```
@@ -82,6 +84,7 @@ NO
 {
   rs_bills: [
     *rsBillObject* // GET /c0ngress/rs_bills/:id
+    ...
   ]
 }
 ```
@@ -89,8 +92,8 @@ NO
 #### `bill_legislative_step`
 ```
 {
-  rs_bill: *rsBillObject*, // GET /c0ngress/rs_bills/:id
-  legislative_step_id: 1
+  rs_bill: *rsBillObject* // GET /c0ngress/rs_bills/:id
+  legislative_step_id
 }
 ```
 
@@ -99,6 +102,7 @@ NO
 {
   rs_votes: [
     *rsVoteObject* // GET /c0ngress/rs_votes/:id
+    ...
   ]
 }
 ```
@@ -108,6 +112,7 @@ NO
 {
   date_reports: [
     *dataReportObject*
+    ...
   ]
 }
 ```
