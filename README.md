@@ -18,8 +18,9 @@
 ## 草民 Citizen
 > 關於草民的 API endpoints
 
-### 基本資訊
-- [/citizen](./citizen/self) 🌱
+### 草民資訊
+- [/citizen](./citizen/citizen) 🌱
+- []
 
 ### Email
 - [/citizen/:handle/emails](./citizen/emails) 🌱
@@ -44,6 +45,16 @@
 ### 言論
 - [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌿
 - [/park/citizen_speeches](./park/citizen_speeches) 🌿
+
+## 給問擂台 Ask
+
+### Games & Matches
+- [/ask/games](./ask/games) 🌿
+- [/ask/matches](./ask/matches) 🌿
+
+### Questions & Answers
+- [/ask/questions](./ask/questions) 🌿
+- [/ask/answers](./ask/answers) 🌿
 
 ## 野生國會 c0ngress
 

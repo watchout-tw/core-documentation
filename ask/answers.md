@@ -16,9 +16,21 @@ NO
 {
   rows: [
     {
+      id
+      status
+      slug
+      index
+      image
+      content
+      question
+      persona
+      references: []
+      data: {}
     }
     ...
   ]
   totalRowCount
 }
 ```
+
+## Get a single answer
