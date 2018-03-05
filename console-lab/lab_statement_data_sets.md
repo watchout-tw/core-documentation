@@ -11,9 +11,11 @@
 GET /console/lab/statement_data_sets
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -58,9 +60,11 @@ GET /console/lab/statement_data_sets
 GET /console/lab/statement_data_sets/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -90,9 +94,11 @@ GET /console/lab/statement_data_sets/:id
 POST /console/lab/statement_data_set
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -133,9 +139,11 @@ POST /console/lab/statement_data_set
 PATCH /console/lab/statement_data_set/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a statement data set](#create-a-statement-data-set)
 
@@ -144,9 +152,11 @@ PATCH /console/lab/statement_data_set/:id
 DELETE /console/lab/statement_data_set/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

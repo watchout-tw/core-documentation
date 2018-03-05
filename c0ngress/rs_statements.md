@@ -5,9 +5,11 @@
 GET /c0ngress/rs_statements/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```

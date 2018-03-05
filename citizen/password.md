@@ -9,18 +9,22 @@
 PATCH /citizen/password
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen” AND “self”
+
+### Paging
+NO
 
 ## Request reset password
 ```
 POST /citizen/request_reset_password
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Input
 
@@ -40,9 +44,11 @@ POST /citizen/request_reset_password
 POST /citizen/reset_password
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Input
 

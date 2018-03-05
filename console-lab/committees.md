@@ -11,9 +11,11 @@
 GET /console/lab/committees
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -41,9 +43,11 @@ GET /console/lab/committees
 GET /console/lab/committees/:name
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -59,9 +63,11 @@ GET /console/lab/committees/:name
 POST /console/lab/committees
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -88,9 +94,11 @@ POST /console/lab/committees
 PATCH /console/lab/committees/:name
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a committee](#create-a-committee)
 
@@ -99,9 +107,11 @@ PATCH /console/lab/committees/:name
 DELETE /console/lab/committees/:name
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

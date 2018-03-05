@@ -1,11 +1,15 @@
-# List acts
+# Act
+> 法案
+
+## List acts
 ```
 GET /c0ngress/acts
 ```
+### Auth
+NO
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Paging
+NO
 
 ### Response
 ```

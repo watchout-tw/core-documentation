@@ -11,9 +11,11 @@
 GET /console/lab/acts
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -27,14 +29,14 @@ GET /console/lab/acts
 {
   rows: [
     {
-      id,
-      title,
-      official_seq_no,
+      id
+      title
+      official_seq_no
       specific_topics: [
         {
-          id,
-          title,
-          index,
+          id
+          title
+          index
           image
         }
         ...
@@ -51,9 +53,11 @@ GET /console/lab/acts
 GET /console/lab/acts/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -78,9 +82,11 @@ GET /console/lab/acts/:id
 POST /console/lab/acts
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -109,9 +115,11 @@ POST /console/lab/acts
 PATCH /console/lab/acts/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create an act](#create-an-act)
 
@@ -120,9 +128,11 @@ PATCH /console/lab/acts/:id
 DELETE /console/lab/acts/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

@@ -5,9 +5,11 @@
 GET /citizen/speeches
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen” AND “self”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -48,14 +50,22 @@ GET /citizen/speeches
 GET /citizen/speeches/:id
 ```
 
+### Auth
+- “citizen” AND “self”
+
+### Paging
+NO
+
 ## Create a citizen speech
 ```
 POST /citizen/speeches
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen” AND “self”
+
+### Paging
+NO
 
 ### Input
 

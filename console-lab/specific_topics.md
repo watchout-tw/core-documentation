@@ -11,9 +11,11 @@
 GET /console/lab/specific_topics
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -28,38 +30,38 @@ GET /console/lab/specific_topics
 {
   rows: [
     {
-      id,
-      title,
-      index,
-      image,
+      id
+      title
+      index
+      image
       general_topics: [
         {
-          id,
-          title,
-          index,
+          id
+          title
+          index
           image
         }
         ...
-      ],
+      ]
       act_dirs: [
         {
-          id,
-          name,
+          id
+          name
           index
         }
         ...
-      ],
+      ]
       st_questions: [
         {
-          id,
-          question,
+          id
+          question
           index
         }
         ...
       ]
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -69,39 +71,41 @@ GET /console/lab/specific_topics
 GET /console/lab/specific_topics/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
 {
-  id,
-  title,
-  index,
-  image,
-  description,
+  id
+  title
+  index
+  image
+  description
   general_topics: [
     {
-      id,
-      title,
-      index,
+      id
+      title
+      index
       image
     }
     ...
-  ],
+  ]
   act_dirs: [
     {
-      id,
-      name,
+      id
+      name
       index
     }
     ...
-  ],
+  ]
   st_questions: [
     {
-      id,
-      question,
+      id
+      question
       index
     }
     ...
@@ -114,9 +118,11 @@ GET /console/lab/specific_topics/:id
 POST /console/lab/specific_topics
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -178,9 +184,11 @@ POST /console/lab/specific_topics
 PATCH /console/lab/specific_topics/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a specific topic](#create-a-specific-topic)
 
@@ -189,9 +197,11 @@ PATCH /console/lab/specific_topics/:id
 DELETE /console/lab/specific_topics/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

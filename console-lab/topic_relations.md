@@ -11,9 +11,11 @@
 GET /console/lab/topic_relations
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -63,7 +65,7 @@ GET /console/lab/topic_relations
       description
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -73,9 +75,11 @@ GET /console/lab/topic_relations
 GET /console/lab/topic_relations/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -95,9 +99,11 @@ GET /console/lab/topic_relations/:id
 POST /console/lab/topic_relations
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -132,9 +138,11 @@ POST /console/lab/topic_relations
 PATCH /console/lab/topic_relations/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a topic relation](#create-a-topic-relation)
 
@@ -143,9 +151,11 @@ PATCH /console/lab/topic_relations/:id
 DELETE /console/lab/topic_relations/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

@@ -11,9 +11,11 @@
 GET /console/lab/bill_data_sets
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -64,9 +66,11 @@ GET /console/lab/bill_data_sets
 GET /console/lab/bill_data_sets/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -98,9 +102,11 @@ GET /console/lab/bill_data_sets/:id
 POST /console/lab/bill_data_set
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -169,9 +175,11 @@ POST /console/lab/bill_data_set
 PATCH /console/lab/bill_data_set/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a bill data set](#create-a-bill-data-set)
 
@@ -180,9 +188,11 @@ PATCH /console/lab/bill_data_set/:id
 DELETE /console/lab/bill_data_set/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

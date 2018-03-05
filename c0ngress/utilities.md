@@ -16,9 +16,11 @@
 GET /c0ngress/date_to_term
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -45,9 +47,11 @@ GET /c0ngress/date_to_term
 GET /c0ngress/date_to_rep_info
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -93,9 +97,11 @@ GET /c0ngress/date_to_rep_info
 GET /c0ngress/zones
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```json
@@ -118,9 +124,11 @@ GET /c0ngress/zones
 GET /c0ngress/unique_sessions
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -150,9 +158,11 @@ GET /c0ngress/unique_sessions
 GET /c0ngress/unique_temp_sessions
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -183,9 +193,11 @@ GET /c0ngress/unique_temp_sessions
 GET /c0ngress/unique_districts
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```json
@@ -206,9 +218,11 @@ GET /c0ngress/unique_districts
 GET /c0ngress/gov_agencies
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```json
@@ -230,9 +244,11 @@ GET /c0ngress/gov_agencies
 GET /c0ngress/legislative_steps
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```json

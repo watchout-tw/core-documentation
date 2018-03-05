@@ -11,9 +11,11 @@
 GET /console/lab/parties
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -45,9 +47,11 @@ GET /console/lab/parties
 GET /console/lab/parties/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -67,9 +71,11 @@ GET /console/lab/parties/:id
 POST /console/lab/parties
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -102,9 +108,11 @@ POST /console/lab/parties
 PATCH /console/lab/parties/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a party](#create-a-party)
 
@@ -113,9 +121,11 @@ PATCH /console/lab/parties/:id
 DELETE /console/lab/parties/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

@@ -11,9 +11,11 @@
 GET /console/comp/timeline_events
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -30,25 +32,25 @@ GET /console/comp/timeline_events
 {
   rows: [
     {
-      status,
-      slug,
-      date,
-      type,
-      image,
-      tagline,
-      title,
-      content,
-      link,
+      status
+      slug
+      date
+      type
+      image
+      tagline
+      title
+      content
+      link
       data
     }
     ...
   ],
   totalRowCount,
   paging: {
-    pages,
-    pageSize,
-    previous,
-    next,
+    pages
+    pageSize
+    previous
+    next
     page
   }
 }
@@ -59,9 +61,11 @@ GET /console/comp/timeline_events
 GET /console/comp/timeline_events/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -85,9 +89,11 @@ GET /console/comp/timeline_events/:id
 POST /console/comp/timeline_events
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -128,9 +134,11 @@ POST /console/comp/timeline_events
 PATCH /console/comp/timeline_events/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a timeline event](#create-a-timeline-event)
 
@@ -138,10 +146,11 @@ PATCH /console/comp/timeline_events/:id
 ```
 DELETE /console/lab/timeline_events/:id
 ```
+### Auth
+- “editor”
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Paging
+NO
 
 ### Response
 ```javascript

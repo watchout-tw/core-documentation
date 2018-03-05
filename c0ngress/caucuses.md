@@ -1,13 +1,16 @@
 # Caucus
+> 黨團或政團
 
 ## List caucuses
 ```
 GET /c0ngress/caucuses
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -31,7 +34,7 @@ GET /c0ngress/caucuses
       status
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```

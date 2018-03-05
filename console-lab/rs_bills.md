@@ -11,9 +11,11 @@
 GET /console/lab/rs_bills
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -84,9 +86,11 @@ GET /console/lab/rs_bills
 GET /console/lab/rs_bills/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -139,9 +143,11 @@ GET /console/lab/rs_bills/:id
 POST /console/lab/rs_bills
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -247,9 +253,11 @@ POST /console/lab/rs_bills
 PATCH /console/lab/rs_bills/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a bill](#create-a-bill)
 
@@ -258,9 +266,11 @@ PATCH /console/lab/rs_bills/:id
 DELETE /console/lab/rs_bills/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

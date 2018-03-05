@@ -11,9 +11,11 @@
 GET /console/lab/caucuses
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -47,9 +49,11 @@ GET /console/lab/caucuses
 GET /console/lab/caucuses/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -71,9 +75,11 @@ GET /console/lab/caucuses/:id
 POST /console/lab/caucuses
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -110,9 +116,11 @@ POST /console/lab/caucuses
 PATCH /console/lab/caucuses/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a caucus](#create-a-caucus)
 
@@ -121,9 +129,11 @@ PATCH /console/lab/caucuses/:id
 DELETE /console/lab/caucuses/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

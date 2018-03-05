@@ -8,9 +8,11 @@
 GET /lab/data_reports
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```
@@ -94,9 +96,11 @@ figure_data_set: {
 GET /lab/data_reports/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```

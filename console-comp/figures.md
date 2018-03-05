@@ -11,9 +11,11 @@
 GET /console/comp/figures
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -26,25 +28,32 @@ GET /console/comp/figures
 {
   rows: [
     {
-      id,
-      status,
-      type,
-      title,
+      id
+      status
+      type
+      title
       data_set: {
-        id,
-        name,
-        type,
+        id
+        name
+        type
         st: {
           id
           title
           image
           index
-        },
+        }
       }
     }
     ...
-  ],
+  ]
   totalRowCount
+  paging: {
+    pages
+    pageSize
+    previous
+    next
+    page
+  }
 }
 ```
 
@@ -53,22 +62,24 @@ GET /console/comp/figures
 GET /console/comp/figure/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
 {
-  id,
-  status,
-  slug,
-  type,
-  image,
-  title,
-  description,
-  summary,
-  data_set_type,
+  id
+  status
+  slug
+  type
+  image
+  title
+  description
+  summary
+  data_set_type
   data_set_id
 }
 ```
@@ -78,9 +89,11 @@ GET /console/comp/figure/:id
 POST /console/comp/figure
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -119,9 +132,11 @@ POST /console/comp/figure
 PATCH /console/comp/figure/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a figure](#create-a-figure)
 
@@ -130,9 +145,11 @@ PATCH /console/comp/figure/:id
 DELETE /console/comp/figure/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

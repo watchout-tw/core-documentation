@@ -5,9 +5,11 @@
 GET /park/citizen_speech_targets
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -22,12 +24,12 @@ GET /park/citizen_speech_targets
 {
   rows: [
     {
-      id,
-      type,
-      source_entity,
+      id
+      type
+      source_entity
       source_id
     }
-  ],
+  ]
   totalRowCount
 }
 ```

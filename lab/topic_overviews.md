@@ -8,9 +8,11 @@
 GET /lab/topic_overviews
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```

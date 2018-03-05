@@ -11,9 +11,11 @@
 GET /console/lab/general_topics
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -51,9 +53,11 @@ GET /console/lab/general_topics
 GET /console/lab/general_topics/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -80,9 +84,11 @@ GET /console/lab/general_topics/:id
 POST /console/lab/general_topics
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -116,9 +122,11 @@ POST /console/lab/general_topics
 PATCH /console/lab/general_topics/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a general topic](#create-a-general-topic)
 
@@ -127,9 +135,11 @@ PATCH /console/lab/general_topics/:id
 DELETE /console/lab/general_topics/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

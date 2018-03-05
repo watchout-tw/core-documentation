@@ -11,9 +11,11 @@
 GET /console/lab/act_features
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -28,28 +30,35 @@ GET /console/lab/act_features
 {
   rows: [
     {
-      id,
+      id
       st: {
-        id,
-        title,
-        image,
+        id
+        title
+        image
         index
       },
       act: {
-        id,
-        title,
+        id
+        title
         official_seq_no
       },
       act_dir: {
-        id,
+        id
         name
       },
-      feature,
+      feature
       dir
     }
     ...
-  ],
+  ]
   totalRowCount
+  paging: {
+    pages
+    pageSize
+    previous
+    next
+    page
+  }
 }
 ```
 
@@ -58,36 +67,38 @@ GET /console/lab/act_features
 GET /console/lab/act_features/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
 {
-  id,
+  id
   st: {
-    id,
-    title,
-    image,
+    id
+    title
+    image
     index
-  },
+  }
   act: {
-    id,
-    title,
+    id
+    title
     official_seq_no
-  },
+  }
   act_dir: {
-    id,
+    id
     name
-  },
-  feature,
-  dir,
-  content,
-  scale_score_max,
+  }
+  feature
+  dir
+  content
+  scale_score_max
   scale: [
     {
-      score,
+      score
       description
     }
     ...
@@ -100,9 +111,11 @@ GET /console/lab/act_features/:id
 POST /console/lab/act_features
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -167,9 +180,11 @@ POST /console/lab/act_features
 PATCH /console/lab/act_features/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create an act feature](#create-an-act-feature)
 
@@ -178,9 +193,11 @@ PATCH /console/lab/act_features/:id
 DELETE /console/lab/act_features/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

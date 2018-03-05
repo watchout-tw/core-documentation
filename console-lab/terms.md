@@ -11,9 +11,11 @@
 GET /console/lab/terms
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -26,50 +28,50 @@ GET /console/lab/terms
 {
   rows: [
     {
-      index,
-      start_date,
-      end_date,
+      index
+      start_date
+      end_date
       sessions: [
         {
-          session_index,
-          temp_session_index,
-          start_date,
+          session_index
+          temp_session_index
+          start_date
           end_date
         }
         ...
-      ],
+      ]
       parties: [
         {
-          id,
-          name,
-          abbreviation,
-          color,
+          id
+          name
+          abbreviation
+          color
           emblem
         }
         ...
-      ],
+      ]
       caucuses: [
         {
-          id,
-          name,
-          abbreviation,
-          color,
+          id
+          name
+          abbreviation
+          color
           emblem
         }
         ...
-      ],
+      ]
       districts: [
         {
-          name,
-          abbreviation,
-          zone_name,
-          index,
+          name
+          abbreviation
+          zone_name
+          index
           neighborhoods
         }
         ...
       ]
     }
-  ],
+  ]
   totalRowCount
 }
 ```
@@ -79,63 +81,65 @@ GET /console/lab/terms
 GET /console/lab/terms/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
 {
-  index,
-  start_date,
-  end_date,
+  index
+  start_date
+  end_date
   sessions: [
     {
-      session_index,
-      temp_session_index,
-      start_date,
+      session_index
+      temp_session_index
+      start_date
       end_date
     }
     ...
-  ],
+  ]
   parties: [
     {
-      id,
-      name,
-      abbreviation,
-      color,
+      id
+      name
+      abbreviation
+      color
       emblem
     }
     ...
-  ],
+  ]
   caucuses: [
     {
       caucus: {
-        id,
-        name,
-        abbreviation,
-        color,
+        id
+        name
+        abbreviation
+        color
         emblem
       }
       parties: [
         {
-          id,
-          name,
-          abbreviation,
-          color,
+          id
+          name
+          abbreviation
+          color
           emblem
         }
         ...
       ]
     }
     ...
-  ],
+  ]
   districts: [
     {
-      name,
-      abbreviation,
-      zone_name,
-      index,
+      name
+      abbreviation
+      zone_name
+      index
       neighborhoods
     }
     ...
@@ -148,9 +152,11 @@ GET /console/lab/terms/:id
 POST /console/lab/terms
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -235,9 +241,11 @@ POST /console/lab/terms
 PATCH /console/lab/terms/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a term](#create-a-term)
 
@@ -246,9 +254,11 @@ PATCH /console/lab/terms/:id
 DELETE /console/lab/terms/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

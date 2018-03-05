@@ -11,9 +11,11 @@
 GET /console/lab/insights
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -49,9 +51,11 @@ GET /console/lab/insights
 GET /console/lab/insight/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -70,9 +74,11 @@ GET /console/lab/insight/:id
 POST /console/lab/insight
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -105,9 +111,11 @@ POST /console/lab/insight
 PATCH /console/lab/insight/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a insight](#create-a-insight)
 
@@ -116,9 +124,11 @@ PATCH /console/lab/insight/:id
 DELETE /console/lab/insight/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

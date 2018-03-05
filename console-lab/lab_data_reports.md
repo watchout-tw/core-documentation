@@ -11,9 +11,11 @@
 GET /console/lab/data_reports
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -110,9 +112,11 @@ figure_data_set: {
 GET /console/lab/data_report/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -141,9 +145,11 @@ GET /console/lab/data_report/:id
 POST /console/lab/data_report
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -198,9 +204,11 @@ POST /console/lab/data_report
 PATCH /console/lab/data_report/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a data report](#create-a-data-report)
 
@@ -209,9 +217,11 @@ PATCH /console/lab/data_report/:id
 DELETE /console/lab/data_report/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

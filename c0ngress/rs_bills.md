@@ -5,9 +5,11 @@
 GET /c0ngress/rs_bill/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```

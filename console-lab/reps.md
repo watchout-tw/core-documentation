@@ -11,9 +11,11 @@
 GET /console/lab/reps
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -72,9 +74,11 @@ GET /console/lab/reps
 GET /console/lab/reps/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -143,9 +147,11 @@ GET /console/lab/reps/:id
 POST /console/lab/reps
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -272,9 +278,11 @@ POST /console/lab/reps
 PATCH /console/lab/reps/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a rep](#create-a-rep)
 
@@ -283,9 +291,11 @@ PATCH /console/lab/reps/:id
 DELETE /console/lab/reps/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

@@ -5,9 +5,11 @@
 GET /park/polls
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```
@@ -34,22 +36,24 @@ GET /park/polls
 GET /park/polls/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```
 {
-  id,
-  slug,
-  name,
+  id
+  slug
+  name
   options: [
     {
       ?... /* NoSQL */
     }
     ...
-  ],
+  ]
   tally: [
     {
       content: [citizen_speech_content],

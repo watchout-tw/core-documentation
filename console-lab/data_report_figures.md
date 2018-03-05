@@ -10,9 +10,11 @@
 GET /console/lab/data_report_figures
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -42,9 +44,11 @@ GET /console/lab/data_report_figures
 POST /console/lab/data_report_figures
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -73,9 +77,11 @@ POST /console/lab/data_report_figures
 DELETE /console/lab/data_report_figures/data_report/{data_report_id}/figure/{figure_id}/index/{index}
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

@@ -1,13 +1,16 @@
 # Party
+> 政黨
 
 ## List parties
 ```
 GET /c0ngress/parties
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -29,7 +32,7 @@ GET /c0ngress/parties
       add_info
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```

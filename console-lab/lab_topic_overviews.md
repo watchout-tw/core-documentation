@@ -11,9 +11,11 @@
 GET /console/lab/topic_overviews
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -53,9 +55,11 @@ GET /console/lab/topic_overviews
 GET /console/lab/topic_overview/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -79,9 +83,11 @@ GET /console/lab/topic_overview/:id
 POST /console/lab/topic_overview
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -136,9 +142,11 @@ POST /console/lab/topic_overview
 PATCH /console/lab/topic_overview/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a topic overview](#create-a-topic-overview)
 
@@ -147,9 +155,11 @@ PATCH /console/lab/topic_overview/:id
 DELETE /console/lab/topic_overview/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

@@ -11,9 +11,11 @@
 GET /console/lab/rs_votes
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -29,30 +31,30 @@ GET /console/lab/rs_votes
 {
   rows: [
     {
-      id,
+      id
       st: {
-        id,
+        id
         title
-      },
-      date,
-      term_index,
-      session_index,
-      title,
-      aye_count,
-      abstain_count,
-      nay_count,
-      absence_count,
-      g0v_link,
+      }
+      date
+      term_index
+      session_index
+      title
+      aye_count
+      abstain_count
+      nay_count
+      absence_count
+      g0v_link
       source_link
     }
     ...
-  ],
-  totalRowCount,
+  ]
+  totalRowCount
   paging: {
-    page,
-    pages,
-    pageSize,
-    previous,
+    page
+    pages
+    pageSize
+    previous
     next
   }
 }
@@ -63,28 +65,30 @@ GET /console/lab/rs_votes
 GET /console/lab/rs_votes/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
 {
-  id,
-  st_id,
-  date,
-  term_index,
-  session_index,
-  temp_session_index,
-  title,
-  content,
-  aye: [int, ...],
-  nay: [int, ...],
-  abstain: [int, ...],
-  absence: [int, ...],
-  g0v_link,
-  source_link,
-  tags: [int, ...]
+  id
+  st_id
+  date
+  term_index
+  session_index
+  temp_session_index
+  title
+  content
+  aye: [int ...]
+  nay: [int ...]
+  abstain: [int ...]
+  absence: [int ...]
+  g0v_link
+  source_link
+  tags: [int ...]
 }
 ```
 
@@ -93,9 +97,11 @@ GET /console/lab/rs_votes/:id
 POST /console/lab/rs_votes
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -154,9 +160,11 @@ POST /console/lab/rs_votes
 PATCH /console/lab/rs_votes/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a vote](#create-a-vote)
 
@@ -165,9 +173,11 @@ PATCH /console/lab/rs_votes/:id
 DELETE /console/lab/rs_votes/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

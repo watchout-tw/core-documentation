@@ -1,13 +1,16 @@
 # Rep
+> 委員
 
 ## List reps
 ```
 GET /c0ngress/reps
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -30,7 +33,7 @@ GET /c0ngress/reps
       name
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```

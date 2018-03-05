@@ -5,9 +5,11 @@
 GET /park/citizen_speeches
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `editor` | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -27,20 +29,20 @@ GET /park/citizen_speeches
 {
   rows: [
     {
-      id,
-      citizen_handle,
+      id
+      citizen_handle
       citizen_speech_target: {
-        id,
-        type,
-        source_entity,
+        id
+        type
+        source_entity
         source_id
-      },
-      date,
-      type,
+      }
+      date
+      type
       content
     }
     ...
-  ],
+  ]
   totalRowCount
 }
 ```

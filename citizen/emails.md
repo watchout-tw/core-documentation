@@ -13,9 +13,11 @@
 GET /citizen/:handle/emails
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -37,9 +39,11 @@ GET /citizen/:handle/emails
 POST /citizen/:handle/emails
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO
 
 ### Input
 
@@ -52,36 +56,44 @@ POST /citizen/:handle/emails
 DELETE /citizen/:handle/emails
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO
 
 ## Request verification
 ```
 GET /citizen/:handle/emails/:emailID/request_verification
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO
 
 ## Confirm verification
 ```
 GET /citizen/:handle/emails/:emailID/confirm_verification/:token
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO
 
 ## Set visibility
 ```
 PATCH /citizen/:handle/emails/:emailID/visibility
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO
 
 ### Input
 
@@ -93,6 +105,8 @@ PATCH /citizen/:handle/emails/:emailID/visibility
 PATCH /citizen/:handle/emails/:emailID/set_primary
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 `citizen` | 🌑 |
+### Auth
+- “citizen”
+
+### Paging
+NO

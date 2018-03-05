@@ -11,9 +11,11 @@
 GET /console/comp/timelines
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Available query parameters
 
@@ -42,9 +44,11 @@ GET /console/comp/timelines
 GET /console/comp/timelines/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -67,9 +71,11 @@ GET /console/comp/timelines/:id
 POST /console/comp/timelines
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -108,9 +114,11 @@ POST /console/comp/timelines
 PATCH /console/comp/timelines/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a timeline](#create-a-timeline)
 
@@ -119,9 +127,11 @@ PATCH /console/comp/timelines/:id
 DELETE /console/lab/timelines/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

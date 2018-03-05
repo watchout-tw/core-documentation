@@ -11,9 +11,11 @@
 GET /console/lab/?s
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -27,8 +29,15 @@ GET /console/lab/?s
     {
     }
     ...
-  ],
+  ]
   totalRowCount
+  paging: {
+    page
+    pages
+    pageSize
+    previous
+    next
+  }
 }
 ```
 
@@ -37,9 +46,11 @@ GET /console/lab/?s
 GET /console/lab/?s/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
@@ -52,9 +63,11 @@ GET /console/lab/?s/:id
 POST /console/lab/?s
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -75,9 +88,11 @@ POST /console/lab/?s
 PATCH /console/lab/?s/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -98,9 +113,11 @@ PATCH /console/lab/?s/:id
 DELETE /console/lab/?s/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript

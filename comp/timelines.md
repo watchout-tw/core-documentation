@@ -5,9 +5,11 @@
 GET /comp/timelines/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌑 | 🌑 |
+### Auth
+NO
+
+### Paging
+NO
 
 ### Response
 ```
@@ -44,16 +46,16 @@ GET /comp/timelines/:id
 #### `term_start`
 ```
 {
-  term_index: 8
+  term_index
 }
 ```
 
 #### `session_start`
 ```
 {
-  term_index: 8,
-  session_index: 1,
-  temp_session_index: 0
+  term_index
+  session_index
+  temp_session_index
 }
 ```
 

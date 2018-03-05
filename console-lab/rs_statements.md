@@ -11,9 +11,11 @@
 GET /console/lab/rs_statements
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌕 |
+### Auth
+- “editor”
+
+### Paging
+YES
 
 ### Available query parameters
 
@@ -31,37 +33,37 @@ GET /console/lab/rs_statements
 {
   rows: [
     {
-      id,
+      id
       st: {
-        id,
+        id
         title
-      },
-      date,
-      term_index,
-      session_index,
+      }
+      date
+      term_index
+      session_index
       rep: {
-        id,
+        id
         name
-      },
+      }
       rep_party: {
-        id,
-        name,
-        abbreviation,
-        color,
+        id
+        name
+        abbreviation
+        color
         emblem
-      },
-      content,
-      position,
+      }
+      content
+      position
       position_summary
     }
     ...
-  ],
-  totalRowCount,
+  ]
+  totalRowCount
   paging: {
-    page,
-    pages,
-    pageSize,
-    previous,
+    page
+    pages
+    pageSize
+    previous
     next
   }
 }
@@ -72,29 +74,31 @@ GET /console/lab/rs_statements
 GET /console/lab/rs_statements/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```
 {
-  id,
-  st_id,
-  date,
-  term_index,
-  session_index,
-  temp_session_index,
-  rep_id,
-  rep_party_id,
-  principle_committee,
-  joint_committees: [str, ...],
-  content,
-  st_question_id,
-  position,
-  position_summary,
-  source_link,
-  tags: [int, ...]
+  id
+  st_id
+  date
+  term_index
+  session_index
+  temp_session_index
+  rep_id
+  rep_party_id
+  principle_committee
+  joint_committees: [str ...]
+  content
+  st_question_id
+  position
+  position_summary
+  source_link
+  tags: [int ...]
 }
 ```
 
@@ -103,9 +107,11 @@ GET /console/lab/rs_statements/:id
 POST /console/lab/rs_statements
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Input
 
@@ -161,9 +167,11 @@ POST /console/lab/rs_statements
 PATCH /console/lab/rs_statements/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 > 參考 [Create a statement](#create-a-statement)
 
@@ -172,9 +180,11 @@ PATCH /console/lab/rs_statements/:id
 DELETE /console/lab/rs_statements/:id
 ```
 
-| Auth | Paging |
-| :---: | :---: |
-| 🌕 | 🌑 |
+### Auth
+- “editor”
+
+### Paging
+NO
 
 ### Response
 ```javascript
