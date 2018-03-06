@@ -110,7 +110,7 @@
 - [/console/comp/timeline_events](./console-comp/timeline_events) 🌿
 - [/console/comp/figures](./console-comp/figures) 🌿
 
-## 中控室／議題實驗室 Console-Lab
+## 中控室／野生國會 Console-c0ngress
 > 中控室中與《議題實驗室》相關的 API endpoints
 
 ### 立法院 Legislative Yuan
@@ -149,7 +149,9 @@
 - 表決 Votes
   - [/console/lab/rs_votes](./console-lab/rs_votes) 🌳
 
-### 議題實驗室 Lab
+## 中控室／議題實驗室 Console-Lab
+> 中控室中與《議題實驗室》相關的 API endpoints
+
 - 議題綜覽 Topic Overviews
   - [/console/lab/lab_topic_overviews](./console-lab/lab_topic_overviews) 🌳
 - 分析評論 Insights
