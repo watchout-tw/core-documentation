@@ -33,8 +33,13 @@
 - [/citizen/request_reset_password](./citizen/password) 🌿
 - [/citizen/reset_password](./citizen/password) 🌿
 
+## 人格 Persona
+
+### 人格資訊
+- [/persona]('./persona/persona') 🌿
+
 ### 言論
-- [/citizen/speeches](./citizen/speeches) 🌿
+- [/persona/speeches](./persona/speeches) 🌿
 
 ## 中央公園 Park
 
@@ -42,8 +47,8 @@
 - [/park/polls](./park/polls) 🌿
 
 ### 言論
-- [/park/citizen_speech_targets](./park/citizen_speech_targets) 🌿
-- [/park/citizen_speeches](./park/citizen_speeches) 🌿
+- [/park/persona_speech_targets](./park/persona_speech_targets) 🌿
+- [/park/persona_speeches](./park/persona_speeches) 🌿
 
 ## 給問擂台 Ask
 

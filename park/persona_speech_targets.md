@@ -1,8 +1,8 @@
-# Citizen speech target
+# Persona speech target
 
-## List citizen speech targets
+## List persona speech targets
 ```
-GET /park/citizen_speech_targets
+GET /park/persona_speech_targets
 ```
 
 ### Auth
@@ -28,6 +28,9 @@ NO
       type
       source_entity
       source_id
+      sp_type
+      sp_per_persona
+      data
     }
   ]
   totalRowCount
