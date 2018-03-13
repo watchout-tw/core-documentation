@@ -20,7 +20,6 @@
 
 ### 草民資訊
 - [/citizen](./citizen/citizen) 🌱
-- []
 
 ### Email
 - [/citizen/:handle/emails](./citizen/emails) 🌱
