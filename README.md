@@ -36,7 +36,7 @@
 ## 人格 Persona
 
 ### 人格資訊
-- [/persona]('./persona/persona') 🌿
+- [/persona](./persona/persona) 🌿
 
 ### 言論
 - [/persona/speeches](./persona/speeches) 🌿
