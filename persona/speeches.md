@@ -1,5 +1,9 @@
 # Speech
 
+- [List speeches](#list-speeches)
+- [Get a single persona speech](#get-a-single-persona-speech)
+- [Create a persona speech](#create-a-persona-speech)
+
 ## List speeches
 ```
 GET /persona/speeches
