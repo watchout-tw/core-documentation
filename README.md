@@ -1,4 +1,4 @@
-# [Watchout API Documentation](https://core-docs.watchout.tw/)
+# [Watchout API Documentation](https://docs.core.watchout.tw/)
 
 ### 圖例
 ```
