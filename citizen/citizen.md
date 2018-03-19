@@ -64,6 +64,7 @@ NO
 | `data` | object | 🌑 | 其他資料 |
 
 `[1]`
+
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
 | `city` | string | 🌑 | 城市 |
