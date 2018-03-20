@@ -19,11 +19,11 @@ NO
       id
       status
       slug
+      persona: {}
+      question: {}
       index
       image
       content
-      question
-      persona
       references: []
       data: {}
     }
