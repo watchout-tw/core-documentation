@@ -25,12 +25,10 @@ NO
   birth_date
   country_code
   phone_number
-  voter_registration: {
-    type
-    city
-    district
-    neighborhood
-  }
+  voter_city
+  voter_district
+  voter_neighborhood
+  voter_type
   data: {}
   personas: [ // GET /personas
     *personaObject*
@@ -61,17 +59,11 @@ NO
 | `birth_date` | int | 🌑 | 出生日 |
 | `country_code` | int | 🌑 | 電話號碼國碼 |
 | `phone_number` | string | 🌑 | 電話號碼 |
-| `voter_registration` `[1]` | object | 🌑 | 選舉人資訊 |
+| `voter_city` | string | 🌑 | 戶籍地城市 |
+| `voter_district` | string | 🌑 | 戶籍地區域 |
+| `voter_neighborhood` | string | 🌑 | 戶籍地村里 |
+| `voter_type` | string | 🌑 | 選舉人類別 |
 | `data` | object | 🌑 | 其他資料 |
-
-`[1]`
-
-| Key | Type | Required | Description |
-| --- | --- | :---: | --- |
-| `type` | string | 🌑 | 選舉人類別 |
-| `city` | string | 🌑 | 城市 |
-| `district` | string | 🌑 | 區域 |
-| `neighborhood` | string | 🌑 | 里 |
 
 ### Sample input
 ```json
@@ -83,12 +75,10 @@ NO
   "birth_date": 17,
   "country_code": 886,
   "phone_number": "912345678",
-  "voter_registration": {
-    "type": "一般",
-    "city": "台北市",
-    "district": "士林區",
-    "neighborhood": "福林里"
-  }
+  "voter_city": "台北市",
+  "voter_district": "士林區",
+  "voter_neighborhood": "福林里",
+  "voter_type": "一般"
 }
 ```
 
