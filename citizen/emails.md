@@ -24,10 +24,11 @@ NO
 {
   rows: [
     {
-      emailID
+      id
       email
-      visibility
       is_primary
+      is_verified
+      visibility
     }
   ]
   totalRowCount
@@ -94,11 +95,6 @@ PATCH /citizen/:handle/emails/:emailID/visibility
 
 ### Paging
 NO
-
-### Input
-
-| Key | Type | Description |
-| --- | --- | --- |
 
 ## Set primary email
 ```
