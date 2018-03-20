@@ -19,10 +19,10 @@
 > 關於草民的 API endpoints
 
 ### 草民資訊
-- [/citizen](./citizen/citizen) 🌱
+- [/citizen](./citizen/citizen) 🌿
 
 ### Email
-- [/citizen/:handle/emails](./citizen/emails) 🌱
+- [/citizen/:handle/emails](./citizen/emails) 🌿
 - [/citizen/:handle/emails/:emailID/request_verification](./citizen/emails#request-verification) 🌱
 - [/citizen/:handle/emails/:emailID/confirm_verification/:token](./citizen/emails#confirm-verification) 🌱
 - [/citizen/:handle/emails/:emailID/visibility](./citizen/emails#set-visibility) 🌱
