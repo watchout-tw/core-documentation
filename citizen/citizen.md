@@ -25,7 +25,8 @@ NO
   birth_date
   country_code
   phone_number
-  electorial_registration: {
+  voter_registration: {
+    type
     city
     district
     neighborhood
@@ -60,13 +61,14 @@ NO
 | `birth_date` | int | 🌑 | 出生日 |
 | `country_code` | int | 🌑 | 電話號碼國碼 |
 | `phone_number` | string | 🌑 | 電話號碼 |
-| `electorial_registration` `[1]` | object | 🌑 | 選舉人資訊 |
+| `voter_registration` `[1]` | object | 🌑 | 選舉人資訊 |
 | `data` | object | 🌑 | 其他資料 |
 
 `[1]`
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
+| `type` | string | 🌑 | 選舉人類別 |
 | `city` | string | 🌑 | 城市 |
 | `district` | string | 🌑 | 區域 |
 | `neighborhood` | string | 🌑 | 里 |
@@ -81,7 +83,8 @@ NO
   "birth_date": 17,
   "country_code": 886,
   "phone_number": "912345678",
-  "electorial_registration": {
+  "voter_registration": {
+    "type": "一般",
     "city": "台北市",
     "district": "士林區",
     "neighborhood": "福林里"
