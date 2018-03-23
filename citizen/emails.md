@@ -121,12 +121,12 @@ NO
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| `visibility` | string | 🌕 | 要新增的email |
+| `visibility` | string | 🌕 | "public" 或 "private" |
 
 ### Sample input
 ```json
 {
-  "email":"watchout@gmail.com"
+  "visibility":"public"
 }
 ```
 
