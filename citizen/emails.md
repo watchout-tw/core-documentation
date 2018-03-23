@@ -52,7 +52,15 @@ NO
 | --- | --- | --- | --- |
 | `email` | string | 🌕 | 要新增的email |
 
+### Sample input
+```json
+{
+  "email":"watchout@gmail.com"
+}
+```
+
 ## Delete a email from a citizen
+
 ```
 DELETE /citizen/:handle/emails
 ```
@@ -62,6 +70,19 @@ DELETE /citizen/:handle/emails
 
 ### Paging
 NO
+
+### Input
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| `email` | string | 🌕 | 要刪除的email |
+
+### Sample input
+```json
+{
+  "email":"watchout@gmail.com"
+}
+```
 
 ## Request verification
 ```
@@ -95,6 +116,19 @@ PATCH /citizen/:handle/emails/:emailID/visibility
 
 ### Paging
 NO
+
+### Input
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| `visibility` | string | 🌕 | 要新增的email |
+
+### Sample input
+```json
+{
+  "email":"watchout@gmail.com"
+}
+```
 
 ## Set primary email
 ```
