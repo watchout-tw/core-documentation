@@ -106,4 +106,4 @@ YES
 > **以目前active persona為發言人**，以`[1]`所列任一Persona_Speech_Target為target的Persona_Speech列表
 
 `[4]`
-> 計算以`[1]`為target，且type是ask_question_push的Persona_Speech數量，也就是這個Q的連署人數
+> 計算以`[2]`所列target中任一為target，且type是ask_question_push的Persona_Speech數量，也就是這個Q的連署人數
