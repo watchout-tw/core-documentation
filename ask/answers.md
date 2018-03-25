@@ -51,7 +51,10 @@ YES
         }
         ...
       ]
-      review_average
+      review: {
+        count
+        average
+      }
     }
     ...
   ]
