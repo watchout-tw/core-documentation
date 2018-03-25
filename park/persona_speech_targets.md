@@ -30,7 +30,9 @@ NO
       source_id
       sp_type
       sp_per_persona
-      data
+      start_date
+      end_date
+      data: {}
     }
   ]
   totalRowCount

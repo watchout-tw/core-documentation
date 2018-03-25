@@ -36,6 +36,11 @@ NO
         type
         source_entity
         source_id
+        sp_type
+        sp_per_persona
+        start_date
+        end_date
+        data: {}
       }
       date
       type

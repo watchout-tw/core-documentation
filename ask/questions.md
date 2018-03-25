@@ -34,16 +34,36 @@ YES
       ]
       chatroom_id
       data: {}
-      push_count // 這個問題的連署人數 [1]
-      assigned_personas: [ // [2]
+      assigned_personas: [ // [1]
         *personaObject*
         ...
       ]
-      persona_speech_target: {
-        start_date
-        end_date
-        data: {}
-      }
+      persona_speech_targets: [ // [2]
+        {
+          id
+          type
+          source_entity
+          source_id
+          sp_type
+          sp_per_persona
+          start_date
+          end_date
+          data: {}
+        }
+        ...
+      ]
+      persona_speeches: [ // [3]
+        {
+          id
+          target_id
+          date
+          time
+          content
+          data: {}
+        }
+        ...
+      ]
+      push_count // [4]
       answers: [
         {
           id
@@ -64,11 +84,24 @@ YES
     ...
   ]
   totalRowCount
+  paging: {
+    page
+    pages
+    pageSize
+    previous
+    next
+  }
 }
 ```
 
 `[1]`
-> 計算target是這個Q的speech target，且type是ask_question_push的Persona_Speech
+> ASK_Question_Assigned_Persona
 
 `[2]`
-> ASK_Question_Assigned_Persona
+> 以這個Q為source_entity的Persona_Speech_Target列表
+
+`[3]`
+> **以目前active persona為發言人**，以上列任一Persona_Speech_Target為target的Persona_Speech列表
+
+`[4]`
+> 這個問題的連署人數。計算target是這個Q的speech target，且type是ask_question_push的Persona_Speech。
