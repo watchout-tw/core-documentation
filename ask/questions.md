@@ -63,8 +63,8 @@ YES
         }
         ...
       ]
-      push: { // [4]
-        count
+      push: {
+        count // [4]
       }
       answers: [
         {
@@ -97,13 +97,13 @@ YES
 ```
 
 `[1]`
-> ASK_Question_Assigned_Persona
+> From ASK_Question_Assigned_Persona
 
 `[2]`
-> 以這個Q為source_entity的Persona_Speech_Target列表
+> 以這個Q為source的Persona_Speech_Target列表
 
 `[3]`
-> **以目前active persona為發言人**，以上列任一Persona_Speech_Target為target的Persona_Speech列表
+> **以目前active persona為發言人**，以`[1]`所列任一Persona_Speech_Target為target的Persona_Speech列表
 
 `[4]`
-> 這個問題的連署人數。計算target是這個Q的speech target，且type是ask_question_push的Persona_Speech。
+> 計算以`[1]`為target，且type是ask_question_push的Persona_Speech數量，也就是這個Q的連署人數
