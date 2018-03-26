@@ -7,6 +7,7 @@ GET /ask/questions
 
 ### Auth
 NO
+> `[3]`需要是“citizen” AND “self”
 
 ### Paging
 YES
