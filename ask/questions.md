@@ -57,7 +57,7 @@ YES
           id
           target_id
           date
-          time
+          type
           content
           data: {}
         }
