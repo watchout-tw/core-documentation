@@ -74,7 +74,7 @@ YES
 > 以這個A為source的Persona_Speech_Target列表
 
 `[2]`
-> **以目前active persona為發言人**，以`[1]`所列任一Persona_Speech_Target為target的Persona_Speech列表
+> **以目前active persona為發言人**，以`[1]`所列任一Persona_Speech_Target為target的Persona_Speech列表；權限不足則無此項目
 
 `[3]`
 > 所有以`[1]`所列target中任一為target，且type為ask_answer_review的Persona_Speech數目

@@ -104,7 +104,7 @@ YES
 > 以這個Q為source的Persona_Speech_Target列表
 
 `[3]`
-> **以目前active persona為發言人**，以`[2]`所列任一Persona_Speech_Target為target的Persona_Speech列表
+> **以目前active persona為發言人**，以`[2]`所列任一Persona_Speech_Target為target的Persona_Speech列表；權限不足則無此項目
 
 `[4]`
 > 計算以`[2]`所列target中任一為target，且type是ask_question_push的Persona_Speech數量，也就是這個Q的連署人數
