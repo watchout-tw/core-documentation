@@ -24,7 +24,7 @@ NO
       image
       title
       description
-      data
+      data: {}
     }
     ...
   ]
