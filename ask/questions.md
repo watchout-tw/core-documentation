@@ -1,5 +1,10 @@
 # Question of ASK
 
+- [List questions](#list-questions)
+- [Get a single question](#get-a-single-question)
+- [Create a question](#create-a-question)
+- [Push a question](#push-a-question)
+
 ## List questions
 ```
 GET /ask/questions
@@ -7,10 +12,58 @@ GET /ask/questions
 
 ### Auth
 NO
-> `[3]`需要是“citizen” AND “self”
+> `persona_speeches`需要是“citizen” AND “self”
 
 ### Paging
 YES
+
+### Available query parameters
+
+| Key | Type | Description | Match | Example |
+| --- | --- | --- | --- | --- | --- |
+| `game` | string | 用game slug過濾問題清單 | exact | `2018-taipei` |
+| `q` | string | 用關鍵字過濾問題清單 `[1]` | exact | `殭屍` |
+| `topics` | array of integers: topic IDs | 用議題過濾問題清單 | 任一即可 | `[1, 2, 3]` |
+| `statuses` | array of strings: statuses `[2]` | 用「狀態」過濾問題清單 | 全部符合 | `["keep_pushing", "expect_answers"]` |
+| `have_pushed` | integer | 用「是否已連署」過濾問題清單 | exact | `0` OR `1` |
+| `order_by` | string `[3]` | 問題排序 | exact | `start_date` |
+
+`[1]`
+> 搜尋範圍：`ASK_Question.title`, `ASK_Question.content`, `ASK_Question.references`
+
+`[2]` 可能的string如下
+
+`keep_pushing`
+```
+Now.time <= Question.persona_speech_target.start_date
+
+/*
+persona_speech_target的選取有點複雜
+*/
+```
+
+`expect_answers`
+```
+Question.push.count >= Question.data.threshold
+```
+
+`failed`
+```
+Now.time > Question.Persona_Speech_Target.start_date && Question.push.count < Question.data.threshold
+```
+
+`have_pushed`
+```
+Question.persona_speeches contains speech.type === ask_question_push
+```
+
+`have_not_pushed`
+```
+Question.persona_speeches !contains speech.type === ask_question_push
+```
+
+`[3]`
+> 可能的string：`start_date`、`push_count`
 
 ### Response
 ```
@@ -22,7 +75,7 @@ YES
       slug
       type
       persona: {} // 與GET /persona格式相同
-      game: {} // 與GET /ask/games格式相同
+      game: {} // 與GET /ask/games中的Game object格式相同
       index
       topic_type
       topic_id
@@ -108,3 +161,34 @@ YES
 
 `[4]`
 > 計算以`[2]`所列target中任一為target，且type是ask_question_push的Persona_Speech數量，也就是這個Q的連署人數
+
+## Get a single question
+```
+GET /ask/questions/:id
+```
+
+### Auth
+NO
+> `persona_speeches`需要是“citizen” AND “self”；權限不足則無此項目
+
+### Paging
+NO
+
+### Response
+> 與[List questions](#list-questions)中的Question object格式相同
+
+## Create a question
+```
+POST /ask/questions
+```
+
+### Push a question
+```
+POST /ask/questions/:id/push
+```
+
+### Auth
+- `citizen` AND `with_info`
+
+### Paging
+NO

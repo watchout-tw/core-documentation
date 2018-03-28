@@ -1,5 +1,8 @@
 # Game of ASK
 
+- [List games](#list-games)
+- [Get a single game BY SLUG](#get-a-single-game-BY-SLUG)
+
 ## List games
 ```
 GET /ask/games

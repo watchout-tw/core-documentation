@@ -1,5 +1,8 @@
 # Match of ASK
 
+- [List matches](#list-matches)
+- [Get a single match](#get-a-single-match)
+
 ## List matches
 ```
 GET /ask/matches
@@ -78,3 +81,15 @@ NO
 ```
 
 ## Get a single match
+```
+GET /ask/matches/:id
+```
+
+### Auth
+NO
+
+### Paging
+NO
+
+### Response
+> 與[List matches](#list-matches)中的Match object格式相同
