@@ -21,8 +21,8 @@ YES
       status
       slug
       type
-      persona: {}
-      game: {}
+      persona: {} // 與GET /persona格式相同
+      game: {} // 與GET /ask/games格式相同
       index
       topic_type
       topic_id
