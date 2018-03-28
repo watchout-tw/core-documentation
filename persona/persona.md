@@ -29,6 +29,12 @@ NO
     }
     ...
   ],
-  latest_status_update
+  latest_status_update: { // [1]
+    content
+    data: {}
+  }
 }
 ```
+
+`[1]`
+> persona_id與active persona相同，且create_date最新的Persona_Status_Update
