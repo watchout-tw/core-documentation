@@ -20,7 +20,7 @@ YES
 ### Available query parameters
 
 | Key | Type | Description | Match | Example |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | `game` | string | 用game slug過濾問題清單 | exact | `2018-taipei` |
 | `q` | string | 用關鍵字過濾問題清單 `[1]` | exact | `殭屍` |
 | `topics` | array of integers: topic IDs | 用議題過濾問題清單 | 任一即可 | `[1, 2, 3]` |
