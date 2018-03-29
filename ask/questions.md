@@ -35,14 +35,14 @@ YES
 > 可能的string：`keep_pushing`、`expect_answers`、`failed`
 
 ```js
+all_targets = all Persona_Speech_Target
 targets = all_targets.filter(target =>
   target.source_entity === 'ASK_Question' &&
   target.source_id === question.id &&
   target.sp_type === 'ask_question_push'
 )
 assert(targets.length === 1) // 一定有一個，且只有一個符合條件的target
-target = targets[0]
-Question.target = target
+question.target = targets[0]
 ```
 
 `keep_pushing`
