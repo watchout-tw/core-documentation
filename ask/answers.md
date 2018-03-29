@@ -18,7 +18,7 @@ YES
 ### Available query parameters
 
 | Key | Type | Description | Match | Example |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | `game` | string | 用原始問題的game過濾答案清單 | exact | `2018-taipei` |
 | `q` | string | 用關鍵字過濾答案清單 `[1]` | exact | `殭屍` |
 | `topics` | array of integers: topic IDs | 用原始問題的議題過濾答案清單 | 任一即可 | `[1, 2, 3]` |
