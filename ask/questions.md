@@ -31,18 +31,23 @@ YES
 `[1]`
 > 搜尋範圍：`ASK_Question.title`, `ASK_Question.content`, `ASK_Question.references`
 
-`[2]` 可能的string如下
+`[2]`
+> 可能的string：`keep_pushing`、`expect_answers`、`failed`
+
+```js
+targets = all_targets.filter(target =>
+  target.source_entity === 'ASK_Question' &&
+  target.source_id === question.id &&
+  target.sp_type === 'ask_question_push'
+)
+assert(targets.length === 1) // 一定有一個，且只有一個符合條件的target
+target = targets[0]
+Question.target = target
+```
 
 `keep_pushing`
 ```js
-Now.time <= target.start_date
-```
-
-```js
-targets = all_targets.filter(target => target.source_entity === 'ASK_Question' && target.source_id === question.id)
-target = targets.filter(target => target.sp_type === 'ask_question_push')
-assert(target.length === 1) // 一定有一個，且只有一個符合條件的target
-target = target[0]
+Now.time <= Question.target.start_date
 ```
 
 `expect_answers`
@@ -52,17 +57,7 @@ Question.push.count >= Question.data.threshold
 
 `failed`
 ```js
-Now.time > Question.Persona_Speech_Target.start_date && Question.push.count < Question.data.threshold
-```
-
-`have_pushed`
-```js
-Question.persona_speeches contains speech.type === ask_question_push
-```
-
-`have_not_pushed`
-```js
-Question.persona_speeches !contains speech.type === ask_question_push
+Now.time > Question.target.start_date && Question.push.count < Question.data.threshold
 ```
 
 `[3]`
