@@ -34,31 +34,34 @@ YES
 `[2]` 可能的string如下
 
 `keep_pushing`
+```js
+Now.time <= target.start_date
 ```
-Now.time <= Question.persona_speech_target.start_date
 
-/*
-persona_speech_target的選取有點複雜
-*/
+```js
+targets = all_targets.filter(target => target.source_entity === 'ASK_Question' && target.source_id === question.id)
+target = targets.filter(target => target.sp_type === ask_question_push)
+assert(target.length === 1) // 一定有一個，且只有一個符合條件的target
+target = target[0]
 ```
 
 `expect_answers`
-```
+```js
 Question.push.count >= Question.data.threshold
 ```
 
 `failed`
-```
+```js
 Now.time > Question.Persona_Speech_Target.start_date && Question.push.count < Question.data.threshold
 ```
 
 `have_pushed`
-```
+```js
 Question.persona_speeches contains speech.type === ask_question_push
 ```
 
 `have_not_pushed`
-```
+```js
 Question.persona_speeches !contains speech.type === ask_question_push
 ```
 
