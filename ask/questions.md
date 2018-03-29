@@ -40,7 +40,7 @@ Now.time <= target.start_date
 
 ```js
 targets = all_targets.filter(target => target.source_entity === 'ASK_Question' && target.source_id === question.id)
-target = targets.filter(target => target.sp_type === ask_question_push)
+target = targets.filter(target => target.sp_type === 'ask_question_push')
 assert(target.length === 1) // 一定有一個，且只有一個符合條件的target
 target = target[0]
 ```
