@@ -185,7 +185,13 @@ NO
 POST /ask/questions
 ```
 
-### Push a question
+### Auth
+- `citizen`
+
+### Paging
+NO
+
+## Push a question
 ```
 POST /ask/questions/:id/push
 ```
