@@ -1,11 +1,11 @@
 # Match of ASK
 
-- [List matches](#list-matches)
-- [Get a single match](#get-a-single-match)
+- [List matches of a game](#list-matches-of-a-game)
+- [Get a single match of a game](#get-a-single-match-of-a-game)
 
-## List matches
+## List matches of a game
 ```
-GET /ask/matches
+GET /ask/games/:gameSlug/matches
 ```
 
 ### Auth
@@ -80,9 +80,9 @@ NO
 }
 ```
 
-## Get a single match
+## Get a single match of a game
 ```
-GET /ask/matches/:id
+GET /ask/games/:gameSlug/matches/:matchSlug
 ```
 
 ### Auth
