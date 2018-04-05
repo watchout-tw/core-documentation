@@ -27,7 +27,7 @@ NO
   handle
   album_id
   persona_id
-  personas: [ // 所有persona
+  personas: [ // 這個citizen的所有persona
     {
       id
       type
