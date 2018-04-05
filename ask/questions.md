@@ -197,7 +197,7 @@ NO
 | `topic` | integer | 🌕 | 與此問題相關連的topic ID |
 | `image` | string | 🌑 | 此問題的封面圖片連結 |
 | `title` | string | 🌕 | 此問題的標題 |
-| `content` | string | 🌕 | 此問題的內容 |
+| `content` | string | 🌑 | 此問題的內容 |
 | `references` | JSON | 🌑 | 此問題的參考資料 |
 | `data` | JSON | 🌑 | 此問題的其他資訊 |
 | `assigned_personas` | array of integers: persona IDs | 🌑 | 指定回答此問題的persona ID列表 |
