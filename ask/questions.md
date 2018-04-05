@@ -182,43 +182,39 @@ NO
 POST /ask/questions
 ```
 
-### Input
-
-| Key | Type | Required | Description |
-| --- | --- | --- | --- |
-| `type` | string | 🌑 | "type" |
-| `game_id` | integer | 🌑 | 與此 question 相關連的 game |
-| `topic_id` | integer | 🌑 | 與此 question 相關連的 topic |
-| `image` | string | 🌑 | 此 question的封面圖片連結 |
-| `title` | string | 🌑 | 此 question 的標題 |
-| `content` | string | 🌑 | 此 question 的內容 |
-| `references` | json | 🌑 | 其他關聯 |
-| `chatroom_id` | integer | 🌑 | 此 question 的聊天室ID |
-| `data` | json | 🌑 | 其他補充資訊 |
-
-### Sample input
-
-```json
-{
-  "type": "type",
-  "game_id": 1,
-  "topic_id" : 1,
-  "image", "https://i.waa.tw/gUYUdY.png"
-  "title": "青年失業問題該如何解決？",
-  "content": "Question. Question. Lorem ipsum. Lorem ipsum.",
-  "references" : null,
-  "chatroom_id" : 1,
-  "data" : null
-}
-```
-
-
-
 ### Auth
 - `citizen`
 
 ### Paging
 NO
+
+### Input
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `type` | string | 🌑 | 問題類型 |
+| `game` | integer | 🌕 | 此問題所屬的game ID |
+| `topic` | integer | 🌕 | 與此問題相關連的topic ID |
+| `image` | string | 🌑 | 此問題的封面圖片連結 |
+| `title` | string | 🌕 | 此問題的標題 |
+| `content` | string | 🌕 | 此問題的內容 |
+| `references` | JSON | 🌑 | 此問題的參考資料 |
+| `data` | JSON | 🌑 | 此問題的其他資訊 |
+| `assigned_personas` | array of integers: persona IDs | 🌑 | 指定回答此問題的persona ID列表 |
+
+### Sample input
+
+```json
+{
+  "type": "default",
+  "game": 1,
+  "topic": 1,
+  "image": "https://i.waa.tw/gUYUdY.png",
+  "title": "青年失業問題該如何解決？",
+  "content": "據主計處2017年7月份統計資料20-24歲青年失業率高達14.67%，也就代表每8個年輕人就有1位是屬失業狀態的。人力銀行分析其原因，主要為二：台灣的低薪環境、勞動環境惡劣；若再將30歲以下失業率計算進去，總數超過20萬人，比例已占全台近半失業率，這難道不是政府與企業該重視的警訊嗎？",
+  "assigned_personas": [1, 2, 3]
+}
+```
 
 ## Push a question
 ```
