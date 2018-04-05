@@ -173,12 +173,46 @@ NO
 NO
 
 ### Response
+
 > 與[List questions](#list-questions)中的Question object格式相同
 
 ## Create a question
+
 ```
 POST /ask/questions
 ```
+
+### Input
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| `type` | string | 🌑 | "type" |
+| `game_id` | integer | 🌑 | 與此 question 相關連的 game |
+| `topic_id` | integer | 🌑 | 與此 question 相關連的 topic |
+| `image` | string | 🌑 | 此 question的封面圖片連結 |
+| `title` | string | 🌑 | 此 question 的標題 |
+| `content` | string | 🌑 | 此 question 的內容 |
+| `references` | json | 🌑 | 其他關聯 |
+| `chatroom_id` | integer | 🌑 | 此 question 的聊天室ID |
+| `data` | json | 🌑 | 其他補充資訊 |
+
+### Sample input
+
+```json
+{
+  "type": "type",
+  "game_id": 1,
+  "topic_id" : 1,
+  "image", "https://i.waa.tw/gUYUdY.png"
+  "title": "青年失業問題該如何解決？",
+  "content": "Question. Question. Lorem ipsum. Lorem ipsum.",
+  "references" : null,
+  "chatroom_id" : 1,
+  "data" : null
+}
+```
+
+
 
 ### Auth
 - `citizen`
