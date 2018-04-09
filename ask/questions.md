@@ -212,21 +212,47 @@ POST /ask/questions
 }
 ```
 
-
-
 ### Auth
+
 - `citizen`
 
 ### Paging
+
 NO
 
 ## Push a question
+
 ```
 POST /ask/questions/:id/push
 ```
 
 ### Auth
+
 - `citizen` AND `with_info`
 
 ### Paging
+
 NO
+
+### Response
+
+> 與[Get a single question](#get-a-single-question)中的Question object格式相同
+
+### Response if target "persona_speech_target" is missng
+
+``` json
+{
+  "statusCode": 400,
+  "error": "Bad Request",
+  "message": "THE_PERSONA_SPEECH_TARGET_OF_QUESTION_IS_MISSING"
+}
+```
+### Response if push limit exceeded
+
+``` json
+{
+	"statusCode": 400,
+	"error": "Bad Request",
+	"message": "PUSH_LIMIT_EXCEEDED"
+}
+```
