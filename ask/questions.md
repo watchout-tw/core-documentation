@@ -255,8 +255,8 @@ NO
 
 ``` json
 {
-	"statusCode": 400,
-	"error": "Bad Request",
-	"message": "PUSH_LIMIT_EXCEEDED"
+  "statusCode": 400,
+  "error": "Bad Request",
+  "message": "PUSH_LIMIT_EXCEEDED"
 }
 ```
