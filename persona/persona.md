@@ -28,7 +28,7 @@ NO
       topic_id
     }
     ...
-  ],
+  ]
   latest_status_update: { // [1]
     content
     data: {}
