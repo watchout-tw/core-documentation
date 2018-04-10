@@ -6,7 +6,7 @@ GET /park/persona_speech_targets
 ```
 
 ### Auth
-- “citizen”
+- “editor”
 
 ### Paging
 NO
