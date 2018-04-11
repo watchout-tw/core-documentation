@@ -38,11 +38,15 @@
 
 ## 人格 Persona
 
-### 人格資訊
+### 個人
 - [/persona](./persona/persona) 🌿
 
-### 言論
+### 個人言論
 - [/persona/speeches](./persona/speeches) 🌿
+
+### 公開資訊
+- [/personas/:id](./personas/personas) 🌿
+- [/personas/:id/summary](./personas/summary) 🌿
 
 ## 中央公園 Park
 

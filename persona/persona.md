@@ -1,5 +1,8 @@
 # Persona
 
+- [Get active persona](#get-active-persona)
+- [Update active persona](#update-active-persona)
+
 ## Get active persona
 ```
 GET /persona
