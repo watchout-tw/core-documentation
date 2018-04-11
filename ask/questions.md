@@ -25,7 +25,11 @@ YES
 | `q` | string | 用關鍵字過濾問題清單 `[1]` | exact | `殭屍` |
 | `topics` | array of integers: topic IDs | 用議題過濾問題清單 | 任一即可 | `[1, 2, 3]` |
 | `statuses` | array of strings: statuses `[2]` | 用「狀態」過濾問題清單 | 全部符合 | `["keep_pushing", "expect_answers"]` |
-| `have_pushed` | integer | 用「是否已連署」過濾問題清單 | exact | `0` OR `1` |
+| `personas` | array of integers: persona IDs | 用提問者的persona過濾答案清單 | 任一即可 | `[1, 2, 3]` |
+| `me_push` | integer | 是否有被active_persona連署？ | exact | `1` |
+| `me_assigned` | integer | active_persona有被指定回答嗎？ | exact | `1` |
+| `me_answered` | integer | 是否有被active_persona回答？ | exact | `1` |
+| `answered` | integer | 是否有被任意一個persona回答？ | exact | `1` |
 | `order_by` | string `[3]` | 問題排序 | exact | `start_date` |
 
 `[1]`

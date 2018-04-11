@@ -23,7 +23,7 @@ YES
 | `q` | string | 用關鍵字過濾答案清單 `[1]` | exact | `殭屍` |
 | `topics` | array of integers: topic IDs | 用原始問題的議題過濾答案清單 | 任一即可 | `[1, 2, 3]` |
 | `personas` | array of integers: persona IDs | 用回答者的persona過濾答案清單 | 任一即可 | `[1, 2, 3]` |
-| `have_reviewed` | integer | 用「是否已評分」過濾答案清單 | exact | `0` OR `1` |
+| `me_reviewed` | integer | 是否有被active_persona評分？ | exact | `0` OR `1` |
 | `order_by` | string `[2]` | 答案排序 | exact | `date` |
 
 `[1]`

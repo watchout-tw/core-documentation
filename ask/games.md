@@ -32,6 +32,10 @@ NO
       index
       data: {}
       players: []
+      summary: {
+        question_count // [1]
+        answer_count // [2]
+      }
     }
     ...
   ]
@@ -66,8 +70,18 @@ NO
   index
   data: {}
   players: []
+  summary: {
+    question_count // [1]
+    answer_count // [2]
+  }
   matches: [
     *matchObject*
   ]
 }
 ```
+
+`[1]`
+> 屬於這個game的問題數量
+
+`[2]`
+> 屬於這個game的問題的答案數量
