@@ -51,7 +51,7 @@ question.target = targets[0]
 
 `keep_pushing`
 ```js
-Now.time <= Question.target.start_date
+Now.time <= Question.target.end_date
 ```
 
 `expect_answers`
@@ -61,7 +61,7 @@ Question.push.count >= Question.data.threshold
 
 `failed`
 ```js
-Now.time > Question.target.start_date && Question.push.count < Question.data.threshold
+Now.time > Question.target.end_date && Question.push.count < Question.data.threshold
 ```
 
 `[3]`
