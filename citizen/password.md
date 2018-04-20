@@ -81,7 +81,7 @@ POST /citizen/reset_password
 
 ### Auth
 
-NO
+YES (The token from reset_password URL)
 
 ### Paging
 
