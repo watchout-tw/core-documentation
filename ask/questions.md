@@ -26,9 +26,9 @@ YES
 | `topics` | array of integers: topic IDs | 用議題過濾問題清單 | 任一即可 | `[1, 2, 3]` |
 | `statuses` | array of strings: statuses `[2]` | 用「狀態」過濾問題清單 | 全部符合 | `["keep_pushing", "expect_answers"]` |
 | `personas` | array of integers: persona IDs | 用提問者的persona過濾答案清單 | 任一即可 | `[1, 2, 3]` |
-| `me_push` | integer | 是否有被active_persona連署？ | exact | `1` |
-| `me_assigned` | integer | active_persona有被指定回答嗎？ | exact | `1` |
-| `me_answered` | integer | 是否有被active_persona回答？ | exact | `1` |
+| `me_pushed` | integer | 是否有被active_persona連署？ | exact | `1` |
+| `assigned_to` | integer: persona ID | 某persona是否有被指定回答？ | exact | `42` |
+| `answered_by` | integer: persona ID | 是否有被某個persona回答？ | exact | `42` |
 | `answered` | integer | 是否有被任意一個persona回答？ | exact | `1` |
 | `order_by` | string `[3]` | 問題排序 | exact | `start_date` |
 
@@ -51,7 +51,7 @@ question.target = targets[0]
 
 `keep_pushing`
 ```js
-Now.time <= Question.target.start_date
+Now.time <= Question.target.end_date
 ```
 
 `expect_answers`
@@ -61,7 +61,7 @@ Question.push.count >= Question.data.threshold
 
 `failed`
 ```js
-Now.time > Question.target.start_date && Question.push.count < Question.data.threshold
+Now.time > Question.target.end_date && Question.push.count < Question.data.threshold
 ```
 
 `[3]`
