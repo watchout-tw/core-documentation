@@ -116,3 +116,45 @@ NO
 
 ### Response
 > 與[List answers](#list-answers)中的Answer object格式相同
+
+## Create a answer
+
+```
+POST /ask/answers
+```
+
+### Auth
+YES
+- `citizen` && `guest` `[1]`
+
+### Paging
+NO
+
+### Input
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `type` | string | 🌑 | 答案類型 |
+| `question` | integer | 🌕 | 此答案所屬的 question ID |
+| `persona` | integer | 🌕 | 回答此答案的候選人 persona ID |
+| `image` | string | 🌑 | 此答案的封面圖片連結 |
+| `content` | string | 🌕 | 此答案的內容 |
+| `references` | JSON | 🌑 | 此問題的參考資料 |
+| `data` | JSON | 🌑 | 此問題的其他資訊 |
+
+### Sample input
+
+```json
+{
+  "type": "default",
+  "question": 1,
+  "persona": 200,
+  "image": "https://i.waa.tw/gUYUdY.png",
+  "content": "據主計處2017年7月份統計資料20-24歲青年失業率高達14.67%，也就代表每8個年輕人就有1位是屬失業狀態的。人力銀行分析其原因，主要為二：台灣的低薪環境、勞動環境惡劣；若再將30歲以下失業率計算進去，總數超過20萬人，比例已占全台近半失業率，這難道不是政府與企業該重視的警訊嗎？",
+  "references": {},
+  "data": {}
+}
+```
+
+`[1]`
+> 所有此 Game 的 Guest 都可以回答此問題
