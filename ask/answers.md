@@ -158,3 +158,46 @@ NO
 
 `[1]`
 > 所有此 Game 的 Guest 都可以回答此問題
+
+## Review an answer
+
+```
+POST /ask/answers/:id/review
+```
+
+### Auth
+
+- `citizen` AND `with_info`
+
+### Paging
+
+NO
+
+### Input
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `rate` | integer | 🌕 | 我對此答案的評分 |
+
+### Response
+
+> 與[Get a single answer](#get-a-single-answer)中的 Answer object 格式相同
+
+#### Speech target missing
+
+``` json
+{
+  "statusCode": 400,
+  "error": "Bad Request",
+  "message": "SPEECH_TARGET_MISSING"
+}
+```
+#### Review limit exceeded
+
+``` json
+{
+  "statusCode": 400,
+  "error": "Bad Request",
+  "message": "REVIEW_LIMIT_EXCEEDED"
+}
+```
