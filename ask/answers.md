@@ -2,6 +2,8 @@
 
 - [List answers](#list-answers)
 - [Get a single answer](#get-a-single-answer)
+- [Create an answer](#create-an-answer)
+- [Review an answer](#review-an-answer)
 
 ## List answers
 ```
@@ -117,7 +119,7 @@ NO
 ### Response
 > 與[List answers](#list-answers)中的Answer object格式相同
 
-## Create a answer
+## Create an answer
 
 ```
 POST /ask/answers
