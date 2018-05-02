@@ -220,14 +220,6 @@ NO
 }
 ```
 
-### Auth
-
-- `citizen`
-
-### Paging
-
-NO
-
 ## Push a question
 
 ```
