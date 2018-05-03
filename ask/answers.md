@@ -56,7 +56,7 @@ YES
         end_date
         start_date
         game_summary: {
-          answer_score_average // [1]
+          answer_review_average // [1]
         }
       }
       question: {}
@@ -118,7 +118,7 @@ YES
 > **以目前 active persona 為發言人**，以`[1]`所列任一 Persona_Speech_Target 為 target 的Persona_Speech 列表；權限不足則無此項目
 
 `[4]`
-> 所有以`[2]`所列 target 中任一為 target，且 type 為 ask_answer_review的Persona_Speech 數目
+> 所有以`[2]`所列 target 中任一為 target，且 type 為 ask_answer_review 的 Persona_Speech 數目
 
 `[5]`
 > `[4]`所列的 Persona_Speech 取 content 平均值，也就是這個 A 的平均評分
@@ -130,13 +130,13 @@ GET /ask/answers/:id
 
 ### Auth
 NO
-> `persona_speeches`需要是“citizen” AND “self”；權限不足則無此項目
+> `persona_speeches`需要是 “citizen” AND “self”；權限不足則無此項目
 
 ### Paging
 NO
 
 ### Response
-> 與[List answers](#list-answers)中的Answer object格式相同
+> 與[List answers](#list-answers)中的 Answer object 格式相同
 
 ## Create an answer
 ```
