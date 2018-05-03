@@ -76,11 +76,11 @@ NO
 | --- | --- | :---: | --- |
 | `status` | string | 🌑 | 此答案的狀態 |
 | `slug` | string | 🌑 | 此答案的短網址 |
-| `persona` | integer: persona ID |
+| `persona` | integer: persona ID | 🌕 | 回答此答案的 Persona ID |
 | `question` | integer: question ID | 🌕 | 此答案所屬的問題 ID |
 | `index` | integer | 🌑 | 此答案排序 |
 | `image` | string | 🌑 | 此答案的封面圖片連結 |
-| `content` | string | 🌑 | 此答案的內容 |
+| `content` | string | 🌕 | 此答案的內容 |
 | `references` | JSON | 🌑 | 此答案的參考資料 |
 | `data` | JSON | 🌑 | 此答案的其他資訊 |
 
