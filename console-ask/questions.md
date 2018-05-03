@@ -42,6 +42,12 @@ YES
         *personaObject*
         ...
       ]
+      persona_speech_targets: [
+        *personaSpeechTargetObject*
+      ]
+      push: {
+        count
+      }
     }
     ...
   ]
