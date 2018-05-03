@@ -118,6 +118,11 @@
 ### 數據分析報告
 - [/lab/data_reports](./lab/data_reports) 🌿
 
+## 中控室／給問擂台 Console-Ask
+
+- [/console/ask/questions](./console-ask/questions) 🌳
+- [/console/ask/answers](./console-ask/answers) 🌳
+
 ## 中控室／內容組成 Console-Composition
 
 - [/console/comp/timelines](./console-comp/timelines) 🌿
