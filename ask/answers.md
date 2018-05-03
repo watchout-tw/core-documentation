@@ -42,14 +42,30 @@ YES
       id
       status
       slug
-      persona: {}
+      persona: {
+        id
+        data
+        name
+        type
+        title
+        avatar: {
+          id
+          type
+        }
+        status
+        end_date
+        start_date
+        game_summary: {
+          answer_score_average // [1]
+        }
+      }
       question: {}
       index
       image
       content
       references: []
       data: {}
-      persona_speech_targets: [ // [1]
+      persona_speech_targets: [ // [2]
         {
           id
           type
@@ -63,7 +79,7 @@ YES
         }
         ...
       ]
-      persona_speeches: [ // [2]
+      persona_speeches: [ // [3]
         {
           id
           target_id
@@ -75,8 +91,8 @@ YES
         ...
       ]
       review: {
-        count // [3]
-        average // [4]
+        count // [4]
+        average // [5]
       }
     }
     ...
@@ -93,16 +109,19 @@ YES
 ```
 
 `[1]`
-> 以這個A為source的Persona_Speech_Target列表
+> 回答這個答案的候選人，在所有他回答過的問題中，分數的平均值。Ex: xxx 回答過 3 個問題得到 4.9, 3, 2，answer_score_average = (4.9+3+2)/3
 
 `[2]`
-> **以目前active persona為發言人**，以`[1]`所列任一Persona_Speech_Target為target的Persona_Speech列表；權限不足則無此項目
+> 以這個 A 為 source 的 Persona_Speech_Target 列表
 
 `[3]`
-> 所有以`[1]`所列target中任一為target，且type為ask_answer_review的Persona_Speech數目
+> **以目前 active persona 為發言人**，以`[1]`所列任一 Persona_Speech_Target 為 target 的Persona_Speech 列表；權限不足則無此項目
 
 `[4]`
-> `[3]`所列的Persona_Speech取content平均值，也就是這個A的平均評分
+> 所有以`[2]`所列 target 中任一為 target，且 type 為 ask_answer_review的Persona_Speech 數目
+
+`[5]`
+> `[4]`所列的 Persona_Speech 取 content 平均值，也就是這個 A 的平均評分
 
 ## Get a single answer
 ```
