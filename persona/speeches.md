@@ -85,6 +85,26 @@ NO
 | content | string | 言論內容 |
 | data | object | 資料 |
 
+### 言論類型與內容、資料格式規範
+
+#### `ballot`
+- `content`為姓名的字串
+- `data`為`NULL`
+
+#### `ask_question_push`
+- `content`為`1`的數字字串
+- `data`為`NULL`
+
+#### `ask_answer_review`
+- `content`為`1`-`5`的數字字串
+- `data`為`NULL`
+
+#### `musou_line_chart_response`
+- `content`為`NULL`
+- `data`為response data object，格式如下
+
+> 格式待補
+
 ### Sample input
 ```json
 {
