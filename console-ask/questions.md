@@ -3,6 +3,7 @@
 - [List questions](#list-questions)
 - [Get a single question](#get-a-single-question)
 - [Update a question](#update-a-question)
+- [Remove a question](#remove-a-question)
 
 ## List questions
 ```
@@ -120,3 +121,25 @@ NO
   "assigned_personas": [1, 2, 3]
 }
 ```
+
+## Remove a question
+```
+DELETE /console/ask/questions/:id
+```
+
+### Auth
+- `editor`
+
+### Paging
+NO
+
+### 行為
+在`status`欄位標示`removed`
+
+### 相關需要一併標示移除的資源及其關聯欄位
+
+| 相關資源 | 關聯欄位 | 備註 |
+| --- | --- | --- |
+| `ASK_Question_Assigned_Persona` | `question_id` |
+| `ASK_Answer` | `question_id` |
+| `Persona_Speech_Target` | `source_entity` & `source_id` | `source_entity`為`ASK_Question`且`source_id`與移除目標的id相符 |
