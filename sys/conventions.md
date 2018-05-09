@@ -1,4 +1,4 @@
-# 系統設計原則
+# 系統設計通則
 
 - 所有的`data`欄位都是object
 - 所有的`editor`欄位都是`Citizen.id`
