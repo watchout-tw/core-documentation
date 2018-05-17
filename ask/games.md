@@ -15,33 +15,7 @@ NO
 NO
 
 ### Response
-```
-{
-  rows: [
-    {
-      id
-      status
-      slug
-      year
-      type
-      battlefield
-      title
-      before_title
-      after_title
-      image
-      index
-      data: {}
-      players: []
-      summary: {
-        question_count // [1]
-        answer_count // [2]
-      }
-    }
-    ...
-  ]
-  totalRowCount
-}
-```
+`請參照 /console/ask/games`
 
 ## Get a single game BY SLUG
 ```
@@ -55,33 +29,4 @@ NO
 NO
 
 ### Response
-```
-{
-  id
-  status
-  slug
-  year
-  type
-  battlefield
-  title
-  before_title
-  after_title
-  image
-  index
-  data: {}
-  players: []
-  summary: {
-    question_count // [1]
-    answer_count // [2]
-  }
-  matches: [
-    *matchObject*
-  ]
-}
-```
-
-`[1]`
-> 屬於這個game的問題數量
-
-`[2]`
-> 屬於這個game的問題的答案數量
+`請參照 /console/ask/games/:slug`
