@@ -149,6 +149,33 @@ NO
 | `data` | JSON | 🌑 |  |
 | `collaborators` | array of integers: persona IDs | 🌑 | 此事件的共同舉辦 persona |
 
+### Sample input
+
+```json
+{
+  "id": 1,
+  "status": "active",
+  "slug": "2018-livestream",
+  "type": "ask-match",
+  "category": ['livestream'],
+  "image": "http://blalbal",
+  "tagline": "你問我我問誰？",
+  "title": "體育署長給問嗎？直播",
+  "before_title": "",
+  "after_title": "",
+  "description": "不然你來問問看嘛！",
+  "start_date": "2018-01-01",
+  "end_date": "2019-02-03",
+  "is_all_day": 1,
+  "location": {},
+  "repeat_rules": { "id": 1 },
+  "next_actions": {},
+  "documentation": {},
+  "related_content": {},
+  "data": {}
+}
+```
+
 ## Update an event
 ```
 PATCH /park/events/:id
