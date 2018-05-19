@@ -7,7 +7,7 @@
 
 ## List events
 ```
-GET /park/events
+GET /console/park/events
 ```
 
 ### Auth
@@ -64,7 +64,7 @@ NO
 
 ## Get a single event
 ```
-GET /park/events/:id
+GET /console/park/events/:id
 ```
 
 ### Auth
@@ -115,7 +115,7 @@ NO
 
 ## Create an event
 ```
-POST /park/events
+POST /console/park/events
 ```
 
 ### Auth
@@ -178,7 +178,7 @@ NO
 
 ## Update an event
 ```
-PATCH /park/events/:id
+PATCH /console/park/events/:id
 ```
 
 ### Auth
