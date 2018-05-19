@@ -131,7 +131,7 @@ PATCH /console/ask/games/:gameSlug
 ### Paging
 NO
 
-> 參考 [Create an game](#create-an-game)
+> 參考 [Create a game](#create-a-game)
 
 `[1]`
 > 屬於這個game的問題數量
