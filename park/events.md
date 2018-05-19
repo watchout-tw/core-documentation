@@ -157,7 +157,7 @@ NO
   "status": "active",
   "slug": "2018-livestream",
   "type": "ask-match",
-  "category": ['livestream'],
+  "category": ["livestream"],
   "image": "http://blalbal",
   "tagline": "你問我我問誰？",
   "title": "體育署長給問嗎？直播",
