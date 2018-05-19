@@ -117,8 +117,8 @@ NO
 | `battlefield` | string | 🌕 | 此給問的戰場（地點或議題） |
 | `image` | string | 🌑 | 此給問的封面圖片連結 |
 | `index` | integer | 🌑 | 此給問排序 |
-| `players` | array of integers: persona IDs  | 🌕 | 參與此給問的玩家 |
-| `matches` | array of integers: event IDs  | 🌕 | 此給問的所有活動 |
+| `players` | array of integers: persona IDs  | 🌑 | 參與此給問的玩家 |
+| `matches` | array of integers: event IDs  | 🌑 | 此給問的所有活動 |
 
 ## Update a game BY SLUG
 ```
