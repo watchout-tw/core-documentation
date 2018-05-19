@@ -187,4 +187,4 @@ PATCH /park/events/:id
 ### Paging
 NO
 
-> 參考 [Create a event](#create-a-event)
+> 參考 [Create an event](#create-an-event)
