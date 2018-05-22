@@ -2,8 +2,8 @@
 
 - [List games](#list-games)
 - [Get a single game BY SLUG](#get-a-single-game-BY-SLUG)
-- [Create an game](#create-an-game)
-- [Update an game](#update-an-game-by-slug)
+- [Create an game](#create-a-game)
+- [Update an game](#update-a-game-by-slug)
 
 ## List games
 ```
