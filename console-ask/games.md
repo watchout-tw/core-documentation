@@ -95,6 +95,12 @@ NO
 }
 ```
 
+`[1]`
+> 屬於這個 game 的問題數量
+
+`[2]`
+> 屬於這個 game 的問題的答案數量
+
 ## Create a game
 ```
 POST /console/ask/games
@@ -110,15 +116,40 @@ NO
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
-| `status` | string | 🌑 | 此給問的狀態 |
-| `slug` | string | 🌕 | 此給問的短網址 |
-| `year` | integer | 🌕 | 給問的年份 |
-| `type` | string | 🌕 | 此給問的類型，如 mayer, topic |
-| `battlefield` | string | 🌕 | 此給問的戰場（地點或議題） |
-| `image` | string | 🌑 | 此給問的封面圖片連結 |
-| `index` | integer | 🌑 | 此給問排序 |
-| `players` | array of integers: persona IDs  | 🌑 | 參與此給問的玩家 |
-| `matches` | array of integers: event IDs  | 🌑 | 此給問的所有活動 |
+| `status` | String | 🌑 | 此給問的狀態 |
+| `slug` | String | 🌕 | 此給問的短網址 |
+| `year` | Integer | 🌕 | 給問的年份 |
+| `type` | String | 🌕 | 此給問的類型，如 mayor, topic |
+| `battlefield` | String | 🌕 | 此給問的戰場（地點或議題） |
+| `title` | String | 🌑 | 此給問的標題 |
+| `before_title` | String | 🌑 | 此給問的 before_title |
+| `after_title` | String | 🌑 | 此給問的 after_title |
+| `image` | String | 🌑 | 此給問的封面圖片連結 |
+| `index` | Integer | 🌑 | 此給問排序 |
+| `data` | Object | 🌑 | 此給問的其它資訊 |
+| `players` **[3]** | Array of objects: personas | 🌑 | 參與此給問的玩家 |
+| `matches` **[4]** | Array of objects: matches | 🌑 | 此給問的所有活動 |
+
+`[3]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `id` | Integer | 🌕 | 此玩家的 Persona ID |
+| `status` | String | 🌑 | 此玩家在此給問的狀態 |
+| `type` | String | 🌑 | 此玩家在此給問的類型 |
+| `index` | String | 🌑 | 此玩家在此給問的排序 |
+| `data` | Object | 🌑 | 此玩家的其它資訊 |
+
+`[4]`
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `id` | Integer | 🌕 | 此給問活動的 Event ID |
+| `slug` | String | 🌑 | 此給問活動的短網址 |
+| `status` | String | 🌑 | 此給問活動的狀態 |
+| `type` | String | 🌑 | 此給問活動的類型 |
+| `index` | String | 🌑 | 此活動在此給問的排序 |
+| `data` | Object | 🌑 | 此給問活動的其它資訊 |
 
 ## Update a game BY SLUG
 ```
@@ -132,9 +163,3 @@ PATCH /console/ask/games/:gameSlug
 NO
 
 > 參考 [Create a game](#create-a-game)
-
-`[1]`
-> 屬於這個game的問題數量
-
-`[2]`
-> 屬於這個game的問題的答案數量
