@@ -81,7 +81,7 @@ NO
 | `index` | integer | 🌑 | 此答案排序 |
 | `image` | string | 🌑 | 此答案的封面圖片連結 |
 | `content` | string | 🌕 | 此答案的內容 |
-| `references` | JSON | 🌑 | 此答案的參考資料 |
+| `references` | array of objects (JSON) | 🌑 | 此答案的參考資料 |
 | `data` | JSON | 🌑 | 此答案的其他資訊 |
 
 ## Update an answer
