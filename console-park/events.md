@@ -14,7 +14,7 @@ GET /console/park/events
 NO
 
 ### Paging
-NO
+YES
 
 ### Response
 ```
@@ -59,6 +59,13 @@ NO
     ...
   ]
   totalRowCount
+  paging: {
+    pages
+    pageSize
+    previous
+    next
+    page
+  }
 }
 ```
 
