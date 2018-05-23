@@ -103,7 +103,7 @@ NO
 | `image` | string | 🌑 | 此問題的封面圖片連結 |
 | `title` | string | 🌕 | 此問題的標題 |
 | `content` | string | 🌑 | 此問題的內容 |
-| `references` | JSON | 🌑 | 此問題的參考資料 |
+| `references` | array of strings (JSON) | 🌑 | 此問題的參考資料 |
 | `chatroom` | string: chatroom ID |  🌑 | 此問題的聊天室ID |
 | `data` | JSON | 🌑 | 此問題的其他資訊 |
 | `assigned_personas` | array of integers: persona IDs | 🌑 | 指定回答此問題的persona ID列表 |
