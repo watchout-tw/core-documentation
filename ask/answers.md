@@ -189,7 +189,7 @@ NO
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
-| `rate` | integer | 🌕 | 我對此答案的評分 |
+| `score` | integer | 🌕 | 我對此答案的評分 |
 
 ### Response
 
