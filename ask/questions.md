@@ -24,7 +24,7 @@ YES
 | `game` | string | 用game slug過濾問題清單 | exact | `2018-taipei` |
 | `q` | string | 用關鍵字過濾問題清單 `[1]` | exact | `殭屍` |
 | `topics` | array of integers: topic IDs | 用議題過濾問題清單 | 任一即可 | `[1, 2, 3]` |
-| `statuses` | array of strings: statuses `[2]` | 用「狀態」過濾問題清單 | 全部符合 | `["keep_pushing", "expect_answers"]` |
+| `statuses` | array of strings: statuses `[2]` | 用「狀態」過濾問題清單 | 任一即可 | `["keep_pushing", "expect_answers"]` |
 | `personas` | array of integers: persona IDs | 用提問者的persona過濾答案清單 | 任一即可 | `[1, 2, 3]` |
 | `me_pushed` | integer | 是否有被active_persona連署？ | exact | `1` |
 | `assigned_to` | integer: persona ID | 某persona是否有被指定回答？ | exact | `42` |
@@ -123,20 +123,8 @@ Now.time > Question.target.end_date && Question.push.count < Question.data.thres
         count // [4]
       }
       answers: [
-        {
-          id
-          status
-          slug
-          persona: {}
-          index
-          image
-          content
-          references: [
-            {}
-            ...
-          ]
-          data: {}
-        }
+        {} // 完整的answerObject
+        ...
       ]
     }
     ...
