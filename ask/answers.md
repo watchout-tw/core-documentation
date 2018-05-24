@@ -59,7 +59,7 @@ YES
           answer_review_average // [1]
         }
       }
-      question: {}
+      question: {} // 完整的questionObject
       index
       image
       content
