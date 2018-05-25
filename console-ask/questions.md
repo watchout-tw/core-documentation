@@ -28,8 +28,8 @@ YES
       persona: {}
       game: {}
       index
+      topic
       topic_type
-      topic_id
       image
       title
       content
@@ -37,7 +37,7 @@ YES
         {}
         ...
       ]
-      chatroom_id
+      chatroom
       data: {}
       assigned_personas: [
         *personaObject*
