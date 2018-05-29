@@ -62,8 +62,9 @@
 
 ## 給問擂台 Ask
 
-### Games & Matches
+### Games & Matches & Statistics
 - [/ask/games](./ask/games) 🌿
+- [/ask/games/stats](./ask/games/stats)
 - [/ask/matches](./ask/matches) 🌿
 
 ### Questions & Answers
