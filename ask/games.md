@@ -48,7 +48,7 @@ NO
 ```
 {
   id
-  game_id
+  game // game ID
   push_threshold
   push_duration
   data: {} // JSON object
