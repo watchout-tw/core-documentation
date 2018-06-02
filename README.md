@@ -64,7 +64,7 @@
 
 ### Games & Matches & Statistics
 - [/ask/games](./ask/games) 🌿
-- [/ask/games/stats](./ask/games/stats)
+- [/ask/games/stats](./ask/stats)
 - [/ask/matches](./ask/matches) 🌿
 
 ### Questions & Answers
@@ -123,6 +123,11 @@
 
 - [/console/ask/questions](./console-ask/questions) 🌳
 - [/console/ask/answers](./console-ask/answers) 🌳
+
+## 中控室／中央公園 Console-Park
+
+- [/console/park/events](./console-park/events)🌳
+- [/console/park/topics](./console-park/topics)🌳
 
 ## 中控室／內容組成 Console-Composition
 
