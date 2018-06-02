@@ -23,7 +23,7 @@ NO
 
 ## Get review average of each guest
 ```
-GET /game/:slug/stats/guest_review_average
+GET /ask/game/:slug/stats/guest_review_average
 ```
 
 ### Auth
@@ -44,7 +44,7 @@ NO
 
 ## Get review average grouped by topic of each guest
 ```
-GET /game/:slug/stats/guest_topic_review_average
+GET /ask/game/:slug/stats/guest_topic_review_average
 ```
 
 ### Auth
@@ -71,7 +71,7 @@ NO
 
 ## Get number of answered question of each guest
 ```
-GET /game/:slug/stats/guest_answered_questions
+GET /ask/game/:slug/stats/guest_answered_questions
 ```
 
 ### Auth
