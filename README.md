@@ -53,6 +53,9 @@
 ### 議題
 - [/park/topics](./park/topics) 🌳
 
+### 事件
+- [/park/events](./park/events) 🌳
+
 ### 民調
 - [/park/polls](./park/polls) 🌿
 
@@ -126,8 +129,8 @@
 
 ## 中控室／中央公園 Console-Park
 
-- [/console/park/events](./console-park/events)🌳
-- [/console/park/topics](./console-park/topics)🌳
+- [/console/park/events](./console-park/events) 🌳
+- [/console/park/topics](./console-park/topics) 🌳
 
 ## 中控室／內容組成 Console-Composition
 
