@@ -159,7 +159,8 @@ NO
           type
           persona: {} // simplifiedPersonaObject
           topic_type
-          topic_id  
+          topic_id
+          topic_title
           title
           content
           data: {} // threshold is here
