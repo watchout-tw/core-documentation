@@ -47,6 +47,7 @@
 ### 公開資訊
 - [/personas/:id](./personas/personas) 🌿
 - [/personas/:id/summary](./personas/summary) 🌿
+- [/personas/:id/ask/*](./personas/ask) 🌿
 
 ## 中央公園 Park
 
