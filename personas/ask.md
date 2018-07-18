@@ -1,8 +1,8 @@
 # Public info of a persona under ASK
 
-## Selected questions
+## Marked questions
 ```
-GET /personas/:id/ask/selected_questions
+GET /personas/:id/ask/marked_questions
 ```
 
 ### Auth
