@@ -106,6 +106,26 @@ GET /citizen/:handle/emails/:emailID/confirm_verification/:token
 ### Paging
 NO
 
+### Response
+
+200 ok
+
+```JSON
+{ 
+  "message" : "EMAIL_VERIFY_SUCCESS",
+  "email": "{email}"
+}
+```
+
+401 unauthorized
+
+```JSON
+{ 
+  "statusCode" : 401,
+  "message": "EMAIL_VERIFY_FAILED"
+}
+```
+
 ## Set visibility
 ```
 PATCH /citizen/:handle/emails/:emailID/visibility
