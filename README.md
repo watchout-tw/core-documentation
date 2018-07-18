@@ -47,6 +47,7 @@
 ### 公開資訊
 - [/personas/:id](./personas/personas) 🌿
 - [/personas/:id/summary](./personas/summary) 🌿
+- [/personas/:id/ask/*](./personas/ask) 🌿
 
 ## 中央公園 Park
 
@@ -65,9 +66,9 @@
 
 ## 給問擂台 Ask
 
-### Games & Matches & Statistics
+### Games, Matches & Statistics
 - [/ask/games](./ask/games) 🌿
-- [/ask/games/stats](./ask/stats)
+- [/ask/games/:gameSlug/stats/*](./ask/stats)
 - [/ask/matches](./ask/matches) 🌿
 
 ### Questions & Answers
