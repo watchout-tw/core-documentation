@@ -9,7 +9,9 @@ NO
 ### Paging
 NO
 
-### Input
+### Login with handle or email
+
+#### Input
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
@@ -19,6 +21,45 @@ NO
 
 `[1]`
 > `handle`或`email`必須擇一
+
+#### Sample Input
+
+```json
+{
+  "handle": "watchout",
+  "password": "password"
+}
+```
+
+Or
+
+```json
+{
+  "email": "user@watchout.tw",
+  "password": "password"
+}
+```
+
+### Login with token
+
+#### Input
+
+| Key | Type | Required | Description |
+| --- | --- | :---: | --- |
+| `token` | string | 🌕 | 草民登入的token |
+| `persona` | integer | 🌑 `[2]` | 草民的 persona ID |
+
+`[2]`
+> 設計用於切換當前 persona 使用
+
+#### Sample Input
+
+```json
+{
+  "token": "XXXXXXXX.DDDDDDDDDD.YYYYYYYYYY",
+  "persona": 9527
+}
+```
 
 ### Response
 ```
