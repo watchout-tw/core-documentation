@@ -9,7 +9,7 @@ NO
 ### Paging
 NO
 
-### Login with handle or email
+### Login With Handle Or Email
 
 #### Input
 
@@ -40,14 +40,14 @@ Or
 }
 ```
 
-### Login with token
+### Login With Token
 
 #### Input
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
 | `token` | string | 🌕 | 草民登入的token |
-| `persona` | integer | 🌑 `[2]` | 草民的 persona ID |
+| `persona_id` | integer | 🌑 `[2]` | 草民的 persona ID |
 
 `[2]`
 > 設計用於切換當前 persona 使用
@@ -57,7 +57,7 @@ Or
 ```json
 {
   "token": "XXXXXXXX.DDDDDDDDDD.YYYYYYYYYY",
-  "persona": 9527
+  "persona_id": 9527
 }
 ```
 
