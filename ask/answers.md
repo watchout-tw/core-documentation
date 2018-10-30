@@ -26,13 +26,13 @@ YES
 | `topics` | array of integers: topic IDs | 用原始問題的議題過濾答案清單 | 任一即可 | `[1, 2, 3]` |
 | `personas` | array of integers: persona IDs | 用回答者的persona過濾答案清單 | 任一即可 | `[1, 2, 3]` |
 | `me_reviewed` | integer | 是否有被active_persona評分？ | exact | `0` OR `1` |
-| `order_by` | string `[2]` | 答案排序 | exact | `date` |
+| `order_by` | string `[2]` | 答案排序 | exact | `start_date` |
 
 `[1]`
 > 搜尋範圍：`ASK_Answer.content`, `ASK_Answer.references`
 
 `[2]`
-> 可能的string：`date`、`review_count`、`review_average`
+> 可能的string：`start_date`、`review_count`、`review_average`
 
 ### Response
 ```
