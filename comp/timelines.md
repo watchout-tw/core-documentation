@@ -77,11 +77,11 @@ NO
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
-| `title` | string | 🌕 | 圖片網址 |
-| `description` | string | 🌕 | 圖片網址 |
-| `authors` | array of persona ids | 🌕 | 作者們的 Persona ID |
-| `tags` | array of tag ids | 🌕 | 此 Timeline 的 Tag |
-| `data` | object | 🌑 | 其它任何需要紀錄在此 timeline 的資料（非必要不使用） |
+| `title` | string | 🌕 | 時間軸標題 |
+| `description` | string | 🌕 | 時間軸敘述 |
+| `data` | json | 🌑 | 其它任何需要紀錄在此時間軸的資料（非必要不使用） |
+| `authors` | array of persona ids | 🌕 | 此時間軸的作者們 Persona ID |
+| `tags` | array of tag ids | 🌕 | 此時間軸的 Tag |
 
 ### Sample input
 ```json
@@ -112,12 +112,12 @@ NO
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
-| `id` | integer | 🌕 | timeline ID |
-| `title` | string | 🌕 | 圖片網址 |
-| `description` | string | 🌕 | 圖片網址 |
-| `data` | json | 🌑 | 其它任何需要紀錄在此 timeline 的資料（非必要不使用） |
-| `authors` | array of persona ids | 🌕 | 作者們的 Persona ID |
-| `tags` | array of tag ids | 🌕 | 此 Timeline 的 Tag |
+| `id` | integer | 🌕 | 時間軸 ID |
+| `title` | string | 🌕 | 時間軸標題 |
+| `description` | string | 🌕 | 時間軸敘述 |
+| `data` | json | 🌑 | 其它任何需要紀錄在此時間軸的資料（非必要不使用） |
+| `authors` | array of persona ids | 🌕 | 此時間軸的作者們 Persona ID |
+| `tags` | array of tag ids | 🌕 | 此時間軸的 Tag |
 
 ### Sample input
 ```json
@@ -125,6 +125,7 @@ NO
   "id": 1,
   "title": "沃草大紀事",
   "description": "沃草的種種",
+  "data": **JSON**,
   "authors": [1, 2, 3],
   "tags": [1, 2]
 }
