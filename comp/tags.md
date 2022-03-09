@@ -36,9 +36,9 @@ NO
 }
 ```
 
-## Get a single 
+## Get a single by slug
 ```
-GET /comp/tags/:id
+GET /comp/tags/:slug
 ```
 
 ### Auth
