@@ -55,6 +55,9 @@ NO
   id
   title
   description
+  authors
+  tags
+  events
   data
   editor
   create_date
