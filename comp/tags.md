@@ -36,9 +36,31 @@ NO
 }
 ```
 
+## Get a single by id
+```
+GET /comp/tags/:id
+```
+
+### Auth
+- “editor”
+
+### Paging
+NO
+
+### Response
+```
+{
+  id
+  slug
+  title
+  description
+  data
+}
+```
+
 ## Get a single by slug
 ```
-GET /comp/tags/:slug
+GET /comp/tags/:slug?type=slug
 ```
 
 ### Auth
