@@ -29,6 +29,7 @@ NO
       id
       index
       image
+      url
     }
     ...
   ]
@@ -52,6 +53,7 @@ NO
   id
   index
   image
+  url
 }
 ```
 
@@ -71,11 +73,13 @@ NO
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
 | `image` | string | 🌕 | 圖片網址 |
+| `url` | string | 🌕 | 連結 |
 
 ### Sample input
 ```json
 {
-  "image": "https://i.waa.tw/68wfwe8fs"
+  "image": "https://i.waa.tw/68wfwe8fs",
+  "url": "https://watchout.tw"
 }
 ```
 
@@ -103,13 +107,15 @@ NO
 | `id` | integer | 🌕 | Banner ID |
 | `index` | integer | 🌕 | 排序 |
 | `image` | string | 🌕 | 圖片網址 |
+| `url` | string | 🌕 | 連結 |
 
 ### Sample input
 ```json
 {
   "id": 1,
   "index": 2,
-  "image": "https://i.waa.tw/68wfwe8fs" 
+  "image": "https://i.waa.tw/68wfwe8fs",
+  "url": "https://watchout.tw"
 }
 ```
 
@@ -137,6 +143,7 @@ NO
 | `id` | integer | 🌕 | Banner ID |
 | `index` | integer | 🌕 | 排序 |
 | `image` | string | 🌕 | 圖片網址 |
+| `url` | string | 🌕 | 連結 |
 
 ### Sample input
 ```json
@@ -145,12 +152,14 @@ NO
     {
       "id": 1,
       "index": 2,
-      "image": "https://i.waa.tw/68wfwe8fs" 
+      "image": "https://i.waa.tw/68wfwe8fs",
+      "url": "https://watchout.tw"
     },
     {
       "id": 2,
       "index": 3,
-      "image": "https://i.waa.tw/68wfwe8fs" 
+      "image": "https://i.waa.tw/68wfwe8fs",
+      "url": "https://watchout.tw"
     }
   ]
 }
