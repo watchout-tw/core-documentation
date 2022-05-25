@@ -1,9 +1,10 @@
-# Invoice verification
+# Invoice verification 載具驗證
 
 - [Carruer verification](#carruer-verification)
 - [Lovecode verification](#lovecode-verification)
 
-## Carruer verification
+## Carruer verification 電子載具驗證
+
 ```
 POST /store/carruer/verification
 ```
@@ -32,7 +33,7 @@ NO
 204 No content
 ```
 
-## Lovecode verification
+## Lovecode verification 愛心碼驗證
 ```
 POST /store/lovecode/verification
 ```
