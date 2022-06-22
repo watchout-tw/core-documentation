@@ -34,6 +34,17 @@ NO
     *personaObject*
     ...
   ]
+  orders: [
+    {
+      id,
+			merchant_trade_no,
+			merchandise_name,
+			merchandise_slug,
+			merchandise_type,
+			price
+    }
+    ...
+  ]
 }
 ```
 
