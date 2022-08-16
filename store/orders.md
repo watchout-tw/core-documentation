@@ -16,10 +16,10 @@ GET /store/orders?type=plan
 - “editor”
 
 ### Paging
-YES
+NO
 
 ### Available query parameters
-YES
+NO
 
 ### Response
 ```
@@ -49,10 +49,10 @@ GET /store/orders?type=physical-product
 - “editor”
 
 ### Paging
-YES
+NO
 
 ### Available query parameters
-YES
+NO
 
 ### Response
 ```
