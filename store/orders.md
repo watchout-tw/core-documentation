@@ -129,7 +129,8 @@ NO
 | `invoice_type` | string | 發票類型 | `identifier`、`donation`、`memberCarruer`、`cellphoneCarruer` |
 | `invoice_code` | string | 發票編號 | 可為載具編號、愛心碼編號 |
 | `notes` | string | 訂單備註 |
-| `commodity_id` | string | 大宗單號 |
+| `commodity_id` | string | 大宗單號（商品訂單用） |
+| `allow_marketing` | boolean | 是否願意收到行銷資訊（商品訂單用） |
 | `remarks` | string | 行政使用的訂單註記 |
 
 ## Create an order
