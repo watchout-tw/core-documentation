@@ -205,6 +205,7 @@ NO
 ### Available query parameters
 
 | Key | Type | Required | Description |
+| --- | --- | :---: | --- |
 | `start_date` | string | 🌑 | 起始時間 |
 | `end_date` | string | 🌑 | 結束時間 |
 
