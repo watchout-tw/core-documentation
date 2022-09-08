@@ -74,9 +74,9 @@ NO
 }
 ```
 
-## Get an order by id
+## Get an order by merchant trade No.
 ```
-GET /store/orders/:id
+GET /store/orders/:tradeNo
 ```
 *定期定額或實體商品皆可*
 
@@ -226,7 +226,7 @@ PATCH /store/orders/:id?type=physical-product
 
 取得目前仍有定期定額名單的 CSV，提供草報寄送
 ```
-GET /store/orders?order_status=active
+GET /store/orders/csv?order_status=active
 ```
 
 ### Auth
@@ -245,7 +245,7 @@ customer_nickname,customer_email
 
 ## Get address CSV list
 ```
-GET /store/orders/address
+GET /store/orders/csv?type=address
 ```
 
 ### Paging
