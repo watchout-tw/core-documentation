@@ -253,10 +253,10 @@ NO
 
 ### Available query parameters
 
-| Key | Type | Required | Description |
+| Key | Type | Required | Description | Example |
 | --- | --- | :---: | --- |
-| `start_date` | string | 🌑 | 起始時間 |
-| `end_date` | string | 🌑 | 結束時間 |
+| `start_date` | string | 🌑 | 起始時間 | 2022-05-01 |
+| `end_date` | string | 🌑 | 結束時間 | 2022-06-01 |
 
 *如果沒有設定，預設回傳近一週的名單*
 
