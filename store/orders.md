@@ -226,7 +226,7 @@ PATCH /store/orders/:id?type=physical-product
 
 取得目前仍有定期定額名單的 CSV，提供草報寄送
 ```
-GET /store/orders/csv?order_status=active
+GET /store/orders/csv/newsletter
 ```
 
 ### Auth
@@ -245,7 +245,7 @@ customer_nickname,customer_email
 
 ## Get address CSV list
 ```
-GET /store/orders/csv?type=address
+GET /store/orders/csv/address
 ```
 
 ### Paging
