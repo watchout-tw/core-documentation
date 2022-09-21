@@ -35,6 +35,8 @@ NO
       customer_email
       total_success_times
       exec_times
+      last_process_date
+      last_process_status
       merchant_trade_date
     }
     ...
