@@ -222,6 +222,68 @@ PATCH /store/orders/:id?type=physical-product
 }
 ```
 
+## List transaction records of an order
+```
+GET /store/orders/_tradeNo/transactions
+```
+
+### Auth
+- “editor”
+
+### Paging
+NO
+
+### Available query parameters
+NO
+
+### Response
+```
+{
+  rows: [
+    id,
+    merchant_trade_no,
+    amount,
+    auth_code,
+    exec_times,
+    first_auth_amount,
+    frequency,
+    gwsr,
+    period_type,
+    process_date,
+    rtn_code,
+    rtn_msg,
+    store_id,
+    total_success_times,
+    custom_field_1,
+    custom_field_2,
+    custom_field_3,
+    custom_field_4
+    ...
+  ]
+}
+```
+
+| Key | Type | Description | Sample |
+| --- | --- | :---: | --- |
+| `id` | integer | 資料庫 ID | 13 |
+| `merchant_trade_no` | string | 定期定額訂單編號 | 00000001655428912135 |
+| `amount` | integer | 本次交易金額 | 300 |
+| `auth_code` | string | 綠界的驗證碼 | 930303 |
+| `exec_times` | string | 執行次數 | 99 |
+| `first_auth_amount` | string | 本定期定額訂單，首次刷卡交易金額 | 300 |
+| `frequency` | string | 執行頻率 | 1 |
+| `gwsr` | string | 綠界的授權交易單號 | 85520066 |
+| `period_type` | string | 單位間隔 | M |
+| `process_date` | string | 本交易執行時間 | 2022-08-15T02:29:17.000Z |
+| `rtn_code` | string | 交易結果代碼，`1`為成功，其餘皆為失敗 | 1 |
+| `rtn_msg` | string | 交易結果訊息 | `success`, `Pay Fail.`  |
+| `store_id` | string | 綠界特約商店編號（無使用） | 無範例 |
+| `total_success_times` | string | 累計刷卡成功次數 | 5 |
+| `custom_field_1` | string | 綠界客製化欄位（無使用） | 無範例 |
+| `custom_field_2` | string | 綠界客製化欄位（無使用） | 無範例 |
+| `custom_field_3` | string | 綠界客製化欄位（無使用） | 無範例 |
+| `custom_field_4` | string | 綠界客製化欄位（無使用） | 無範例 |
+
 ## Get all active CSV list
 
 取得目前仍有定期定額名單的 CSV，提供草報寄送
