@@ -31,9 +31,9 @@ NO
       id
       merchant_trade_no
       order_status
-      merchandise
+      merchandise_name
       customer_email
-      done_exec_times
+      total_success_times
       exec_times
       merchant_trade_date
     }
@@ -64,7 +64,7 @@ NO
       id
       merchant_trade_no
       order_status
-      merchandise
+      merchandise_name
       price
       customer_email
       merchant_trade_date
@@ -132,6 +132,9 @@ NO
 | `commodity_id` | string | 大宗單號（商品訂單用） |
 | `allow_marketing` | boolean | 是否願意收到行銷資訊（商品訂單用） |
 | `remarks` | string | 行政使用的訂單註記 |
+| `total_success_times` | string | 累計刷卡成功次數（定期定額訂單用） |
+| `last_process_date` | string | 最後一次刷卡執行日期 |
+| `last_process_status` | string | 最後一次刷卡執行成功與否 |
 
 ## Create an order
 ```
