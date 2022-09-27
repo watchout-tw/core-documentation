@@ -18,7 +18,9 @@ GET /store/orders?type=plan
 - “editor”
 
 ### Paging
-NO
+YES
+
+*用 querystring 帶 page=1,2,3*
 
 ### Available query parameters
 NO
@@ -53,7 +55,9 @@ GET /store/orders?type=physical-product
 - “editor”
 
 ### Paging
-NO
+YES
+
+*用 querystring 帶 page=1,2,3*
 
 ### Available query parameters
 NO
