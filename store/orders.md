@@ -4,8 +4,7 @@
 - [List physical-product orders](#list-physical-product-orders)
 - [Get an order by id](#get-an-order-by-id)
 - [Create an order](#create-an-order)
-- [Update a plan order](#update-a-plan-order)
-- [Update a physical-product order](#update-a-physical-product-order)
+- [Update an order](#update-an-order)
 - [Get all active CSV list](#get-all-active-CSV-list)
 - [Get address CSV list](#get-address-CSV-list)
 
@@ -146,6 +145,7 @@ NO
 ```
 POST /store/orders
 ```
+*定期定額或實體商品皆可*
 
 ### Auth
 - “editor”
@@ -185,10 +185,11 @@ POST /store/orders
 ### Response
 > 由綠界 SDK 提供的刷卡頁面 (HTML string)
 
-## Update a plan order
+## Update an order
 ```
-PATCH /store/orders/:id?type=plan
+PATCH /store/orders/:tradeNo
 ```
+*定期定額或實體商品皆可*
 
 ### Auth
 - “editor”
@@ -197,43 +198,32 @@ PATCH /store/orders/:id?type=plan
 
 | Key | Type | Required | Description |
 | --- | --- | :---: | --- |
-| `order_status` | string | 🌕 | 訂單狀態 |
+| `id` | integer | 🌕 | 資料庫 ID，Ex: `13` |
+| `merchant_trade_no` | string | 🌕 | 定期定額訂單編號，Ex: `00000001655428912135` |
+| `order_status` | string | 🌑 | 訂單狀態（定期定額使用），可為 `active` 或 `inactive` |
+| `commodity_id` | string | 🌑 | 大宗單號（單筆訂單使用） |
+| `remarks` | string | 🌑 | 行政使用的訂單註記 |
+| `allow_marketing` | tinyint | 🌑 | 是否願意收到行銷資訊（單筆訂單使用），可為 `0` 或 `1` |
 
 ### Sample input
 ```json
 {
+  "id": 13,
+  "merchant_trade_no": "00000001655428912135",
   "order_status": "inactive"
 }
-```
-
-## Update a physical product order
-```
-PATCH /store/orders/:id?type=physical-product
-```
-
-### Auth
-- “editor”
-
-### Input
-
-| Key | Type | Required | Description |
-| --- | --- | :---: | --- |
-| `commodity_id` | string | 🌑 | 大宗單號 |
-| `remarks` | string | 🌑 | 行政使用的訂單註記 |
-| `allow_marketing` | boolean | 🌑 | 是否願意收到行銷資訊 |
-
-### Sample input
-```json
 {
-  "commodity_id": "18930a90000b0",
-  "remarks": "退貨第二次失敗",
-  "allow_marketing": true
+  "id": 13,
+  "merchant_trade_no": "00000001655428912135",
+  "commodity_id": "KMI-0038495",
+  "remarks": "已被退回第二次",
+  "allow_marketing": 0
 }
 ```
 
 ## List transaction records of an order
 ```
-GET /store/orders/_tradeNo/transactions
+GET /store/orders/:tradeNo/transactions
 ```
 
 ### Auth
