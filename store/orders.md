@@ -24,7 +24,7 @@ YES
 | --- | --- | :---: | --- |
 | `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
 | `customer_email` | string | 訂購人 Email | abc@gmail.com |
-| `order_status` | string | 訂單狀態 | `active`、`inactive` |
+| `order_status` | string | 訂單狀態，`active` 或 `inactive` 兩種 | `active`、`inactive` |
 | `expire_in_six_month` | tinyint | 是否於六個月內到期 | `0` 或 `1` |
 | `page` | integer | 分頁編號 | 1, 2, 3... |
 
@@ -56,10 +56,10 @@ YES
 | `order_status` | string | 訂單狀態 | `active`、`inactive` |
 | `merchantdise_name` | string | 定期定額方案名稱 | 定期定額-519 |
 | `customer_email` | string | 訂購人 Email | abc@gmail.com |
-| `total_success_times` | string | 已執行成功次數 |
+| `total_success_times` | string | 已執行成功次數 | 5 |
 | `exec_times` | string | 執行次數 | 99 |
-| `last_process_date` | string | 最後一次刷卡執行日期 |
-| `last_process_status` | string | 最後一次刷卡執行成功與否 |
+| `last_process_date` | string | 最後一次刷卡執行日期 | 2022/06/17 01:21:52 |
+| `last_process_status` | string | 最後一次刷卡執行成功與否 | `success`, `Pay Fail.` |
 | `merchant_trade_date` | string | 訂單成立時間 | 2022/06/17 01:21:52 |
 
 ## List physical product orders
@@ -78,7 +78,7 @@ YES
 | --- | --- | :---: | --- |
 | `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
 | `customer_email` | string | 訂購人 Email | abc@gmail.com |
-| `allow_marketing` | tinyint | 是否願意收到行銷資訊，`0` 或 `1` |
+| `allow_marketing` | tinyint | 是否願意收到行銷資訊 | `0` 或 `1` |
 | `page` | integer | 分頁編號 | 1, 2, 3... |
 
 ### Response
@@ -104,9 +104,9 @@ YES
 | `id` | integer | 資料庫 ID | 13 |
 | `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
 | `merchantdise_name` | string | 商品名稱 | 公民行動指南 |
-| `price` | integer | 價格 |
+| `price` | integer | 價格 | 350 |
 | `customer_email` | string | 訂購人 Email | abc@gmail.com |
-| `allow_marketing` | tinyint | 是否願意收到行銷資訊 |
+| `allow_marketing` | tinyint | 是否願意收到行銷資訊 | `0` 或 `1` |
 | `merchant_trade_date` | string | 訂單成立時間 | 2022/06/17 01:21:52 |
 
 ## Get an order by merchant trade No.
@@ -149,7 +149,7 @@ NO
 | --- | --- | :---: | --- |
 | `id` | integer | 資料庫 ID | 13 |
 | `merchant_trade_no` | string | 定期定額訂單編號 | 00000001655428912135 |
-| `order_status` | string | 訂單狀態 | active |
+| `order_status` | string | 訂單狀態（定期定額訂單用），`active` 或 `inactive` 兩種 | active |
 | `merchant_trade_date` | string | 訂單成立時間 | 2022/06/17 01:21:52 |
 | `exec_times` | string | 執行次數 | 99 |
 | `frequency` | string | 執行頻率 | 1 |
@@ -163,13 +163,13 @@ NO
 | `customer_addr` | string | 訂購人地址 | 110台北市懷寧街 |
 | `invoice_type` | string | 發票類型 | `identifier`、`donation`、`memberCarruer`、`cellphoneCarruer` |
 | `invoice_code` | string | 發票編號 | 可為載具編號、愛心碼編號 |
-| `notes` | string | 訂單備註 |
-| `commodity_id` | string | 大宗單號（商品訂單用） |
-| `allow_marketing` | boolean | 是否願意收到行銷資訊（商品訂單用） |
-| `remarks` | string | 行政使用的訂單註記 |
-| `total_success_times` | string | 累計刷卡成功次數（定期定額訂單用） |
-| `last_process_date` | string | 最後一次刷卡執行日期 |
-| `last_process_status` | string | 最後一次刷卡執行成功與否 |
+| `notes` | string | 訂單備註 | 平常可能沒人在家 |
+| `commodity_id` | string | 大宗單號（商品訂單用） | LGN-097 |
+| `allow_marketing` | tinyint | 是否願意收到行銷資訊（商品訂單用） | `0` 或 `1` |
+| `remarks` | string | 行政使用的訂單註記 | 出貨但無人接應 |
+| `total_success_times` | string | 累計刷卡成功次數（定期定額訂單用） | 5 |
+| `last_process_date` | string | 最後一次刷卡執行日期 | 2022/06/17 01:21:52 |
+| `last_process_status` | string | 最後一次刷卡執行成功與否 | `success`、`Pay Fail.` |
 
 ## Create an order
 ```
@@ -344,7 +344,7 @@ NO
 
 ### Available query parameters
 | Key | Type | Required | Description | Example |
-| --- | --- | :---: | --- |
+| --- | --- | :---: | --- | --- |
 | `start_date` | string | 🌑 | 起始時間 | 2022-05-01 |
 | `end_date` | string | 🌑 | 結束時間 | 2022-06-01 |
 
