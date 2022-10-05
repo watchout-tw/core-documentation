@@ -22,7 +22,12 @@ YES
 *用 querystring 帶 page=1,2,3*
 
 ### Available query parameters
-NO
+| Key | Type | Description | Sample |
+| --- | --- | :---: | --- |
+| `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
+| `customer_email` | string | 訂購人 Email | abc@gmail.com |
+| `order_status` | string | 訂單狀態 | `active`、`inactive` |
+| `expire_in_six_month` | tinyint | 是否於六個月內到期 | `0` 或 `1` |
 
 ### Response
 ```
@@ -45,6 +50,19 @@ NO
 }
 ```
 
+| Key | Type | Description | Sample |
+| --- | --- | :---: | --- |
+| `id` | integer | 資料庫 ID | 13 |
+| `merchant_trade_no` | string | 定期定額訂單編號 | 00000001655428912135 |
+| `order_status` | string | 訂單狀態 | `active`、`inactive` |
+| `merchantdise_name` | string | 定期定額方案名稱 | 定期定額-519 |
+| `customer_email` | string | 訂購人 Email | abc@gmail.com |
+| `total_success_times` | string | 已執行成功次數 |
+| `exec_times` | string | 執行次數 | 99 |
+| `last_process_date` | string | 最後一次刷卡執行日期 |
+| `last_process_status` | string | 最後一次刷卡執行成功與否 |
+| `merchant_trade_date` | string | 訂單成立時間 | 2022/06/17 01:21:52 |
+
 ## List physical product orders
 ```
 GET /store/orders?type=physical-product
@@ -59,7 +77,11 @@ YES
 *用 querystring 帶 page=1,2,3*
 
 ### Available query parameters
-NO
+| Key | Type | Description | Sample |
+| --- | --- | :---: | --- |
+| `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
+| `customer_email` | string | 訂購人 Email | abc@gmail.com |
+| `allow_marketing` | tinyint | 是否願意收到行銷資訊，`0` 或 `1` |
 
 ### Response
 ```
@@ -68,16 +90,26 @@ NO
     {
       id
       merchant_trade_no
-      order_status
       merchandise_name
       price
       customer_email
+      allow_marketing
       merchant_trade_date
     }
     ...
   ]
 }
 ```
+
+| Key | Type | Description | Sample |
+| --- | --- | :---: | --- |
+| `id` | integer | 資料庫 ID | 13 |
+| `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
+| `merchantdise_name` | string | 商品名稱 | 公民行動指南 |
+| `price` | integer | 價格 |
+| `customer_email` | string | 訂購人 Email | abc@gmail.com |
+| `allow_marketing` | tinyint | 是否願意收到行銷資訊 |
+| `merchant_trade_date` | string | 訂單成立時間 | 2022/06/17 01:21:52 |
 
 ## Get an order by merchant trade No.
 ```
@@ -313,7 +345,6 @@ GET /store/orders/csv/address
 NO
 
 ### Available query parameters
-
 | Key | Type | Required | Description | Example |
 | --- | --- | :---: | --- |
 | `start_date` | string | 🌑 | 起始時間 | 2022-05-01 |
