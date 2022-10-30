@@ -7,6 +7,7 @@
 - [Update an order](#update-an-order)
 - [Get all active CSV list](#get-all-active-CSV-list)
 - [Get address CSV list](#get-address-CSV-list)
+- [Get allow marketing CSV list](#get-allow-marketing-CSV-list)
 
 ## List plan orders
 ```
@@ -353,4 +354,25 @@ NO
 ### Response
 ```
 customer_name,customer_addr,customer_phone
+```
+
+## Get allow marketing CSV list
+
+從單筆購買的訂單中，取得同意接收行銷資訊名單的 CSV
+```
+GET /store/orders/csv/allowMarketing
+```
+
+### Auth
+- “editor”
+
+### Paging
+NO
+
+### Available query parameters
+NO
+
+### Response
+```
+customer_nickname,customer_email
 ```
