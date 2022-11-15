@@ -23,7 +23,8 @@ YES
 ### Available query parameters
 | Key | Type | Description | Sample |
 | --- | --- | :---: | --- |
-| `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
+| `merchandise_id` | integer | 商品編號 | 1 |
+| `merchant_trade_no` | string | 訂單編號 | 00000001655428912135 |
 | `customer_email` | string | 訂購人 Email | abc@gmail.com |
 | `order_status` | string | 訂單狀態，`active` 或 `inactive` 兩種 | `active`、`inactive` |
 | `expire_in_six_month` | tinyint | 是否於六個月內到期 | `0` 或 `1` |
@@ -77,7 +78,8 @@ YES
 ### Available query parameters
 | Key | Type | Description | Sample |
 | --- | --- | :---: | --- |
-| `merchant_trade_no` | string | 商品訂單編號 | 00000001655428912135 |
+| `merchandise_id` | integer | 商品編號 | 1 |
+| `merchant_trade_no` | string | 訂單編號 | 00000001655428912135 |
 | `customer_email` | string | 訂購人 Email | abc@gmail.com |
 | `allow_marketing` | tinyint | 是否願意收到行銷資訊 | `0` 或 `1` |
 | `page` | integer | 分頁編號 | 1, 2, 3... |
