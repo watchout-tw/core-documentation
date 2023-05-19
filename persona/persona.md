@@ -2,6 +2,7 @@
 
 - [Get active persona](#get-active-persona)
 - [Update active persona](#update-active-persona)
+- [Get public info of a persona](#get-public-info-of-a-persona)
 
 ## Get active persona
 ```
@@ -77,3 +78,40 @@ NO
 
 ### Response
 > ?
+
+# Public info of a persona
+
+## Get public info of a persona
+```
+GET /personas/:id
+```
+### Auth
+NO
+
+### Paging
+NO
+
+### Response
+```
+{
+  type
+  status
+  title
+  name
+  avatar
+  start_date
+  end_date
+  data: {}
+  concerned_topics: [
+    {
+      topic_type
+      topic_id
+    }
+    ...
+  ]
+  latest_status_update: { // [1]
+    content
+    data: {}
+  }
+}
+```

@@ -1,36 +1,41 @@
-# Public info of a persona
+# Get a list of personas by role
 
-## Public info of a persona
 ```
-GET /personas/:id
+GET /personas/role/_roleID
 ```
+
 ### Auth
 NO
 
 ### Paging
 NO
 
+### Available query parameters
+roleID:
+
+2: editor
+
+21: collaborator
+
+22: watchout-editor
+
+23: console-editor
+
 ### Response
 ```
 {
-  type
-  status
-  title
-  name
-  avatar
-  start_date
-  end_date
-  data: {}
-  concerned_topics: [
+  rows: [
     {
-      topic_type
-      topic_id
+      type
+      status
+      title
+      name
+      avatar: {}
+      start_date
+      end_date
+      data: {}
     }
     ...
   ]
-  latest_status_update: { // [1]
-    content
-    data: {}
-  }
 }
 ```
